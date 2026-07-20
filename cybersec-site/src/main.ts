@@ -68,17 +68,17 @@ app.innerHTML = `
   <div class="section-header">
     <span class="section-tag">ABOUT US</span>
     <h2>Engineering-driven cybersecurity.</h2>
-    <p class="section-desc">fuse-cec.io is a cybersecurity engineering and consulting company specializing in cloud security, offensive security, and security automation across Azure, GCP, and AWS. Our mission is to help organizations build secure, resilient, and compliant systems through engineering-driven security solutions.</p>
+    <p class="section-desc">fuse-cec.io is a cybersecurity engineering and consulting company specializing in AI security, penetration testing, cloud security, DevSecOps, detection engineering, and compliance across Azure, GCP, and AWS. Our mission is to help organizations build secure, resilient, and compliant systems through engineering-driven security solutions.</p>
   </div>
   <div class="philosophy-cards">
     <div class="philosophy-card">
       <h3>Why Companies Choose Us</h3>
       <ul class="choose-list">
-        <li><span class="choose-bullet"></span> Engineering-first approach</li>
-        <li><span class="choose-bullet"></span> Cloud-native expertise</li>
-        <li><span class="choose-bullet"></span> Offensive + defensive capability</li>
-        <li><span class="choose-bullet"></span> Automation-focused</li>
-        <li><span class="choose-bullet"></span> Compliance-ready</li>
+        <li><span class="choose-bullet"></span> Full-spectrum coverage: AI to AD to cloud</li>
+        <li><span class="choose-bullet"></span> Engineer-led delivery</li>
+        <li><span class="choose-bullet"></span> Offensive + defensive in one practice</li>
+        <li><span class="choose-bullet"></span> Automation-first approach</li>
+        <li><span class="choose-bullet"></span> Compliance-ready outcomes</li>
       </ul>
     </div>
     <div class="philosophy-card">
@@ -87,7 +87,7 @@ app.innerHTML = `
     </div>
     <div class="philosophy-card">
       <h3>Our Impact</h3>
-      <p>We reduce cloud misconfigurations, strengthen detection capabilities, improve compliance posture, and help organizations build resilient architectures that withstand real-world threats.</p>
+      <p>We harden AI applications, reduce cloud misconfigurations, strengthen detection capabilities, improve compliance posture, and help organizations build resilient architectures that withstand real-world threats.</p>
     </div>
   </div>
   </div>
