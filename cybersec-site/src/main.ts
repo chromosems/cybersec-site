@@ -26,7 +26,7 @@ app.innerHTML = `
   <div class="hero-layout">
     <div class="hero-text">
       <h1>Built by Engineers.<br>Trusted by Teams.</h1>
-      <p class="hero-sub">Secure-by-design cloud architectures, offensive security testing, and automated security engineering for modern digital environments.</p>
+      <p class="hero-sub">AI security, penetration testing, cloud architecture, and detection engineering for modern digital environments.</p>
     </div>
     <div class="hero-form-col">
       <div class="hero-form-card">
