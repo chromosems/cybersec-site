@@ -190,52 +190,59 @@ app.innerHTML = `
 <section id="retainer">
   <div class="container">
   <div class="section-header">
-    <span class="section-tag">THE RETAINER MODEL</span>
-    <h2>One number, one team, zero friction.</h2>
-    <p class="section-desc">The retainer isn't a pricing scheme: it's the structural decision that makes partnership possible. No scopes, no change orders, no resetting context every engagement.</p>
+    <span class="section-tag">RETAINER MODEL</span>
+    <h2>Cybersecurity Retainer Model</h2>
+    <p class="section-desc">Our retainer model gives your organization continuous access to our cybersecurity expertise, ensuring proactive protection, rapid response, and ongoing improvement of your cloud and security posture.</p>
   </div>
+  <h3 class="retainer-subheading">What's Included</h3>
+  <div class="retainer-single">
+    <ul class="retainer-list">
+      <li>Monthly cloud security reviews (Azure, GCP, AWS)</li>
+      <li>Continuous detection engineering updates (Sentinel, Splunk)</li>
+      <li>On-demand security consultation and advisory</li>
+      <li>Threat monitoring and analysis</li>
+      <li>Secure architecture guidance for new projects</li>
+      <li>Support for DevSecOps, CI/CD, and automation workflows</li>
+      <li>Documentation updates (SDRs, policies, governance)</li>
+    </ul>
+  </div>
+  <h3 class="retainer-subheading">Why Choose a Retainer</h3>
   <div class="retainer-grid">
     <div class="retainer-card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
-        <rect x="4" y="8" width="16" height="12" rx="1.5"/>
-        <path d="M8 8V5a4 4 0 118 0v3"/>
-        <path d="M16 14h1"/>
-        <circle cx="12" cy="14" r="1.5" fill="currentColor"/>
-      </svg>
-      <h3>Your environment, already known</h3>
-      <p>We don't start every call with "what's your setup?" We monitor it daily. When a threat hits, we're already inside your infrastructure, not dialling in from cold.</p>
+      <ul class="retainer-list">
+        <li>Predictable monthly cost</li>
+        <li>Faster response times</li>
+        <li>Continuous improvement instead of one-off fixes</li>
+        <li>Access to senior cybersecurity engineers</li>
+      </ul>
     </div>
     <div class="retainer-card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
-        <path d="M12 2a16 16 0 00-8.5 14" stroke-dasharray="2 3"/>
-        <path d="M12 2a16 16 0 018.5 14" stroke-dasharray="2 3"/>
-        <path d="M3.5 16A16 16 0 0012 22a16 16 0 008.5-6"/>
-        <circle cx="12" cy="5" r="2" fill="currentColor"/>
-        <path d="M8 12l2.5 2.5L16 11"/>
-      </svg>
-      <h3>We eat our own cooking</h3>
-      <p>Your risk profile is our dashboard. When your security posture improves, our retention renews. There's no incentive to drag work out: we succeed only when your attack surface shrinks.</p>
+      <ul class="retainer-list">
+        <li>Reduced risk through proactive security</li>
+        <li>Ideal for growing cloud environments</li>
+        <li>Priority incident response</li>
+        <li>Custom security roadmaps</li>
+      </ul>
+    </div>
+  </div>
+  <h3 class="retainer-subheading">Retainer Tiers</h3>
+  <div class="retainer-grid-3">
+    <div class="retainer-card">
+      <div class="retainer-tier">Basic</div>
+      <p>For small teams needing periodic guidance</p>
     </div>
     <div class="retainer-card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
-        <circle cx="8" cy="8" r="4"/>
-        <circle cx="16" cy="16" r="4"/>
-        <path d="M6 10l4 4"/>
-        <path d="M14 14l4-4"/>
-        <path d="M10 8h4"/>
-        <path d="M12 10v4"/>
-      </svg>
-      <h3>Full scope, single thread</h3>
-      <p>One retainer covers SOC monitoring, pentesting, risk assessment, compliance, and AI security. No separate vendors, no handoffs, no "that's out of scope" emails at 3 AM.</p>
+      <div class="retainer-tier">Standard</div>
+      <p>For organizations with active cloud workloads</p>
     </div>
     <div class="retainer-card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
-        <path d="M12 2l3 4 5 1-3 4 1 5-5-2-5 2 1-5-3-4 5-1 3-4z"/>
-        <circle cx="12" cy="10" r="1.5" fill="currentColor"/>
-      </svg>
-      <h3>Onboarding, baked in</h3>
-      <p>Baseline assessment, agent deployment, SIEM configuration: it's all part of the first month, not a separate proposal. You pay one number from day one. No surprises because there's nothing to surprise you with.</p>
+      <div class="retainer-tier">Premium</div>
+      <p>For companies requiring continuous support and rapid response</p>
     </div>
+  </div>
+  <div class="retainer-cta">
+    <a href="#hero" class="btn-primary">Get Started</a>
+    <p class="retainer-cta-text">Contact us to discuss which retainer tier fits your environment and security needs.</p>
   </div>
   </div>
 </section>
