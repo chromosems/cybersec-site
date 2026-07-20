@@ -118,7 +118,7 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">01</div>
       <h3>AI Security & Adversarial Testing</h3>
-      <p>We secure AI-driven applications against modern threats including prompt injection, model poisoning, jailbreak attacks, data leakage, and adversarial manipulation.</p>
+      <p>We secure AI-driven applications against modern threats including prompt injection, model poisoning, jailbreak attacks, data leakage, and adversarial manipulation. Our engineers test AI pipelines end to end to ensure your AI systems remain safe, reliable, and compliant.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -286,38 +286,35 @@ app.innerHTML = `
   <div class="section-header">
     <span class="section-tag">RETAINER MODEL</span>
     <h2>Cybersecurity Retainer Model</h2>
-    <p class="section-desc">Our retainer model gives your organization continuous access to our cybersecurity expertise, ensuring proactive protection, rapid response, and ongoing improvement of your cloud and security posture.</p>
+    <p class="section-desc">Our retainer model provides continuous access to our cybersecurity expertise, ensuring proactive protection, rapid response, and ongoing improvement of your cloud, AI, and enterprise security posture.</p>
   </div>
   <h3 class="retainer-subheading">What's Included</h3>
   <div class="retainer-single">
-    <ul class="retainer-list">
-      <li>Monthly cloud security reviews (Azure, GCP, AWS)</li>
-      <li>Continuous detection engineering updates (Sentinel, Splunk)</li>
-      <li>On-demand security consultation and advisory</li>
-      <li>Threat monitoring and analysis</li>
-      <li>Secure architecture guidance for new projects</li>
-      <li>Support for DevSecOps, CI/CD, and automation workflows</li>
-      <li>Documentation updates (SDRs, policies, governance)</li>
-    </ul>
+      <ul class="retainer-list">
+        <li>Monthly cloud security reviews (Azure, GCP, AWS)</li>
+        <li>Continuous detection engineering updates (Sentinel, Splunk)</li>
+        <li>AI security testing (prompt injection, jailbreaks, model abuse)</li>
+        <li>AI application hardening and guardrail implementation</li>
+        <li>Network penetration testing (internal & external)</li>
+        <li>Web application penetration testing</li>
+        <li>API penetration testing (REST, GraphQL, microservices)</li>
+        <li>Active Directory attack path analysis</li>
+        <li>On-demand security consultation and advisory</li>
+        <li>Secure architecture guidance for new projects</li>
+        <li>Support for DevSecOps, CI/CD, and automation workflows</li>
+        <li>Documentation updates (SDRs, policies, governance)</li>
+      </ul>
   </div>
   <h3 class="retainer-subheading">Why Choose a Retainer</h3>
-  <div class="retainer-grid">
-    <div class="retainer-card">
-      <ul class="retainer-list">
-        <li>Predictable monthly cost</li>
-        <li>Faster response times</li>
-        <li>Continuous improvement instead of one off fixes</li>
-        <li>Access to senior cybersecurity engineers</li>
-      </ul>
-    </div>
-    <div class="retainer-card">
-      <ul class="retainer-list">
-        <li>Reduced risk through proactive security</li>
-        <li>Ideal for growing cloud environments</li>
-        <li>Priority incident response</li>
-        <li>Custom security roadmaps</li>
-      </ul>
-    </div>
+  <div class="retainer-single">
+    <ul class="retainer-list">
+      <li>Predictable monthly cost</li>
+      <li>Faster response times</li>
+      <li>Continuous improvement instead of one off fixes</li>
+      <li>Access to senior cybersecurity engineers</li>
+      <li>Proactive identification of vulnerabilities</li>
+      <li>Ideal for organizations with growing cloud or AI workloads</li>
+    </ul>
   </div>
   <h3 class="retainer-subheading">Retainer Tiers</h3>
   <div class="retainer-grid-3">
@@ -327,11 +324,11 @@ app.innerHTML = `
     </div>
     <div class="retainer-card">
       <div class="retainer-tier">Standard</div>
-      <p>For organizations with active cloud workloads</p>
+      <p>For organizations with active cloud and AI workloads</p>
     </div>
     <div class="retainer-card">
       <div class="retainer-tier">Premium</div>
-      <p>For companies requiring continuous support and rapid response</p>
+      <p>For companies requiring continuous support, rapid response, and regular penetration testing</p>
     </div>
   </div>
   <div class="retainer-cta">
