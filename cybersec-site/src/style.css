@@ -507,6 +507,41 @@ section {
   margin-top: 14px;
 }
 
+.deliverables.collapsed {
+  display: none;
+}
+
+.deliverables.expanded {
+  display: block;
+}
+
+.read-more-btn {
+  display: inline-block;
+  font-family: var(--heading);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  color: var(--accent);
+  background: none;
+  border: none;
+  border-top: 1px solid var(--border);
+  padding: 10px 0 0;
+  margin-top: 14px;
+  cursor: pointer;
+  width: 100%;
+  text-align: left;
+  transition: color 0.2s;
+}
+
+.read-more-btn:hover {
+  color: #ef4444;
+}
+
+.read-more-btn::after {
+  content: ' \2192';
+}
+
 .deliverables-heading {
   display: block;
   font-family: var(--heading);

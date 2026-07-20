@@ -106,15 +106,15 @@ app.innerHTML = `
 <section id="expertise">
   <div class="container">
   <div class="section-header">
-    <span class="section-tag">OUR SERVICES</span>
-    <h2>Our Services</h2>
+    <span class="section-tag">OUR EXPERTISE</span>
+    <h2>Our Expertise</h2>
   </div>
   <div class="expertise-grid">
     <div class="expertise-card">
       <div class="expertise-number">01</div>
       <h3>AI Security & Adversarial Testing</h3>
-      <p>We secure AI-driven applications against modern threats including prompt injection, model poisoning, jailbreak attacks, data leakage, and adversarial manipulation. Our engineers test AI pipelines end-to-end — from model inputs to backend integrations — ensuring your AI systems remain safe, reliable, and compliant.</p>
-      <div class="deliverables">
+      <p>We secure AI-driven applications against modern threats including prompt injection, model poisoning, jailbreak attacks, data leakage, and adversarial manipulation.</p>
+      <div class="deliverables collapsed">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>AI model penetration testing</li>
@@ -124,12 +124,13 @@ app.innerHTML = `
           <li>AI red teaming scenarios</li>
         </ul>
       </div>
+      <button class="read-more-btn">Read more</button>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">02</div>
       <h3>AI Application Hardening</h3>
       <p>We help organizations build secure AI applications by integrating guardrails, monitoring, and safe-execution controls into their AI workflows.</p>
-      <div class="deliverables">
+      <div class="deliverables collapsed">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>Secure LLM architecture design</li>
@@ -139,12 +140,13 @@ app.innerHTML = `
           <li>Secure API integration for AI systems</li>
         </ul>
       </div>
+      <button class="read-more-btn">Read more</button>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">03</div>
       <h3>Penetration Testing (Network, Web, API, AD)</h3>
-      <p>We perform comprehensive penetration testing across your entire environment — network infrastructure, web applications, APIs, and Active Directory — to identify vulnerabilities before attackers do.</p>
-      <div class="deliverables">
+      <p>We perform comprehensive penetration testing across your entire environment: network infrastructure, web applications, APIs, and Active Directory.</p>
+      <div class="deliverables collapsed">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>Internal & external network penetration testing</li>
@@ -154,12 +156,13 @@ app.innerHTML = `
           <li>Exploitation, reporting, and remediation guidance</li>
         </ul>
       </div>
+      <button class="read-more-btn">Read more</button>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">04</div>
       <h3>Cloud Security Architecture</h3>
       <p>Build secure-by-design cloud environments across Azure, GCP, and AWS with identity hardening, segmentation, and workload protection.</p>
-      <div class="deliverables">
+      <div class="deliverables collapsed">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>Cloud architecture reviews</li>
@@ -169,12 +172,13 @@ app.innerHTML = `
           <li>Secure workload deployment</li>
         </ul>
       </div>
+      <button class="read-more-btn">Read more</button>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">05</div>
       <h3>Security Automation & DevSecOps</h3>
       <p>Accelerate development while improving security through automated guardrails and CI/CD pipeline hardening.</p>
-      <div class="deliverables">
+      <div class="deliverables collapsed">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>CI/CD security</li>
@@ -184,12 +188,13 @@ app.innerHTML = `
           <li>Policy-as-code implementation</li>
         </ul>
       </div>
+      <button class="read-more-btn">Read more</button>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">06</div>
       <h3>Detection Engineering & SIEM Optimization</h3>
       <p>Enhance visibility and reduce response time with high-fidelity detection rules and log coverage.</p>
-      <div class="deliverables">
+      <div class="deliverables collapsed">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>Sentinel & Splunk detection rules</li>
@@ -199,12 +204,13 @@ app.innerHTML = `
           <li>Identity anomaly detection</li>
         </ul>
       </div>
+      <button class="read-more-btn">Read more</button>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">07</div>
       <h3>Compliance & Governance</h3>
       <p>Achieve and maintain compliance with clear, auditable controls and security documentation.</p>
-      <div class="deliverables">
+      <div class="deliverables collapsed">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>GDPR alignment</li>
@@ -214,6 +220,7 @@ app.innerHTML = `
           <li>Governance frameworks</li>
         </ul>
       </div>
+      <button class="read-more-btn">Read more</button>
     </div>
     </div>
   </div>
@@ -427,6 +434,20 @@ app.innerHTML = `
   </div>
 </footer>
 `
+
+// ------ Read more toggles ------
+
+document.querySelectorAll('.read-more-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const card = btn.closest('.expertise-card')
+    const deliverables = card?.querySelector('.deliverables')
+    if (!deliverables) return
+    const isCollapsed = deliverables.classList.contains('collapsed')
+    deliverables.classList.toggle('collapsed')
+    deliverables.classList.toggle('expanded')
+    btn.textContent = isCollapsed ? 'Show less' : 'Read more'
+  })
+})
 
 // ------ Smooth scroll ------
 
