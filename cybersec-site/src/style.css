@@ -277,6 +277,21 @@ nav {
   margin-top: 4px;
 }
 
+.form-status {
+  font-size: 13px;
+  line-height: 1.5;
+  min-height: 0;
+  transition: min-height 0.2s;
+}
+
+.form-status-success {
+  color: #16a34a;
+}
+
+.form-status-error {
+  color: #dc2626;
+}
+
 .btn-primary {
   display: inline-block;
   font-family: var(--heading);

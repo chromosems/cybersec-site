@@ -32,7 +32,7 @@ app.innerHTML = `
       <div class="hero-form-card">
         <h3>How Can We Help</h3>
         <p class="hero-form-sub">Tell us about your security needs and we'll get back to you within 24 hours.</p>
-        <form action="https://formspree.io/f/xqerbgkr" method="POST">
+        <form id="contact-form">
           <input type="text" name="name" placeholder="Your name" required minlength="2" autocomplete="name">
           <input type="email" name="email" placeholder="Email address" required autocomplete="email">
           <input type="tel" name="phone" placeholder="Phone number" required pattern="[0-9+\-()\s]+" title="Numbers and phone characters only (+, -, parentheses)" inputmode="numeric">
@@ -51,6 +51,7 @@ app.innerHTML = `
           </select>
           <textarea name="message" placeholder="Tell us about your security needs..." rows="3" required></textarea>
           <button type="submit" class="btn-primary">Send message</button>
+          <div class="form-status" role="alert"></div>
         </form>
     </div>
     </div>
@@ -481,6 +482,43 @@ document.querySelectorAll('.nav-center a').forEach(link => {
     navCenter?.classList.remove('open')
     navToggle?.classList.remove('open')
   })
+})
+
+// ------ Form submission ------
+
+const contactForm = document.querySelector<HTMLFormElement>('#contact-form')
+contactForm?.addEventListener('submit', async e => {
+  e.preventDefault()
+  const status = contactForm.querySelector<HTMLDivElement>('.form-status')!
+  const btn = contactForm.querySelector<HTMLButtonElement>('button[type="submit"]')!
+  const data = new FormData(contactForm)
+
+  status.textContent = ''
+  status.className = 'form-status'
+  btn.disabled = true
+  btn.textContent = 'Sending...'
+
+  try {
+    const res = await fetch('https://formspree.io/f/xqerbgkr', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' },
+    })
+    if (res.ok) {
+      status.textContent = 'Thanks! We will get back to you within 24 hours.'
+      status.classList.add('form-status-success')
+      contactForm.reset()
+    } else {
+      status.textContent = 'Something went wrong. Please try again or email us directly.'
+      status.classList.add('form-status-error')
+    }
+  } catch {
+    status.textContent = 'Network error. Please try again.'
+    status.classList.add('form-status-error')
+  }
+
+  btn.disabled = false
+  btn.textContent = 'Send message'
 })
 
 // ------ Auto-detect phone country code ------
