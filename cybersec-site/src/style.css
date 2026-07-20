@@ -188,6 +188,24 @@ nav {
   margin-bottom: 32px;
 }
 
+.hero-ctas {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.hero-ctas .btn-primary,
+.hero-ctas .btn-outline {
+  font-size: 13px;
+  padding: 12px 24px;
+}
+
+@media (max-width: 900px) {
+  .hero-ctas {
+    justify-content: center;
+  }
+}
+
 
 /* Hero Form */
 
@@ -937,6 +955,32 @@ footer {
   font-size: 14px;
   line-height: 1.7;
   color: var(--text);
+}
+
+.choose-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+.choose-list li {
+  font-size: 14px;
+  line-height: 1.8;
+  color: var(--text);
+  padding: 4px 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.choose-bullet {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+  flex-shrink: 0;
 }
 
 /* Retainer Model */

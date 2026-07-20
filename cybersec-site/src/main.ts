@@ -11,7 +11,7 @@ app.innerHTML = `
       <a href="#philosophy">About</a>
       <a href="#expertise">Expertise</a>
       <a href="#how-it-works">How It Works</a>
-      <a href="#solutions">Solutions</a>
+      <a href="#solutions">Deliverables</a>
       <a href="#hero" class="nav-btn nav-btn-internal">Get a free consultation</a>
     </div>
     <a href="#hero" class="nav-btn nav-btn-external">Get a free consultation</a>
@@ -26,7 +26,11 @@ app.innerHTML = `
   <div class="hero-layout">
     <div class="hero-text">
       <h1>Built by operators.<br>Trusted by teams.</h1>
-      <p class="hero-sub">Industrial grade cybersecurity for mid market firms. Defensive operations, proactive assurance, and strategic infrastructure  in one monthly retainer.</p>
+      <p class="hero-sub">Secure-by-design cloud architectures, offensive security testing, and automated security engineering for modern digital environments.</p>
+      <div class="hero-ctas">
+        <a href="#expertise" class="btn-primary">Services</a>
+        <a href="#hero" class="btn-outline">Contact Us</a>
+      </div>
     </div>
     <div class="hero-form-col">
       <div class="hero-form-card">
@@ -39,14 +43,11 @@ app.innerHTML = `
           <input type="text" name="company" placeholder="Company" required autocomplete="organization">
           <select name="service" class="hero-form-select" required>
             <option value="" disabled selected>How we can help you</option>
-            <option value="security-monitoring">Security Monitoring</option>
-            <option value="incident-response">Incident Response</option>
-            <option value="penetration-testing">Penetration Testing</option>
-            <option value="risk-assessment">Risk Assessment</option>
-            <option value="compliance-management">Compliance Management</option>
-            <option value="cloud-security">Cloud Security</option>
-            <option value="zero-trust">Zero Trust Architecture</option>
-            <option value="ai-security">AI Application Security</option>
+            <option value="cloud-security">Cloud Security Architecture</option>
+            <option value="penetration-testing">Penetration Testing & Adversarial Simulation</option>
+            <option value="devsecops">Security Automation & DevSecOps</option>
+            <option value="detection-engineering">Detection Engineering & SIEM</option>
+            <option value="compliance">Compliance & Governance</option>
             <option value="other">Other</option>
           </select>
           <textarea name="message" placeholder="Tell us about your security needs..." rows="3" required></textarea>
@@ -67,51 +68,28 @@ app.innerHTML = `
 <section id="philosophy" class="section-light">
   <div class="container">
   <div class="section-header">
-    <span class="section-tag">OUR PHILOSOPHY</span>
-    <h2>Bridging the gap between East African roots and global standards.</h2>
-    <p class="section-desc">We combine deep local context with world class security standards. We aren't just consultants we are your dedicated security operations partners, delivering enterprise grade protection built for mid market realities.</p>
+    <span class="section-tag">ABOUT US</span>
+    <h2>Engineering-driven cybersecurity.</h2>
+    <p class="section-desc">fuse-cec.io is a cybersecurity engineering and consulting company specializing in cloud security, offensive security, and security automation across Azure, GCP, and AWS. Our mission is to help organizations build secure, resilient, and compliant systems through engineering-driven security solutions.</p>
   </div>
   <div class="philosophy-cards">
     <div class="philosophy-card">
-      <div class="philosophy-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-          <path d="M12 21s-7-6-7-11a7 7 0 1114 0c0 5-7 11-7 11z"/>
-          <path d="M12 14a4 4 0 100-8 4 4 0 000 8z"/>
-          <circle cx="9" cy="7" r="1" fill="currentColor"/>
-          <circle cx="15" cy="7" r="1" fill="currentColor"/>
-          <circle cx="9" cy="13" r="1" fill="currentColor"/>
-          <circle cx="15" cy="13" r="1" fill="currentColor"/>
-          <path d="M10 8l-1 1M10 12l-1-1M14 8l1 1M14 12l1-1"/>
-        </svg>
-      </div>
-      <h3>Local Context</h3>
-      <p>We understand the East African threat landscape, regulatory environment, and business realities because we operate here.</p>
+      <h3>Why Companies Choose Us</h3>
+      <ul class="choose-list">
+        <li><span class="choose-bullet"></span> Engineering-first approach</li>
+        <li><span class="choose-bullet"></span> Cloud-native expertise</li>
+        <li><span class="choose-bullet"></span> Offensive + defensive capability</li>
+        <li><span class="choose-bullet"></span> Automation-focused</li>
+        <li><span class="choose-bullet"></span> Compliance-ready</li>
+      </ul>
     </div>
     <div class="philosophy-card">
-      <div class="philosophy-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-          <rect x="4" y="8" width="16" height="12" rx="2"/>
-          <path d="M4 11h16"/>
-          <path d="M8 8V6a4 4 0 118 0v2"/>
-          <path d="M10 15l1.5 1.5L14 14"/>
-        </svg>
-      </div>
-      <h3>Global Standards</h3>
-      <p>Our methodologies align with industry frameworks built on real frontline experience and a deep understanding of global security standards.</p>
+      <h3>What We Do</h3>
+      <p>Cloud security architecture, penetration testing, security automation and DevSecOps, detection engineering and SIEM, and compliance and governance. Delivered as one integrated practice, not fragmented engagements.</p>
     </div>
     <div class="philosophy-card">
-      <div class="philosophy-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-          <path d="M6 21a3 3 0 100-6 3 3 0 000 6z"/>
-          <path d="M18 21a3 3 0 100-6 3 3 0 000 6z"/>
-          <path d="M9 12h6"/>
-          <path d="M7.5 15L9 12l-1.5-3"/>
-          <path d="M16.5 9L15 12l1.5 3"/>
-          <path d="M9 3h6l2 4.5H7L9 3z"/>
-        </svg>
-      </div>
-      <h3>Partnership Model</h3>
-      <p>We embed ourselves as your security operations partner  not a vendor. One retainer, one point of contact, no handoffs.</p>
+      <h3>Our Impact</h3>
+      <p>We reduce cloud misconfigurations, strengthen detection capabilities, improve compliance posture, and help organizations build resilient architectures that withstand real-world threats.</p>
     </div>
   </div>
   </div>
@@ -132,33 +110,28 @@ app.innerHTML = `
   <div class="expertise-grid">
     <div class="expertise-card">
       <div class="expertise-number">01</div>
-      <h3>Risk Assessment</h3>
-      <p>We conduct comprehensive threat modeling and vulnerability assessments to identify and mitigate critical security risks before they impact your operations.</p>
+      <h3>Cloud Security Architecture</h3>
+      <p>Secure-by-design Azure, GCP, and AWS architectures, identity hardening, network segmentation, and workload protection.</p>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">02</div>
-      <h3>Security Monitoring</h3>
-      <p>Our 24/7 SOC provides continuous surveillance of your network infrastructure, detecting anomalies and malicious activities in real-time for immediate response.</p>
+      <h3>Penetration Testing & Adversarial Simulation</h3>
+      <p>Realistic offensive security assessments targeting cloud, web applications, APIs, and identity systems.</p>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">03</div>
-      <h3>Incident Response</h3>
-      <p>We deploy rapid forensic analysis and technical remediation to contain breaches and restore normal operations, minimizing downtime and financial loss.</p>
+      <h3>Security Automation & DevSecOps</h3>
+      <p>CI/CD pipeline hardening, GitHub Advanced Security integration, IaC security, and automated misconfiguration detection.</p>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">04</div>
-      <h3>Penetration Testing</h3>
-      <p>Two full scope engagements per year external, internal, and web application testing. Delivered with a prioritised remediation roadmap, not just a PDF of findings.</p>
+      <h3>Detection Engineering & SIEM</h3>
+      <p>Sentinel and Splunk rule development, log normalization, threat hunting, and security monitoring optimization.</p>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">05</div>
-      <h3>AI Penetration Testing</h3>
-      <p>Specialised security assessments of AI/ML systems, LLM applications, and autonomous agents. Testing against the OWASP LLM Top 10: prompt injection, model poisoning, data leakage, and adversarial attacks across the AI stack.</p>
-    </div>
-    <div class="expertise-card">
-      <div class="expertise-number">06</div>
-      <h3>AI Application Security</h3>
-      <p>Securing AI pipelines, LLM deployments, and machine learning infrastructure. Enforcing Zero Trust for AI models access control, input validation, and model integrity verification.</p>
+      <h3>Compliance & Governance</h3>
+      <p>GDPR alignment, ISO 27001 and NIST control design, security decision records, and policy development.</p>
     </div>
     </div>
   </div>
@@ -294,137 +267,26 @@ app.innerHTML = `
 <section id="solutions" class="section-light">
   <div class="container">
   <div class="section-header">
-    <span class="section-tag">SECURITY SOLUTIONS</span>
-    <h2>Security Solutions</h2>
+    <span class="section-tag">SAMPLE DELIVERABLES</span>
+    <h2>What we produce.</h2>
+    <p class="section-desc">Security decision records, assessment reports, detection packs, and attack simulations. Each deliverable is designed to be immediately actionable.</p>
   </div>
-  <div class="tabs">
-    <div class="tab-nav">
-      <button class="tab-btn active" data-tab="defensive">Defensive Operations</button>
-      <button class="tab-btn" data-tab="proactive">Proactive Assurance</button>
-      <button class="tab-btn" data-tab="strategic">Strategic Infrastructure</button>
+  <div class="tab-grid">
+    <div class="tab-card">
+      <h3>Azure Key Vault Public Access SDR</h3>
+      <p>Secure architecture with compensating controls, logging, and conditional access. Includes a security decision record with threat model, risk assessment, and implementation guidance.</p>
     </div>
-    <div class="tab-panel active" id="tab-defensive">
-      <div class="tab-grid">
-        <div class="tab-card">
-          <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M12 2l7 4v4a9 9 0 01-7 8 9 9 0 01-7-8V6l7-4z"/>
-              <path d="M8 12l2.5 2.5L16 10"/>
-            </svg>
-          </div>
-          <h3>Security Monitoring</h3>
-          <p>SIEM Integration, Log Analysis, Real time Alerts, Threat Intelligence</p>
-        </div>
-        <div class="tab-card">
-          <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M12 3l-3 8h5l-2 8"/>
-              <circle cx="12" cy="12" r="9"/>
-              <path d="M9 12h6"/>
-            </svg>
-          </div>
-          <h3>Incident Response</h3>
-          <p>24/7 SOC Monitoring, Rapid Forensics, Threat Containment, Global Support</p>
-        </div>
-      </div>
+    <div class="tab-card">
+      <h3>GitHub Advanced Security Assessment</h3>
+      <p>Evaluated Code Scanning and Secret Scanning costs, privacy implications, and operational impact across the organization. Delivered with a cost-benefit analysis and rollout roadmap.</p>
     </div>
-    <div class="tab-panel" id="tab-proactive">
-      <div class="tab-grid">
-        <div class="tab-card">
-          <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <circle cx="12" cy="12" r="8"/>
-              <circle cx="12" cy="12" r="3"/>
-              <circle cx="12" cy="12" r="1" fill="currentColor"/>
-              <path d="M20 20l-5-5"/>
-              <path d="M4 4l5 5"/>
-            </svg>
-          </div>
-          <h3>Penetration Testing</h3>
-          <p>Proactive attack simulations to find and fix vulnerabilities before real attackers do.</p>
-        </div>
-        <div class="tab-card">
-          <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <circle cx="12" cy="6" r="2"/>
-              <circle cx="6" cy="18" r="2"/>
-              <circle cx="18" cy="18" r="2"/>
-              <path d="M14 7l-2 2-2-2"/>
-              <path d="M8 16l-1 1"/>
-              <path d="M16 16l1 1"/>
-              <path d="M7 8l7 8"/>
-              <path d="M17 8l-7 8"/>
-            </svg>
-          </div>
-          <h3>AI Penetration Testing</h3>
-          <p>Specialised red-teaming of AI/ML systems mapped to the OWASP LLM Top 10: prompt injections, model extraction, training data poisoning, and adversarial robustness testing.</p>
-        </div>
-        <div class="tab-card">
-          <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M14 3l4 4v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1h7z"/>
-              <path d="M8.5 10l2 2 3-3"/>
-              <path d="M8.5 15l2 2 3-3"/>
-            </svg>
-          </div>
-          <h3>Risk Assessment</h3>
-          <p>Threat Modeling, Vulnerability Scanning, Asset Inventory, Risk Prioritization</p>
-        </div>
-        <div class="tab-card">
-          <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M5 12L9 4l5 8-5 8-4-8z"/>
-              <path d="M9 4l5 8-5 8"/>
-              <path d="M14 12h6"/>
-              <path d="M16 9l-2 3 2 3"/>
-            </svg>
-          </div>
-          <h3>Compliance Management</h3>
-          <p>Navigating the convergence of global requirements (ISO 27001, SOC 2, GDPR) and local mandates like Uganda’s Data Protection and Privacy Act, Kenya’s Data Protection Act. We ensure your security architecture isn't just world class it’s locally compliant.</p>
-        </div>
-      </div>
+    <div class="tab-card">
+      <h3>Cloud Attack Path Simulation</h3>
+      <p>Adversarial scenarios demonstrating privilege escalation and identity pivoting across multi-cloud environments. Mapped to MITRE ATT&CK with prioritized remediation steps.</p>
     </div>
-    <div class="tab-panel" id="tab-strategic">
-      <div class="tab-grid">
-        <div class="tab-card">
-          <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M17.5 10.5A5 5 0 007 11a4 4 0 000 7h10a3.5 3.5 0 10.5-6.5z"/>
-              <rect x="10.5" y="12" width="4" height="3.5" rx="0.75"/>
-              <path d="M12.5 12v-1a0.5 0.5 0 00-1 0v1"/>
-            </svg>
-          </div>
-          <h3>Cloud Security</h3>
-          <p>Securing workloads, identities, and data across AWS, Azure, and GCP.</p>
-        </div>
-        <div class="tab-card">
-          <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <path d="M12 3l7 4v5a9 9 0 01-7 8 9 9 0 01-7-8V7l7-4z"/>
-              <path d="M12 3v17"/>
-              <path d="M5 10l7 3 7-3"/>
-            </svg>
-          </div>
-          <h3>Zero Trust Architecture</h3>
-          <p>Secure, resilient architectures applying Zero Trust principles across networks, identities, and cloud workloads for mid-market enterprises.</p>
-        </div>
-        <div class="tab-card">
-          <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
-              <polygon points="12,2 22,7 22,17 12,22 2,17 2,7"/>
-              <circle cx="12" cy="12" r="3"/>
-              <circle cx="12" cy="6" r="1" fill="currentColor"/>
-              <circle cx="7" cy="9" r="1" fill="currentColor"/>
-              <circle cx="7" cy="15" r="1" fill="currentColor"/>
-              <circle cx="12" cy="18" r="1" fill="currentColor"/>
-              <circle cx="17" cy="15" r="1" fill="currentColor"/>
-              <circle cx="17" cy="9" r="1" fill="currentColor"/>
-            </svg>
-          </div>
-          <h3>AI Application Security</h3>
-          <p>Securing AI pipelines, LLM deployments, and ML infrastructure. Zero Trust for AI models access control, input and output validation, and model integrity checks.</p>
-        </div>
-      </div>
+    <div class="tab-card">
+      <h3>SIEM Detection Engineering Pack</h3>
+      <p>Production-ready KQL and SPL rules for identity anomalies, service principal abuse, privilege escalation, and suspicious cloud API calls. Includes test cases and tuning guidance.</p>
     </div>
   </div>
   </div>
@@ -453,7 +315,7 @@ app.innerHTML = `
       <div class="footer-col">
         <span class="footer-heading">Services</span>
         <a href="#expertise" class="footer-link">Our Expertise</a>
-        <a href="#solutions" class="footer-link">Security Solutions</a>
+        <a href="#solutions" class="footer-link">Deliverables</a>
         <a href="#how-it-works" class="footer-link">How It Works</a>
         <a href="#retainer" class="footer-link">Retainer Model</a>
       </div>
@@ -471,19 +333,6 @@ app.innerHTML = `
   </div>
 </footer>
 `
-
-// ------ Tabs ------
-
-document.querySelectorAll('.tab-btn').forEach(btn => {
-  btn.addEventListener('click', () => {
-    const tabId = btn.getAttribute('data-tab')
-    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'))
-    btn.classList.add('active')
-    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'))
-    const panel = document.getElementById('tab-' + tabId)
-    if (panel) panel.classList.add('active')
-  })
-})
 
 // ------ Smooth scroll ------
 
