@@ -11,6 +11,7 @@ app.innerHTML = `
       <a href="#philosophy">About</a>
       <a href="#expertise">Services</a>
       <a href="#how-it-works">How It Works</a>
+      <a href="#case-studies">Case Studies</a>
       <a href="#hero" class="nav-btn nav-btn-internal">Get a free consultation</a>
     </div>
     <a href="#hero" class="nav-btn nav-btn-external">Get a free consultation</a>
@@ -343,6 +344,54 @@ app.innerHTML = `
   </svg>
 </div>
 
+<section id="case-studies" class="section-light">
+  <div class="container">
+  <div class="section-header">
+    <span class="section-tag">CASE STUDIES</span>
+    <h2>Real engagements, real outcomes.</h2>
+    <p class="section-desc">Selected engagements that demonstrate how we help organizations improve their security posture across AI, cloud, identity, and compliance.</p>
+  </div>
+  <div class="cases-grid">
+    <div class="case-card">
+      <span class="case-tag">AI Security</span>
+      <h3>AI Red Team for Fintech</h3>
+      <p>A financial platform processing sensitive customer data wanted to adopt LLM-powered features but needed assurance against adversarial attacks. We performed full AI red team engagement covering prompt injection, model extraction, training data poisoning, and jailbreak testing across their AI pipeline.</p>
+      <p class="case-impact">3 prompt injection vectors identified and remediated, LLM guardrails deployed, secure model deployment pipeline established.</p>
+    </div>
+    <div class="case-card">
+      <span class="case-tag">Penetration Testing</span>
+      <h3>AD Attack Path Assessment for Healthcare</h3>
+      <p>A healthcare organization with 2,000+ employees suspected Active Directory misconfigurations but had not performed a dedicated AD security assessment. We mapped attack paths using BloodHound, analyzed privilege escalation chains, assessed Kerberoasting risks, and simulated lateral movement.</p>
+      <p class="case-impact">12 escalation paths closed, excessive admin privileges reduced, 5 unused GPOs cleaned up.</p>
+    </div>
+    <div class="case-card">
+      <span class="case-tag">Detection Engineering</span>
+      <h3>SIEM Modernization for E-Commerce</h3>
+      <p>An e-commerce platform had poor visibility into cloud threats. Existing SIEM rules produced excessive false positives and missed critical cloud-native threats. We overhauled KQL and SPL rules, normalized logs, and built custom detection rules for identity anomalies and service principal abuse.</p>
+      <p class="case-impact">15 high-fidelity rules deployed, 60% reduction in false positives, mean detection time reduced from 4 hours to 15 minutes.</p>
+    </div>
+    <div class="case-card">
+      <span class="case-tag">Cloud Security</span>
+      <h3>Cloud Security Review for Fintech Startup</h3>
+      <p>A seed-stage fintech with AWS workloads needed a security baseline before their first SOC 2 audit. We performed a cloud architecture review, IAM assessment, network segmentation analysis, and KMS security review.</p>
+      <p class="case-impact">25 critical misconfigurations identified and remediated, full compliance roadmap delivered.</p>
+    </div>
+    <div class="case-card">
+      <span class="case-tag">Compliance & Governance</span>
+      <h3>Compliance Gap Analysis for B2B SaaS</h3>
+      <p>A B2B SaaS company targeting ISO 27001 certification had security controls in place but no formal documentation or governance framework. We conducted a gap assessment, created policies and procedures, developed Security Decision Records, and designed the control framework.</p>
+      <p class="case-impact">Stage 1 audit passed with zero non-conformities, 30 security policies created, complete SoA documented.</p>
+    </div>
+  </div>
+  </div>
+</section>
+
+<div class="section-wave">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+    <path d="M0,80 C360,20 1080,20 1440,80 L1440,0 L0,0 Z" fill="#f7f8fa"/>
+  </svg>
+</div>
+
 <footer>
   <div class="container">
   <div class="footer-inner" style="padding: 0; max-width: none;">
@@ -361,6 +410,7 @@ app.innerHTML = `
         <span class="footer-heading">Services</span>
         <a href="#expertise" class="footer-link">Services</a>
         <a href="#how-it-works" class="footer-link">How It Works</a>
+        <a href="#case-studies" class="footer-link">Case Studies</a>
         <a href="#retainer" class="footer-link">Retainer Model</a>
       </div>
       <div class="footer-col">
