@@ -5,7 +5,7 @@ const app = document.querySelector<HTMLDivElement>('#app')!
 app.innerHTML = `
 <nav>
   <div class="nav-inner">
-    <a href="#hero" class="logo">fusecec<span class="logo-accent">.io</span></a>
+    <a href="#hero" class="logo">fuse-cec<span class="logo-accent">.io</span></a>
     <div class="nav-center">
       <a href="#hero">Home</a>
       <a href="#philosophy">About</a>
@@ -441,13 +441,13 @@ app.innerHTML = `
   <div class="footer-inner" style="padding: 0; max-width: none;">
     <div class="footer-grid">
       <div class="footer-col">
-        <span class="logo">fusecec<span class="logo-accent">.io</span></span>
+        <span class="logo">fuse-cec<span class="logo-accent">.io</span></span>
         <p class="footer-tag">Industrial-grade cybersecurity for mid-market enterprises.</p>
       </div>
       <div class="footer-col">
         <span class="footer-heading">Contact</span>
         <span class="footer-link">Kampala, Uganda</span>
-        <span class="footer-link">hello@fusecec.io</span>
+        <span class="footer-link">hello@fuse-cec.io</span>
         <span class="footer-link">+256 700 000 000</span>
         <span class="footer-link">Mon-Fri 8am-6pm EAT</span>
       </div>
@@ -465,7 +465,7 @@ app.innerHTML = `
       </div>
     </div>
     <div class="footer-bottom">
-      <span>&copy; 2026 fusecec.io. All rights reserved.</span>
+      <span>&copy; 2026 fuse-cec.io. All rights reserved.</span>
       <span class="footer-legal">Privacy Policy | Terms of Service</span>
     </div>
   </div>
