@@ -349,7 +349,7 @@ app.innerHTML = `
   <div class="section-header">
     <span class="section-tag">CASE STUDIES</span>
     <h2>Real engagements, real outcomes.</h2>
-    <p class="section-desc">Selected engagements that demonstrate how we help organizations improve their security posture across AI, cloud, identity, and compliance.</p>
+    <p class="section-desc">Selected engagements that demonstrate how we help organisations improve their security posture across the full attack surface.</p>
   </div>
   <div class="cases-grid">
     <div class="case-card case-ai">
