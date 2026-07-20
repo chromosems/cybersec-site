@@ -9,7 +9,7 @@ app.innerHTML = `
     <div class="nav-center">
       <a href="#hero">Home</a>
       <a href="#philosophy">About</a>
-      <a href="#expertise">Expertise</a>
+      <a href="#expertise">Services</a>
       <a href="#how-it-works">How It Works</a>
       <a href="#solutions">Deliverables</a>
       <a href="#hero" class="nav-btn nav-btn-internal">Get a free consultation</a>
@@ -43,10 +43,12 @@ app.innerHTML = `
           <input type="text" name="company" placeholder="Company" required autocomplete="organization">
           <select name="service" class="hero-form-select" required>
             <option value="" disabled selected>How we can help you</option>
+            <option value="ai-security">AI Security & Adversarial Testing</option>
+            <option value="ai-hardening">AI Application Hardening</option>
+            <option value="penetration-testing">Penetration Testing (Network, Web, API, AD)</option>
             <option value="cloud-security">Cloud Security Architecture</option>
-            <option value="penetration-testing">Penetration Testing (Network, Web, AD, AI)</option>
             <option value="devsecops">Security Automation & DevSecOps</option>
-            <option value="detection-engineering">Detection Engineering & SIEM</option>
+            <option value="detection-engineering">Detection Engineering & SIEM Optimization</option>
             <option value="compliance">Compliance & Governance</option>
             <option value="other">Other</option>
           </select>
@@ -85,7 +87,7 @@ app.innerHTML = `
     </div>
     <div class="philosophy-card">
       <h3>What We Do</h3>
-      <p>Cloud security architecture, penetration testing (network, web, AD, AI), security automation and DevSecOps, detection engineering and SIEM, and compliance and governance. Delivered as one integrated practice, not fragmented engagements.</p>
+      <p>AI security and adversarial testing, AI application hardening, penetration testing (network, web, API, AD), cloud security architecture, security automation and DevSecOps, detection engineering and SIEM optimization, and compliance and governance. Delivered as one integrated practice, not fragmented engagements.</p>
     </div>
     <div class="philosophy-card">
       <h3>Our Impact</h3>
@@ -104,34 +106,114 @@ app.innerHTML = `
 <section id="expertise">
   <div class="container">
   <div class="section-header">
-    <span class="section-tag">OUR EXPERTISE</span>
-    <h2>Our Expertise</h2>
+    <span class="section-tag">OUR SERVICES</span>
+    <h2>Our Services</h2>
   </div>
   <div class="expertise-grid">
     <div class="expertise-card">
       <div class="expertise-number">01</div>
-      <h3>Cloud Security Architecture</h3>
-      <p>Secure-by-design Azure, GCP, and AWS architectures, identity hardening, network segmentation, and workload protection.</p>
+      <h3>AI Security & Adversarial Testing</h3>
+      <p>We secure AI-driven applications against modern threats including prompt injection, model poisoning, jailbreak attacks, data leakage, and adversarial manipulation. Our engineers test AI pipelines end-to-end — from model inputs to backend integrations — ensuring your AI systems remain safe, reliable, and compliant.</p>
+      <div class="deliverables">
+        <span class="deliverables-heading">What we deliver:</span>
+        <ul>
+          <li>AI model penetration testing</li>
+          <li>LLM prompt injection testing</li>
+          <li>AI supply chain security</li>
+          <li>Secure model deployment guidance</li>
+          <li>AI red teaming scenarios</li>
+        </ul>
+      </div>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">02</div>
-      <h3>Penetration Testing</h3>
-      <p>Network, Active Directory, web application, and AI/LLM penetration testing. Realistic offensive assessments covering the full attack surface from external perimeter to cloud and AI pipelines.</p>
+      <h3>AI Application Hardening</h3>
+      <p>We help organizations build secure AI applications by integrating guardrails, monitoring, and safe-execution controls into their AI workflows.</p>
+      <div class="deliverables">
+        <span class="deliverables-heading">What we deliver:</span>
+        <ul>
+          <li>Secure LLM architecture design</li>
+          <li>Safety guardrail implementation</li>
+          <li>AI logging & monitoring setup</li>
+          <li>Abuse detection and anomaly rules</li>
+          <li>Secure API integration for AI systems</li>
+        </ul>
+      </div>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">03</div>
-      <h3>Security Automation & DevSecOps</h3>
-      <p>CI/CD pipeline hardening, GitHub Advanced Security integration, IaC security, and automated misconfiguration detection.</p>
+      <h3>Penetration Testing (Network, Web, API, AD)</h3>
+      <p>We perform comprehensive penetration testing across your entire environment — network infrastructure, web applications, APIs, and Active Directory — to identify vulnerabilities before attackers do.</p>
+      <div class="deliverables">
+        <span class="deliverables-heading">What we deliver:</span>
+        <ul>
+          <li>Internal & external network penetration testing</li>
+          <li>Web application security assessments</li>
+          <li>API security testing (REST, GraphQL, microservices)</li>
+          <li>Active Directory attack path analysis</li>
+          <li>Exploitation, reporting, and remediation guidance</li>
+        </ul>
+      </div>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">04</div>
-      <h3>Detection Engineering & SIEM</h3>
-      <p>Sentinel and Splunk rule development, log normalization, threat hunting, and security monitoring optimization.</p>
+      <h3>Cloud Security Architecture</h3>
+      <p>Build secure-by-design cloud environments across Azure, GCP, and AWS with identity hardening, segmentation, and workload protection.</p>
+      <div class="deliverables">
+        <span class="deliverables-heading">What we deliver:</span>
+        <ul>
+          <li>Cloud architecture reviews</li>
+          <li>Identity & access hardening</li>
+          <li>Key Vault / KMS security</li>
+          <li>Network segmentation</li>
+          <li>Secure workload deployment</li>
+        </ul>
+      </div>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">05</div>
+      <h3>Security Automation & DevSecOps</h3>
+      <p>Accelerate development while improving security through automated guardrails and CI/CD pipeline hardening.</p>
+      <div class="deliverables">
+        <span class="deliverables-heading">What we deliver:</span>
+        <ul>
+          <li>CI/CD security</li>
+          <li>GitHub Advanced Security integration</li>
+          <li>IaC security (Terraform)</li>
+          <li>Automated misconfiguration detection</li>
+          <li>Policy-as-code implementation</li>
+        </ul>
+      </div>
+    </div>
+    <div class="expertise-card">
+      <div class="expertise-number">06</div>
+      <h3>Detection Engineering & SIEM Optimization</h3>
+      <p>Enhance visibility and reduce response time with high-fidelity detection rules and log coverage.</p>
+      <div class="deliverables">
+        <span class="deliverables-heading">What we deliver:</span>
+        <ul>
+          <li>Sentinel & Splunk detection rules</li>
+          <li>Threat hunting queries</li>
+          <li>Log normalization</li>
+          <li>Cloud API monitoring</li>
+          <li>Identity anomaly detection</li>
+        </ul>
+      </div>
+    </div>
+    <div class="expertise-card">
+      <div class="expertise-number">07</div>
       <h3>Compliance & Governance</h3>
-      <p>GDPR alignment, ISO 27001 and NIST control design, security decision records, and policy development.</p>
+      <p>Achieve and maintain compliance with clear, auditable controls and security documentation.</p>
+      <div class="deliverables">
+        <span class="deliverables-heading">What we deliver:</span>
+        <ul>
+          <li>GDPR alignment</li>
+          <li>ISO 27001 / NIST control design</li>
+          <li>Security Decision Records (SDRs)</li>
+          <li>Policy development</li>
+          <li>Governance frameworks</li>
+        </ul>
+      </div>
     </div>
     </div>
   </div>
@@ -326,7 +408,7 @@ app.innerHTML = `
       </div>
       <div class="footer-col">
         <span class="footer-heading">Services</span>
-        <a href="#expertise" class="footer-link">Our Expertise</a>
+        <a href="#expertise" class="footer-link">Services</a>
         <a href="#solutions" class="footer-link">Deliverables</a>
         <a href="#how-it-works" class="footer-link">How It Works</a>
         <a href="#retainer" class="footer-link">Retainer Model</a>

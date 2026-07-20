@@ -503,6 +503,56 @@ section {
   color: #4a5060;
 }
 
+.deliverables {
+  margin-top: 14px;
+}
+
+.deliverables-heading {
+  display: block;
+  font-family: var(--heading);
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 6px;
+}
+
+.deliverables ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.deliverables li {
+  font-size: 13px;
+  line-height: 1.6;
+  color: #4a5060;
+  padding: 2px 0 2px 14px;
+  position: relative;
+}
+
+.deliverables li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+#expertise .deliverables li {
+  color: #4a5060;
+}
+
+@media (max-width: 600px) {
+  .deliverables li {
+    font-size: 12px;
+  }
+}
+
 /* How It Works */
 
 #how-it-works .step {
