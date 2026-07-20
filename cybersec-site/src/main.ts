@@ -352,25 +352,25 @@ app.innerHTML = `
     <p class="section-desc">Selected engagements that demonstrate how we help organizations improve their security posture across AI, cloud, identity, and compliance.</p>
   </div>
   <div class="cases-grid">
-    <div class="case-card">
+    <div class="case-card case-ai">
       <span class="case-tag">AI Security</span>
       <h3>AI Red Team for Fintech</h3>
       <p>A financial platform processing sensitive customer data wanted to adopt LLM-powered features but needed assurance against adversarial attacks. We performed full AI red team engagement covering prompt injection, model extraction, training data poisoning, and jailbreak testing across their AI pipeline.</p>
       <p class="case-impact">3 prompt injection vectors identified and remediated, LLM guardrails deployed, secure model deployment pipeline established.</p>
     </div>
-    <div class="case-card">
+    <div class="case-card case-pentest">
       <span class="case-tag">Penetration Testing</span>
       <h3>AD Attack Path Assessment for Healthcare</h3>
       <p>A healthcare organization with 2,000+ employees suspected Active Directory misconfigurations but had not performed a dedicated AD security assessment. We mapped attack paths using BloodHound, analyzed privilege escalation chains, assessed Kerberoasting risks, and simulated lateral movement.</p>
       <p class="case-impact">12 escalation paths closed, excessive admin privileges reduced, 5 unused GPOs cleaned up.</p>
     </div>
-    <div class="case-card">
+    <div class="case-card case-siem">
       <span class="case-tag">Detection Engineering</span>
       <h3>SIEM Modernization for E-Commerce</h3>
       <p>An e-commerce platform had poor visibility into cloud threats. Existing SIEM rules produced excessive false positives and missed critical cloud-native threats. We overhauled KQL and SPL rules, normalized logs, and built custom detection rules for identity anomalies and service principal abuse.</p>
       <p class="case-impact">15 high-fidelity rules deployed, 60% reduction in false positives, mean detection time reduced from 4 hours to 15 minutes.</p>
     </div>
-    <div class="case-card">
+    <div class="case-card case-cloud">
       <span class="case-tag">Cloud Security</span>
       <h3>Cloud Security Review for Fintech Startup</h3>
       <p>A seed-stage fintech with AWS workloads needed a security baseline before their first SOC 2 audit. We performed a cloud architecture review, IAM assessment, network segmentation analysis, and KMS security review.</p>

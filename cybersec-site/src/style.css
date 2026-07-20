@@ -501,11 +501,59 @@ section {
   padding: 28px 24px;
   position: relative;
   transition: box-shadow 0.25s, transform 0.2s;
+  overflow: hidden;
+}
+
+.case-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 4px;
+  height: 100%;
+  background: var(--theme-color, var(--accent));
+  transition: width 0.25s;
+}
+
+.case-card:hover::before {
+  width: 6px;
 }
 
 .case-card:hover {
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 4px 24px var(--theme-glow, rgba(220, 38, 38, 0.08));
   transform: translateY(-2px);
+}
+
+/* AI theme */
+.case-ai {
+  --theme-color: #7c3aed;
+  --theme-glow: rgba(124, 58, 237, 0.1);
+  --theme-bg: rgba(124, 58, 237, 0.08);
+  --theme-border: rgba(124, 58, 237, 0.15);
+}
+
+/* Pentest theme */
+.case-pentest {
+  --theme-color: #2563eb;
+  --theme-glow: rgba(37, 99, 235, 0.1);
+  --theme-bg: rgba(37, 99, 235, 0.08);
+  --theme-border: rgba(37, 99, 235, 0.15);
+}
+
+/* SIEM theme */
+.case-siem {
+  --theme-color: #d97706;
+  --theme-glow: rgba(217, 119, 6, 0.1);
+  --theme-bg: rgba(217, 119, 6, 0.08);
+  --theme-border: rgba(217, 119, 6, 0.15);
+}
+
+/* Cloud theme */
+.case-cloud {
+  --theme-color: #059669;
+  --theme-glow: rgba(5, 150, 105, 0.1);
+  --theme-bg: rgba(5, 150, 105, 0.08);
+  --theme-border: rgba(5, 150, 105, 0.15);
 }
 
 .case-tag {
@@ -515,8 +563,8 @@ section {
   font-weight: 600;
   letter-spacing: 0.5px;
   text-transform: uppercase;
-  color: var(--accent);
-  background: rgba(220, 38, 38, 0.08);
+  color: var(--theme-color, var(--accent));
+  background: var(--theme-bg, rgba(220, 38, 38, 0.08));
   padding: 3px 10px;
   border-radius: 3px;
   margin-bottom: 14px;
@@ -541,10 +589,10 @@ section {
 .case-impact {
   font-size: 13px;
   line-height: 1.6;
-  color: var(--accent);
+  color: var(--theme-color, var(--accent));
   font-weight: 500;
   padding-top: 12px;
-  border-top: 1px solid #e2e4e9;
+  border-top: 1px solid var(--theme-border, #e2e4e9);
 }
 
 @media (max-width: 600px) {
