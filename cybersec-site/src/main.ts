@@ -332,29 +332,6 @@ app.innerHTML = `
   </div>
 </section>
 
-<section id="global">
-  <div class="container">
-  <div class="section-header">
-    <span class="section-tag">GLOBAL OPERATIONS</span>
-    <h2>We bridge the gap between East African roots and global standards.</h2>
-    <p class="section-desc">Our industrial grade protection extends across continents, delivering precision monitoring and risk assessment for mid market firms worldwide.</p>
-  </div>
-  <div class="global-regions">
-    <div class="global-region">
-      <span class="region-name">East Africa</span>
-      <span class="region-desc">Kampala, Nairobi, Kigali, Dar es Salaam</span>
-    </div>
-    <div class="global-region">
-      <span class="region-name">Global</span>
-      <span class="region-desc">Remote delivery worldwide</span>
-    </div>
-  </div>
-  <div class="global-cta">
-    <a href="#hero" class="btn-primary">Partner with us</a>
-  </div>
-  </div>
-</section>
-
 <div class="section-wave">
   <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
     <path d="M0,0 C360,60 1080,60 1440,0 L1440,80 L0,80 Z" fill="#f7f8fa"/>
