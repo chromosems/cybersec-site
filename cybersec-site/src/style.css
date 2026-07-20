@@ -188,24 +188,6 @@ nav {
   margin-bottom: 32px;
 }
 
-.hero-ctas {
-  display: flex;
-  gap: 12px;
-  flex-wrap: wrap;
-}
-
-.hero-ctas .btn-primary,
-.hero-ctas .btn-outline {
-  font-size: 13px;
-  padding: 12px 24px;
-}
-
-@media (max-width: 900px) {
-  .hero-ctas {
-    justify-content: center;
-  }
-}
-
 
 /* Hero Form */
 

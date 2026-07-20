@@ -27,10 +27,6 @@ app.innerHTML = `
     <div class="hero-text">
       <h1>Built by operators.<br>Trusted by teams.</h1>
       <p class="hero-sub">Secure-by-design cloud architectures, offensive security testing, and automated security engineering for modern digital environments.</p>
-      <div class="hero-ctas">
-        <a href="#expertise" class="btn-primary">Services</a>
-        <a href="#hero" class="btn-outline">Contact Us</a>
-      </div>
     </div>
     <div class="hero-form-col">
       <div class="hero-form-card">
