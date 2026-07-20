@@ -29,10 +29,10 @@ app.innerHTML = `
         <h3>How Can We Help</h3>
         <p class="hero-form-sub">Tell us about your security needs and we'll get back to you within 24 hours.</p>
         <form action="https://formspree.io/f/xqerbgkr" method="POST">
-          <input type="text" name="name" placeholder="Your name" required minlength="2">
-          <input type="email" name="email" placeholder="Email address" required>
-          <input type="tel" name="phone" placeholder="Phone number" required>
-          <input type="text" name="company" placeholder="Company" required>
+          <input type="text" name="name" placeholder="Your name" required minlength="2" autocomplete="name">
+          <input type="email" name="email" placeholder="Email address" required autocomplete="email">
+          <input type="tel" name="phone" placeholder="Phone number" required pattern="[0-9+\-()\s]+" title="Numbers and phone characters only (+, -, parentheses)" inputmode="numeric">
+          <input type="text" name="company" placeholder="Company" required autocomplete="organization">
           <select name="service" class="hero-form-select" required>
             <option value="" disabled selected>How we can help you</option>
             <option value="security-monitoring">Security Monitoring</option>
