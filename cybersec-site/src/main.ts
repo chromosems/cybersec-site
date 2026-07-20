@@ -67,18 +67,18 @@ app.innerHTML = `
   <div class="container">
   <div class="section-header">
     <span class="section-tag">ABOUT US</span>
-    <h2>Engineering-driven cybersecurity.</h2>
-    <p class="section-desc">fuse-cec.io is a cybersecurity engineering and consulting company specializing in AI security, penetration testing, cloud security, DevSecOps, detection engineering, and compliance across cloud and on-premises IT infrastructure. Our mission is to help organizations build secure, resilient, and compliant systems through engineering-driven security solutions.</p>
+    <h2>Engineering driven cybersecurity.</h2>
+    <p class="section-desc">fuse-cec.io is a cybersecurity engineering and consulting company specializing in AI security, penetration testing, cloud security, DevSecOps, detection engineering, and compliance across cloud and on-premises IT infrastructure. Our mission is to help organizations protect and harden existing environments while building secure, resilient, and compliant systems through engineering-driven security solutions.</p>
   </div>
   <div class="philosophy-cards">
     <div class="philosophy-card">
       <h3>Why Companies Choose Us</h3>
       <ul class="choose-list">
-        <li><span class="choose-bullet"></span> Full-spectrum coverage: AI to AD to cloud</li>
-        <li><span class="choose-bullet"></span> Engineer-led delivery</li>
+        <li><span class="choose-bullet"></span> Full spectrum coverage: AI to AD to cloud</li>
+        <li><span class="choose-bullet"></span> Engineer led delivery</li>
         <li><span class="choose-bullet"></span> Offensive + defensive in one practice</li>
-        <li><span class="choose-bullet"></span> Automation-first approach</li>
-        <li><span class="choose-bullet"></span> Compliance-ready outcomes</li>
+        <li><span class="choose-bullet"></span> Automation first approach</li>
+        <li><span class="choose-bullet"></span> Compliance ready outcomes</li>
       </ul>
     </div>
     <div class="philosophy-card">
@@ -96,7 +96,7 @@ app.innerHTML = `
     </div>
     <div class="philosophy-card">
       <h3>Our Impact</h3>
-      <p>We harden AI applications, reduce cloud misconfigurations, strengthen detection capabilities, improve compliance posture, and help organizations build resilient architectures that withstand real-world threats.</p>
+      <p>We harden AI applications, reduce cloud misconfigurations, strengthen detection capabilities, improve compliance posture, and help organizations build resilient architectures that withstand real world threats.</p>
     </div>
   </div>
   </div>
@@ -134,7 +134,7 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">02</div>
       <h3>AI Application Hardening</h3>
-      <p>We help organizations build secure AI applications by integrating guardrails, monitoring, and safe-execution controls into their AI workflows.</p>
+      <p>We help organizations build secure AI applications by integrating guardrails, monitoring, and safe execution controls into their AI workflows.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -166,7 +166,7 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">04</div>
       <h3>Cloud Security Architecture</h3>
-      <p>Build secure-by-design cloud environments across Azure, GCP, and AWS with identity hardening, segmentation, and workload protection.</p>
+      <p>Build secure by design cloud environments across Azure, GCP, and AWS with identity hardening, segmentation, and workload protection.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -198,7 +198,7 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">06</div>
       <h3>Detection Engineering & SIEM Optimization</h3>
-      <p>Enhance visibility and reduce response time with high-fidelity detection rules and log coverage.</p>
+      <p>Enhance visibility and reduce response time with high fidelity detection rules and log coverage.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -269,7 +269,7 @@ app.innerHTML = `
     <div class="step">
       <div class="step-number">05</div>
       <h3>Support & Follow-Up</h3>
-      <p>We help you implement improvements and strengthen long-term security posture.</p>
+      <p>We help you implement improvements and strengthen long term security posture.</p>
     </div>
   </div>
   </div>
@@ -306,7 +306,7 @@ app.innerHTML = `
       <ul class="retainer-list">
         <li>Predictable monthly cost</li>
         <li>Faster response times</li>
-        <li>Continuous improvement instead of one-off fixes</li>
+        <li>Continuous improvement instead of one off fixes</li>
         <li>Access to senior cybersecurity engineers</li>
       </ul>
     </div>
@@ -361,15 +361,15 @@ app.innerHTML = `
     </div>
     <div class="tab-card">
       <h3>GitHub Advanced Security Assessment</h3>
-      <p>Evaluated Code Scanning and Secret Scanning costs, privacy implications, and operational impact across the organization. Delivered with a cost-benefit analysis and rollout roadmap.</p>
+      <p>Evaluated Code Scanning and Secret Scanning costs, privacy implications, and operational impact across the organization. Delivered with a cost benefit analysis and rollout roadmap.</p>
     </div>
     <div class="tab-card">
       <h3>Cloud Attack Path Simulation</h3>
-      <p>Adversarial scenarios demonstrating privilege escalation and identity pivoting across multi-cloud environments. Mapped to MITRE ATT&CK with prioritized remediation steps.</p>
+      <p>Adversarial scenarios demonstrating privilege escalation and identity pivoting across multi cloud environments. Mapped to MITRE ATT&CK with prioritized remediation steps.</p>
     </div>
     <div class="tab-card">
       <h3>SIEM Detection Engineering Pack</h3>
-      <p>Production-ready KQL and SPL rules for identity anomalies, service principal abuse, privilege escalation, and suspicious cloud API calls. Includes test cases and tuning guidance.</p>
+      <p>Production ready KQL and SPL rules for identity anomalies, service principal abuse, privilege escalation, and suspicious cloud API calls. Includes test cases and tuning guidance.</p>
     </div>
   </div>
   </div>
@@ -387,7 +387,7 @@ app.innerHTML = `
     <div class="footer-grid">
       <div class="footer-col">
         <span class="logo">fuse-cec<span class="logo-accent">.io</span></span>
-        <p class="footer-tag">Industrial-grade cybersecurity for mid-market enterprises.</p>
+        <p class="footer-tag">Industrial grade cybersecurity for mid market enterprises.</p>
       </div>
       <div class="footer-col">
         <span class="footer-heading">Contact</span>
