@@ -44,7 +44,7 @@ app.innerHTML = `
           <select name="service" class="hero-form-select" required>
             <option value="" disabled selected>How we can help you</option>
             <option value="cloud-security">Cloud Security Architecture</option>
-            <option value="penetration-testing">Penetration Testing & Adversarial Simulation</option>
+            <option value="penetration-testing">Penetration Testing (Network, Web, AD, AI)</option>
             <option value="devsecops">Security Automation & DevSecOps</option>
             <option value="detection-engineering">Detection Engineering & SIEM</option>
             <option value="compliance">Compliance & Governance</option>
@@ -85,7 +85,7 @@ app.innerHTML = `
     </div>
     <div class="philosophy-card">
       <h3>What We Do</h3>
-      <p>Cloud security architecture, penetration testing, security automation and DevSecOps, detection engineering and SIEM, and compliance and governance. Delivered as one integrated practice, not fragmented engagements.</p>
+      <p>Cloud security architecture, penetration testing (network, web, AD, AI), security automation and DevSecOps, detection engineering and SIEM, and compliance and governance. Delivered as one integrated practice, not fragmented engagements.</p>
     </div>
     <div class="philosophy-card">
       <h3>Our Impact</h3>
@@ -115,8 +115,8 @@ app.innerHTML = `
     </div>
     <div class="expertise-card">
       <div class="expertise-number">02</div>
-      <h3>Penetration Testing & Adversarial Simulation</h3>
-      <p>Realistic offensive security assessments targeting cloud, web applications, APIs, and identity systems.</p>
+      <h3>Penetration Testing</h3>
+      <p>Network, Active Directory, web application, and AI/LLM penetration testing. Realistic offensive assessments covering the full attack surface from external perimeter to cloud and AI pipelines.</p>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">03</div>
