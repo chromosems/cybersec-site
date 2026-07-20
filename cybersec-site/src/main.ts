@@ -376,12 +376,6 @@ app.innerHTML = `
       <p>A seed-stage fintech with AWS workloads needed a security baseline before their first SOC 2 audit. We performed a cloud architecture review, IAM assessment, network segmentation analysis, and KMS security review.</p>
       <p class="case-impact">25 critical misconfigurations identified and remediated, full compliance roadmap delivered.</p>
     </div>
-    <div class="case-card">
-      <span class="case-tag">Compliance & Governance</span>
-      <h3>Compliance Gap Analysis for B2B SaaS</h3>
-      <p>A B2B SaaS company targeting ISO 27001 certification had security controls in place but no formal documentation or governance framework. We conducted a gap assessment, created policies and procedures, developed Security Decision Records, and designed the control framework.</p>
-      <p class="case-impact">Stage 1 audit passed with zero non-conformities, 30 security policies created, complete SoA documented.</p>
-    </div>
   </div>
   </div>
 </section>
