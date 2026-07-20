@@ -148,29 +148,34 @@ app.innerHTML = `
   <div class="container">
   <div class="section-header">
     <span class="section-tag">HOW IT WORKS</span>
-    <h2>Two weeks to a known environment.</h2>
-    <p class="section-desc">We don't do pilots, proofs of concept, or discovery phases that stretch into quarters. Here's exactly how the first month looks.</p>
+    <h2>How It Works</h2>
+    <p class="section-desc">Our engagement model is simple, transparent, and designed to deliver measurable security outcomes.</p>
   </div>
   <div class="steps">
     <div class="step">
       <div class="step-number">01</div>
-      <h3>The 45-minute audit</h3>
-      <p>We sit down with your team and map your infrastructure, tooling, and risk surface. No slides, no demo: just a shared document and honest answers. By the end of the call, we know if we can help.</p>
+      <h3>Initial Consultation</h3>
+      <p>We discuss your environment, challenges, and security goals.</p>
     </div>
     <div class="step">
       <div class="step-number">02</div>
-      <h3>We touch everything</h3>
-      <p>Week one: agents deployed, SIEM connected, cloud configs reviewed, AI pipelines inventoried. We find what's exposed, what's misconfigured, and what's running unattended. You get a ranked list of what matters most.</p>
+      <h3>Assessment & Scoping</h3>
+      <p>We define the scope, deliverables, timelines, and required access.</p>
     </div>
     <div class="step">
       <div class="step-number">03</div>
-      <h3>Monitoring goes live</h3>
-      <p>Week two: SOC dashboards are up, alerts are routing to the right people, and your first pentest is on the calendar. You don't need to read a manual: we walk your team through what changed and why.</p>
+      <h3>Execution</h3>
+      <p>Our engineers perform the agreed security work: architecture, testing, automation, or detection engineering.</p>
     </div>
     <div class="step">
       <div class="step-number">04</div>
-      <h3>You forget we're here</h3>
-      <p>That's the goal. Monitoring runs, reports land in your inbox, and when something breaks, we're already on it. Quarterly reviews keep the roadmap sharp. You run your business; we run your security operations.</p>
+      <h3>Reporting & Delivery</h3>
+      <p>You receive detailed documentation, findings, diagrams, and remediation guidance.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">05</div>
+      <h3>Support & Follow-Up</h3>
+      <p>We help you implement improvements and strengthen long-term security posture.</p>
     </div>
   </div>
   </div>
