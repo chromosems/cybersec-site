@@ -1103,12 +1103,48 @@ footer {
   .tab-nav {
     flex-direction: column;
     gap: 4px;
+    margin-bottom: 20px;
   }
 
   .tab-btn {
     text-align: center;
-    padding: 10px 12px;
-    font-size: 11px;
+    padding: 12px 14px;
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+
+  .tab-card-icon {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 12px;
+  }
+
+  .tab-card h3 {
+    font-size: 15px;
+  }
+
+  .tab-card p {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .tab-nav {
+    gap: 3px;
+    padding: 3px;
+  }
+
+  .tab-btn {
+    font-size: 10px;
+    padding: 10px 8px;
+    letter-spacing: 0.3px;
+    word-break: break-word;
+    hyphens: auto;
+  }
+
+  .tab-card-icon {
+    width: 30px;
+    height: 30px;
   }
 }
 
