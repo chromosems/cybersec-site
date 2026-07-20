@@ -68,7 +68,7 @@ app.innerHTML = `
   <div class="section-header">
     <span class="section-tag">ABOUT US</span>
     <h2>Engineering driven cybersecurity.</h2>
-    <p class="section-desc">fuse-cec.io is a cybersecurity engineering and consulting company specializing in AI security, penetration testing, cloud security, DevSecOps, detection engineering, and compliance across cloud and on-premises IT infrastructure. Our mission is to help organizations protect and harden existing environments while building secure, resilient, and compliant systems through engineering-driven security solutions.</p>
+    <p class="section-desc">fuse-cec.io is a cybersecurity engineering and consulting company specializing in AI security, penetration testing, cloud security, DevSecOps, detection engineering, and compliance across cloud and on-premise IT infrastructure. Our mission is to help organizations protect and harden existing environments while building secure, resilient, and compliant systems through engineering-driven security solutions.</p>
   </div>
   <div class="philosophy-cards">
     <div class="philosophy-card">
