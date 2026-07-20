@@ -12,8 +12,12 @@ app.innerHTML = `
       <a href="#expertise">Expertise</a>
       <a href="#how-it-works">How It Works</a>
       <a href="#solutions">Solutions</a>
+      <a href="#hero" class="nav-btn nav-btn-internal">Get a free consultation</a>
     </div>
-    <a href="#hero" class="nav-btn">Get a free consultation</a>
+    <a href="#hero" class="nav-btn nav-btn-external">Get a free consultation</a>
+    <button class="nav-toggle" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
   </div>
 </nav>
 
@@ -461,6 +465,21 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     e.preventDefault()
     const target = document.querySelector(anchor.getAttribute('href')!)
     if (target) target.scrollIntoView({ behavior: 'smooth' })
+  })
+})
+
+// ------ Mobile nav toggle ------
+
+const navToggle = document.querySelector<HTMLButtonElement>('.nav-toggle')
+const navCenter = document.querySelector<HTMLDivElement>('.nav-center')
+navToggle?.addEventListener('click', () => {
+  navCenter?.classList.toggle('open')
+  navToggle?.classList.toggle('open')
+})
+document.querySelectorAll('.nav-center a').forEach(link => {
+  link.addEventListener('click', () => {
+    navCenter?.classList.remove('open')
+    navToggle?.classList.remove('open')
   })
 })
 
