@@ -504,15 +504,15 @@ section {
 }
 
 .deliverables {
-  margin-top: 14px;
-}
-
-.deliverables.collapsed {
-  display: none;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, margin 0.3s ease;
+  margin-top: 0;
 }
 
 .deliverables.expanded {
-  display: block;
+  max-height: 400px;
+  margin-top: 14px;
 }
 
 .read-more-btn {

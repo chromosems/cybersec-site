@@ -114,7 +114,7 @@ app.innerHTML = `
       <div class="expertise-number">01</div>
       <h3>AI Security & Adversarial Testing</h3>
       <p>We secure AI-driven applications against modern threats including prompt injection, model poisoning, jailbreak attacks, data leakage, and adversarial manipulation.</p>
-      <div class="deliverables collapsed">
+      <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>AI model penetration testing</li>
@@ -130,7 +130,7 @@ app.innerHTML = `
       <div class="expertise-number">02</div>
       <h3>AI Application Hardening</h3>
       <p>We help organizations build secure AI applications by integrating guardrails, monitoring, and safe-execution controls into their AI workflows.</p>
-      <div class="deliverables collapsed">
+      <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>Secure LLM architecture design</li>
@@ -146,7 +146,7 @@ app.innerHTML = `
       <div class="expertise-number">03</div>
       <h3>Penetration Testing (Network, Web, API, AD)</h3>
       <p>We perform comprehensive penetration testing across your entire environment: network infrastructure, web applications, APIs, and Active Directory.</p>
-      <div class="deliverables collapsed">
+      <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>Internal & external network penetration testing</li>
@@ -162,7 +162,7 @@ app.innerHTML = `
       <div class="expertise-number">04</div>
       <h3>Cloud Security Architecture</h3>
       <p>Build secure-by-design cloud environments across Azure, GCP, and AWS with identity hardening, segmentation, and workload protection.</p>
-      <div class="deliverables collapsed">
+      <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>Cloud architecture reviews</li>
@@ -178,7 +178,7 @@ app.innerHTML = `
       <div class="expertise-number">05</div>
       <h3>Security Automation & DevSecOps</h3>
       <p>Accelerate development while improving security through automated guardrails and CI/CD pipeline hardening.</p>
-      <div class="deliverables collapsed">
+      <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>CI/CD security</li>
@@ -194,7 +194,7 @@ app.innerHTML = `
       <div class="expertise-number">06</div>
       <h3>Detection Engineering & SIEM Optimization</h3>
       <p>Enhance visibility and reduce response time with high-fidelity detection rules and log coverage.</p>
-      <div class="deliverables collapsed">
+      <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>Sentinel & Splunk detection rules</li>
@@ -210,7 +210,7 @@ app.innerHTML = `
       <div class="expertise-number">07</div>
       <h3>Compliance & Governance</h3>
       <p>Achieve and maintain compliance with clear, auditable controls and security documentation.</p>
-      <div class="deliverables collapsed">
+      <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>GDPR alignment</li>
@@ -442,10 +442,9 @@ document.querySelectorAll('.read-more-btn').forEach(btn => {
     const card = btn.closest('.expertise-card')
     const deliverables = card?.querySelector('.deliverables')
     if (!deliverables) return
-    const isCollapsed = deliverables.classList.contains('collapsed')
-    deliverables.classList.toggle('collapsed')
+    const isExpanded = deliverables.classList.contains('expanded')
     deliverables.classList.toggle('expanded')
-    btn.textContent = isCollapsed ? 'Show less' : 'Read more'
+    btn.textContent = isExpanded ? 'Read more' : 'Show less'
   })
 })
 
