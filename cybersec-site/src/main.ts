@@ -83,7 +83,16 @@ app.innerHTML = `
     </div>
     <div class="philosophy-card">
       <h3>What We Do</h3>
-      <p>AI security and adversarial testing, AI application hardening, penetration testing (network, web, API, AD), cloud security architecture, security automation and DevSecOps, detection engineering and SIEM optimization, and compliance and governance. Delivered as one integrated practice, not fragmented engagements.</p>
+      <ul class="choose-list">
+        <li><span class="choose-bullet"></span> AI Security & Adversarial Testing</li>
+        <li><span class="choose-bullet"></span> AI Application Hardening</li>
+        <li><span class="choose-bullet"></span> Penetration Testing (Network, Web, API, AD)</li>
+        <li><span class="choose-bullet"></span> Cloud Security Architecture</li>
+        <li><span class="choose-bullet"></span> Security Automation & DevSecOps</li>
+        <li><span class="choose-bullet"></span> Detection Engineering & SIEM Optimization</li>
+        <li><span class="choose-bullet"></span> Compliance & Governance</li>
+      </ul>
+      <p style="margin-top: 12px; font-size: 13px; color: var(--text);">Delivered as one integrated practice, not fragmented engagements.</p>
     </div>
     <div class="philosophy-card">
       <h3>Our Impact</h3>
