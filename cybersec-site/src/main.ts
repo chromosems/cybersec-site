@@ -213,8 +213,8 @@ app.innerHTML = `
   <div class="container">
   <div class="section-header">
     <span class="section-tag">THE RETAINER MODEL</span>
-    <h2>Predictable protection. No surprises.</h2>
-    <p class="section-desc">Security is a constant discipline. Our monthly retainer replaces expensive, fragmented projects with a predictable, all inclusive partnership.</p>
+    <h2>One number, one team, zero friction.</h2>
+    <p class="section-desc">The retainer isn't a pricing scheme — it's the structural decision that makes partnership possible. No scopes, no change orders, no resetting context every engagement.</p>
   </div>
   <div class="retainer-grid">
     <div class="retainer-card">
@@ -224,8 +224,8 @@ app.innerHTML = `
         <path d="M16 14h1"/>
         <circle cx="12" cy="14" r="1.5" fill="currentColor"/>
       </svg>
-      <h3>No hidden setup fees</h3>
-      <p>What we quote is what you pay. Onboarding, agent deployment, and initial baseline assessment are included in your retainer.</p>
+      <h3>Your environment, already known</h3>
+      <p>We don't start every call with "what's your setup?" — we monitor it daily. When a threat hits, we're already inside your infrastructure, not dialling in from cold.</p>
     </div>
     <div class="retainer-card">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
@@ -235,8 +235,8 @@ app.innerHTML = `
         <circle cx="12" cy="5" r="2" fill="currentColor"/>
         <path d="M8 12l2.5 2.5L16 11"/>
       </svg>
-      <h3>Deep context, faster response</h3>
-      <p>We know your environment because we monitor it daily. When something happens, we respond with context not from scratch.</p>
+      <h3>We eat our own cooking</h3>
+      <p>Your risk profile is our dashboard. When your security posture improves, our retention renews. There's no incentive to drag work out — we succeed only when your attack surface shrinks.</p>
     </div>
     <div class="retainer-card">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
@@ -247,16 +247,16 @@ app.innerHTML = `
         <path d="M10 8h4"/>
         <path d="M12 10v4"/>
       </svg>
-      <h3>Aligned incentives</h3>
-      <p>We focus on risk reduction, not hourly billing. Your security outcomes are our success metrics plain and simple.</p>
+      <h3>Full scope, single thread</h3>
+      <p>One retainer covers SOC monitoring, pentesting, risk assessment, compliance, and AI security. No separate vendors, no handoffs, no "that's out of scope" emails at 3 AM.</p>
     </div>
     <div class="retainer-card">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
         <path d="M12 2l3 4 5 1-3 4 1 5-5-2-5 2 1-5-3-4 5-1 3-4z"/>
         <circle cx="12" cy="10" r="1.5" fill="currentColor"/>
       </svg>
-      <h3>Preferred rates for extras</h3>
-      <p>Need a major cloud migration assessment or additional forensics? Retainer clients get priority scheduling and preferred pricing.</p>
+      <h3>Onboarding, baked in</h3>
+      <p>Baseline assessment, agent deployment, SIEM configuration — it's all part of the first month, not a separate proposal. You pay one number from day one. No surprises because there's nothing to surprise you with.</p>
     </div>
   </div>
   </div>
