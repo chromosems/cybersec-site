@@ -1,8 +1,8 @@
-# fuse-cec — Business Plan
+# fusecec — Business Plan
 
 ## Executive Summary
 
-fuse-cec delivers industrial-grade managed cybersecurity services to mid-market enterprises across East Africa and globally. Operating on a monthly retainer model, we replace fragmented project-based security engagements with a single, predictable partnership covering defensive operations (24/7 SOC monitoring, incident response), proactive assurance (penetration testing, risk assessment, compliance management), and strategic infrastructure (cloud security, zero trust architecture, AI security). Headquartered in Kampala, Uganda, we bridge the gap between deep local context and world-class security standards.
+fusecec delivers industrial-grade managed cybersecurity services to mid-market enterprises across East Africa and globally. Operating on a monthly retainer model, we replace fragmented project-based security engagements with a single, predictable partnership covering defensive operations (24/7 SOC monitoring, incident response), proactive assurance (penetration testing, risk assessment, compliance management), and strategic infrastructure (cloud security, zero trust architecture, AI security). Headquartered in Kampala, Uganda, we bridge the gap between deep local context and world-class security standards.
 
 ## Problem
 
