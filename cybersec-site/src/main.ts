@@ -74,8 +74,14 @@ app.innerHTML = `
   <div class="philosophy-cards">
     <div class="philosophy-card">
       <div class="philosophy-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M12 21a9.004 9.004 0 008.716-6.747M12 21a9.004 9.004 0 01-8.716-6.747M12 21c2.485 0 4.5-4.03 4.5-9S14.485 3 12 3m0 18c-2.485 0-4.5-4.03-4.5-9S9.515 3 12 3m0 0a8.997 8.997 0 017.843 4.582M12 3a8.997 8.997 0 00-7.843 4.582m15.686 0A11.953 11.953 0 0112 10.5c-2.998 0-5.74-1.1-7.843-2.918m15.686 0A8.959 8.959 0 0121 12c0 .778-.099 1.533-.284 2.253m0 0A17.919 17.919 0 0112 16.5c-3.162 0-6.133-.815-8.716-2.247m0 0A9.015 9.015 0 013 12c0-1.605.42-3.113 1.157-4.418"/>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M12 21s-7-6-7-11a7 7 0 1114 0c0 5-7 11-7 11z"/>
+          <path d="M12 14a4 4 0 100-8 4 4 0 000 8z"/>
+          <circle cx="9" cy="7" r="1" fill="currentColor"/>
+          <circle cx="15" cy="7" r="1" fill="currentColor"/>
+          <circle cx="9" cy="13" r="1" fill="currentColor"/>
+          <circle cx="15" cy="13" r="1" fill="currentColor"/>
+          <path d="M10 8l-1 1M10 12l-1-1M14 8l1 1M14 12l1-1"/>
         </svg>
       </div>
       <h3>Local Context</h3>
@@ -83,8 +89,11 @@ app.innerHTML = `
     </div>
     <div class="philosophy-card">
       <div class="philosophy-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M9 12.75L11.25 15 15 9.75m-3-7.036A11.959 11.959 0 013.598 6 11.99 11.99 0 003 9.749c0 5.592 3.824 10.29 9 11.623 5.176-1.332 9-6.03 9-11.622 0-1.31-.21-2.571-.598-3.751h-.152c-3.196 0-6.1-1.248-8.25-3.285z"/>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <rect x="4" y="8" width="16" height="12" rx="2"/>
+          <path d="M4 11h16"/>
+          <path d="M8 8V6a4 4 0 118 0v2"/>
+          <path d="M10 15l1.5 1.5L14 14"/>
         </svg>
       </div>
       <h3>Global Standards</h3>
@@ -92,8 +101,13 @@ app.innerHTML = `
     </div>
     <div class="philosophy-card">
       <div class="philosophy-icon">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-          <path d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"/>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+          <path d="M6 21a3 3 0 100-6 3 3 0 000 6z"/>
+          <path d="M18 21a3 3 0 100-6 3 3 0 000 6z"/>
+          <path d="M9 12h6"/>
+          <path d="M7.5 15L9 12l-1.5-3"/>
+          <path d="M16.5 9L15 12l1.5 3"/>
+          <path d="M9 3h6l2 4.5H7L9 3z"/>
         </svg>
       </div>
       <h3>Partnership Model</h3>
@@ -204,39 +218,42 @@ app.innerHTML = `
   </div>
   <div class="retainer-grid">
     <div class="retainer-card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
-        <path d="M12 2L3 7v6c0 5.25 3.83 10.05 9 11 5.17-.95 9-5.75 9-11V7l-9-5z"/>
-        <rect x="9" y="9" width="6" height="6" rx="1"/>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
+        <rect x="4" y="8" width="16" height="12" rx="1.5"/>
+        <path d="M8 8V5a4 4 0 118 0v3"/>
+        <path d="M16 14h1"/>
+        <circle cx="12" cy="14" r="1.5" fill="currentColor"/>
       </svg>
       <h3>No hidden setup fees</h3>
       <p>What we quote is what you pay. Onboarding, agent deployment, and initial baseline assessment are included in your retainer.</p>
     </div>
     <div class="retainer-card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
-        <circle cx="12" cy="12" r="8"/>
-        <circle cx="12" cy="12" r="4"/>
-        <circle cx="12" cy="12" r="1.5"/>
-        <line x1="12" y1="4" x2="12" y2="6"/>
-        <line x1="12" y1="18" x2="12" y2="20"/>
-        <line x1="4" y1="12" x2="6" y2="12"/>
-        <line x1="18" y1="12" x2="20" y2="12"/>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
+        <path d="M12 2a16 16 0 00-8.5 14" stroke-dasharray="2 3"/>
+        <path d="M12 2a16 16 0 018.5 14" stroke-dasharray="2 3"/>
+        <path d="M3.5 16A16 16 0 0012 22a16 16 0 008.5-6"/>
+        <circle cx="12" cy="5" r="2" fill="currentColor"/>
+        <path d="M8 12l2.5 2.5L16 11"/>
       </svg>
       <h3>Deep context, faster response</h3>
       <p>We know your environment because we monitor it daily. When something happens, we respond with context not from scratch.</p>
     </div>
     <div class="retainer-card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
-        <path d="M4 20c3-7 6-9 8-9s5 2 8 9" stroke-linecap="round"/>
-        <path d="M12 11V4"/>
-        <path d="M9 7l3-3 3 3"/>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
+        <circle cx="8" cy="8" r="4"/>
+        <circle cx="16" cy="16" r="4"/>
+        <path d="M6 10l4 4"/>
+        <path d="M14 14l4-4"/>
+        <path d="M10 8h4"/>
+        <path d="M12 10v4"/>
       </svg>
       <h3>Aligned incentives</h3>
       <p>We focus on risk reduction, not hourly billing. Your security outcomes are our success metrics plain and simple.</p>
     </div>
     <div class="retainer-card">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="24" height="24">
-        <path d="M12 2L4 9l3 12h10l3-12-8-7z"/>
-        <path d="M4 9h16"/>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
+        <path d="M12 2l3 4 5 1-3 4 1 5-5-2-5 2 1-5-3-4 5-1 3-4z"/>
+        <circle cx="12" cy="10" r="1.5" fill="currentColor"/>
       </svg>
       <h3>Preferred rates for extras</h3>
       <p>Need a major cloud migration assessment or additional forensics? Retainer clients get priority scheduling and preferred pricing.</p>
@@ -290,11 +307,9 @@ app.innerHTML = `
       <div class="tab-grid">
         <div class="tab-card">
           <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="12" cy="12" r="7"/>
-              <circle cx="12" cy="12" r="3"/>
-              <circle cx="12" cy="12" r="1.5" fill="currentColor"/>
-              <path d="M12 5v1m0 12v1M5 12h1m12 0h1"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2l7 4v4a9 9 0 01-7 8 9 9 0 01-7-8V6l7-4z"/>
+              <path d="M8 12l2.5 2.5L16 10"/>
             </svg>
           </div>
           <h3>Security Monitoring</h3>
@@ -302,8 +317,10 @@ app.innerHTML = `
         </div>
         <div class="tab-card">
           <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M13 3L4 14h6l-1 7 9-11h-6l1-7z"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 3l-3 8h5l-2 8"/>
+              <circle cx="12" cy="12" r="9"/>
+              <path d="M9 12h6"/>
             </svg>
           </div>
           <h3>Incident Response</h3>
@@ -315,10 +332,12 @@ app.innerHTML = `
       <div class="tab-grid">
         <div class="tab-card">
           <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
               <circle cx="12" cy="12" r="8"/>
-              <path d="M12 4v3m0 10v3M4 12h3m10 0h3"/>
-              <path d="M12 12l5-5"/>
+              <circle cx="12" cy="12" r="3"/>
+              <circle cx="12" cy="12" r="1" fill="currentColor"/>
+              <path d="M20 20l-5-5"/>
+              <path d="M4 4l5 5"/>
             </svg>
           </div>
           <h3>Penetration Testing</h3>
@@ -326,11 +345,15 @@ app.innerHTML = `
         </div>
         <div class="tab-card">
           <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="12" cy="12" r="3"/>
-              <circle cx="12" cy="12" r="7"/>
-              <circle cx="12" cy="3" r="1.5" fill="currentColor"/>
-              <path d="M12 5v1"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <circle cx="12" cy="6" r="2"/>
+              <circle cx="6" cy="18" r="2"/>
+              <circle cx="18" cy="18" r="2"/>
+              <path d="M14 7l-2 2-2-2"/>
+              <path d="M8 16l-1 1"/>
+              <path d="M16 16l1 1"/>
+              <path d="M7 8l7 8"/>
+              <path d="M17 8l-7 8"/>
             </svg>
           </div>
           <h3>AI Penetration Testing</h3>
@@ -338,10 +361,10 @@ app.innerHTML = `
         </div>
         <div class="tab-card">
           <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="8" y="3" width="8" height="18" rx="2"/>
-              <path d="M10 8h4"/>
-              <path d="M10 12l1 1 2-2"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M14 3l4 4v13a1 1 0 01-1 1H7a1 1 0 01-1-1V4a1 1 0 011-1h7z"/>
+              <path d="M8.5 10l2 2 3-3"/>
+              <path d="M8.5 15l2 2 3-3"/>
             </svg>
           </div>
           <h3>Risk Assessment</h3>
@@ -349,9 +372,11 @@ app.innerHTML = `
         </div>
         <div class="tab-card">
           <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M12 2l9 7-3 11H6L3 9l9-7z"/>
-              <path d="M9 12l2 2 4-4"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M5 12L9 4l5 8-5 8-4-8z"/>
+              <path d="M9 4l5 8-5 8"/>
+              <path d="M14 12h6"/>
+              <path d="M16 9l-2 3 2 3"/>
             </svg>
           </div>
           <h3>Compliance Management</h3>
@@ -363,10 +388,10 @@ app.innerHTML = `
       <div class="tab-grid">
         <div class="tab-card">
           <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <path d="M17.5 9.5A5 5 0 007 10a4 4 0 000 8h10a3.5 3.5 0 100-7z"/>
-              <path d="M12 13v4"/>
-              <path d="M10.5 14.5l1.5-1.5 1.5 1.5"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M17.5 10.5A5 5 0 007 11a4 4 0 000 7h10a3.5 3.5 0 10.5-6.5z"/>
+              <rect x="10.5" y="12" width="4" height="3.5" rx="0.75"/>
+              <path d="M12.5 12v-1a0.5 0.5 0 00-1 0v1"/>
             </svg>
           </div>
           <h3>Cloud Security</h3>
@@ -374,10 +399,10 @@ app.innerHTML = `
         </div>
         <div class="tab-card">
           <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <rect x="9" y="10" width="6" height="8" rx="1"/>
-              <path d="M7 10V7a5 5 0 0110 0v3"/>
-              <path d="M11 14l1 1 2-2"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 3l7 4v5a9 9 0 01-7 8 9 9 0 01-7-8V7l7-4z"/>
+              <path d="M12 3v17"/>
+              <path d="M5 10l7 3 7-3"/>
             </svg>
           </div>
           <h3>Zero Trust Architecture</h3>
@@ -385,13 +410,15 @@ app.innerHTML = `
         </div>
         <div class="tab-card">
           <div class="tab-card-icon">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
-              <circle cx="7" cy="7" r="2"/>
-              <circle cx="17" cy="7" r="2"/>
-              <circle cx="12" cy="17" r="2"/>
-              <path d="M7 7l5 10"/>
-              <path d="M17 7l-5 10"/>
-              <path d="M7 7h10"/>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polygon points="12,2 22,7 22,17 12,22 2,17 2,7"/>
+              <circle cx="12" cy="12" r="3"/>
+              <circle cx="12" cy="6" r="1" fill="currentColor"/>
+              <circle cx="7" cy="9" r="1" fill="currentColor"/>
+              <circle cx="7" cy="15" r="1" fill="currentColor"/>
+              <circle cx="12" cy="18" r="1" fill="currentColor"/>
+              <circle cx="17" cy="15" r="1" fill="currentColor"/>
+              <circle cx="17" cy="9" r="1" fill="currentColor"/>
             </svg>
           </div>
           <h3>AI Application Security</h3>
