@@ -499,9 +499,10 @@ contactForm?.addEventListener('submit', async e => {
   btn.textContent = 'Sending...'
 
   try {
-    const res = await fetch('/api/contact', {
+    const res = await fetch('https://formspree.io/f/xqerbgkr', {
       method: 'POST',
       body: data,
+      headers: { 'Accept': 'application/json' },
     })
     if (res.ok) {
       status.textContent = 'Thanks! We will get back to you within 24 hours.'
