@@ -448,7 +448,6 @@ app.innerHTML = `
         <span class="footer-heading">Contact</span>
         <span class="footer-link">Kampala, Uganda</span>
         <span class="footer-link">info@fuse-cec.io</span>
-        #<span class="footer-link">+256 </span>#
         <span class="footer-link">Mon-Fri 8am-6pm EAT</span>
       </div>
       <div class="footer-col">
