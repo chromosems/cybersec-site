@@ -331,10 +331,44 @@ app.innerHTML = `
       <p>For companies requiring continuous support, rapid response, and regular penetration testing</p>
     </div>
   </div>
-  <div class="retainer-cta">
-    <a href="#hero" class="btn-primary">Get Started</a>
-    <p class="retainer-cta-text">Contact us to discuss which retainer tier fits your environment and security needs.</p>
-  </div>
+  <h3 class="retainer-subheading">Build Your Retainer</h3>
+  <p class="section-desc" style="text-align: center; max-width: 640px; margin: 0 auto 28px;">Select the services you need and we'll put together a custom retainer quote.</p>
+  <form id="retainer-builder-form" class="builder-form">
+    <div class="builder-grid">
+      <div class="builder-category">
+        <h4 class="builder-category-title">AI Security</h4>
+        <label class="builder-check"><input type="checkbox" name="services" value="AI Security & Adversarial Testing"> AI Security & Adversarial Testing</label>
+        <label class="builder-check"><input type="checkbox" name="services" value="AI Application Hardening"> AI Application Hardening</label>
+      </div>
+      <div class="builder-category">
+        <h4 class="builder-category-title">Penetration Testing</h4>
+        <label class="builder-check"><input type="checkbox" name="services" value="Network Penetration Testing"> Network Penetration Testing</label>
+        <label class="builder-check"><input type="checkbox" name="services" value="Web Application Penetration Testing"> Web Application Penetration Testing</label>
+        <label class="builder-check"><input type="checkbox" name="services" value="API Penetration Testing"> API Penetration Testing</label>
+        <label class="builder-check"><input type="checkbox" name="services" value="Active Directory Attack Path Analysis"> Active Directory Attack Path Analysis</label>
+      </div>
+      <div class="builder-category">
+        <h4 class="builder-category-title">Cloud & Detection</h4>
+        <label class="builder-check"><input type="checkbox" name="services" value="Cloud Security Reviews"> Cloud Security Reviews</label>
+        <label class="builder-check"><input type="checkbox" name="services" value="Detection Engineering & SIEM"> Detection Engineering & SIEM</label>
+        <label class="builder-check"><input type="checkbox" name="services" value="Secure Architecture Guidance"> Secure Architecture Guidance</label>
+      </div>
+      <div class="builder-category">
+        <h4 class="builder-category-title">Advisory & DevOps</h4>
+        <label class="builder-check"><input type="checkbox" name="services" value="DevSecOps & CI/CD Support"> DevSecOps & CI/CD Support</label>
+        <label class="builder-check"><input type="checkbox" name="services" value="On-Demand Security Consultation"> On-Demand Security Consultation</label>
+        <label class="builder-check"><input type="checkbox" name="services" value="Documentation & Governance"> Documentation & Governance</label>
+      </div>
+    </div>
+    <div class="builder-fields">
+      <input type="text" name="name" placeholder="Your name" required>
+      <input type="email" name="email" placeholder="Email address" required>
+      <input type="text" name="company" placeholder="Company" required>
+      <textarea name="notes" placeholder="Additional notes or questions..." rows="2"></textarea>
+      <button type="submit" class="btn-primary">Request a Quote</button>
+    </div>
+    <div class="builder-status" role="alert"></div>
+  </form>
   </div>
 </section>
 
@@ -487,6 +521,58 @@ contactForm?.addEventListener('submit', async e => {
 
   btn.disabled = false
   btn.textContent = 'Send message'
+})
+
+// ------ Retainer builder form ------
+
+const builderForm = document.querySelector<HTMLFormElement>('#retainer-builder-form')
+builderForm?.addEventListener('submit', async e => {
+  e.preventDefault()
+  const status = builderForm.querySelector<HTMLDivElement>('.builder-status')!
+  const btn = builderForm.querySelector<HTMLButtonElement>('button[type="submit"]')!
+  const formData = new FormData(builderForm)
+
+  const selected = formData.getAll('services')
+  const details = {
+    name: formData.get('name') || '',
+    email: formData.get('email') || '',
+    company: formData.get('company') || '',
+    notes: formData.get('notes') || '',
+    services: selected.join(', '),
+  }
+
+  const data = new FormData()
+  data.append('name', details.name as string)
+  data.append('email', details.email as string)
+  data.append('company', details.company as string)
+  data.append('message', `Retainer Request from ${details.name} (${details.company}, ${details.email})\n\nSelected services:\n${details.services}\n\nNotes:\n${details.notes}`)
+
+  status.textContent = ''
+  status.className = 'builder-status'
+  btn.disabled = true
+  btn.textContent = 'Sending...'
+
+  try {
+    const res = await fetch('https://formspree.io/f/xqerbgkr', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' },
+    })
+    if (res.ok) {
+      status.textContent = 'Thanks! We will review your selections and get back to you within 24 hours.'
+      status.classList.add('success')
+      builderForm.reset()
+    } else {
+      status.textContent = 'Something went wrong. Please try again or email us directly.'
+      status.classList.add('error')
+    }
+  } catch {
+    status.textContent = 'Network error. Please try again.'
+    status.classList.add('error')
+  }
+
+  btn.disabled = false
+  btn.textContent = 'Request a Quote'
 })
 
 // ------ Auto-detect phone country code ------
