@@ -96,7 +96,7 @@ app.innerHTML = `
     </div>
     <div class="philosophy-card">
       <h3>Our Impact</h3>
-      <p>We harden AI applications, reduce cloud misconfigurations, strengthen detection capabilities, improve compliance posture, and help organizations build resilient architectures that withstand real world threats.</p>
+      <p>We harden AI applications, close network and identity attack paths, reduce cloud misconfigurations, sharpen detection rules, automate security guardrails, and build compliance into every architecture. Delivering measurable risk reduction across the full attack surface.</p>
     </div>
   </div>
   </div>
