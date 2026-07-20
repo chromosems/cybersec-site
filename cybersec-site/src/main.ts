@@ -11,7 +11,6 @@ app.innerHTML = `
       <a href="#philosophy">About</a>
       <a href="#expertise">Services</a>
       <a href="#how-it-works">How It Works</a>
-      <a href="#solutions">Deliverables</a>
       <a href="#hero" class="nav-btn nav-btn-internal">Get a free consultation</a>
     </div>
     <a href="#hero" class="nav-btn nav-btn-external">Get a free consultation</a>
@@ -344,40 +343,6 @@ app.innerHTML = `
   </svg>
 </div>
 
-<section id="solutions" class="section-light">
-  <div class="container">
-  <div class="section-header">
-    <span class="section-tag">SAMPLE DELIVERABLES</span>
-    <h2>What we produce.</h2>
-    <p class="section-desc">Security decision records, assessment reports, detection packs, and attack simulations. Each deliverable is designed to be immediately actionable.</p>
-  </div>
-  <div class="tab-grid">
-    <div class="tab-card">
-      <h3>Azure Key Vault Public Access SDR</h3>
-      <p>Secure architecture with compensating controls, logging, and conditional access. Includes a security decision record with threat model, risk assessment, and implementation guidance.</p>
-    </div>
-    <div class="tab-card">
-      <h3>GitHub Advanced Security Assessment</h3>
-      <p>Evaluated Code Scanning and Secret Scanning costs, privacy implications, and operational impact across the organization. Delivered with a cost benefit analysis and rollout roadmap.</p>
-    </div>
-    <div class="tab-card">
-      <h3>Cloud Attack Path Simulation</h3>
-      <p>Adversarial scenarios demonstrating privilege escalation and identity pivoting across multi cloud environments. Mapped to MITRE ATT&CK with prioritized remediation steps.</p>
-    </div>
-    <div class="tab-card">
-      <h3>SIEM Detection Engineering Pack</h3>
-      <p>Production ready KQL and SPL rules for identity anomalies, service principal abuse, privilege escalation, and suspicious cloud API calls. Includes test cases and tuning guidance.</p>
-    </div>
-  </div>
-  </div>
-</section>
-
-<div class="section-wave">
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
-    <path d="M0,80 C360,20 1080,20 1440,80 L1440,0 L0,0 Z" fill="#f7f8fa"/>
-  </svg>
-</div>
-
 <footer>
   <div class="container">
   <div class="footer-inner" style="padding: 0; max-width: none;">
@@ -395,14 +360,12 @@ app.innerHTML = `
       <div class="footer-col">
         <span class="footer-heading">Services</span>
         <a href="#expertise" class="footer-link">Services</a>
-        <a href="#solutions" class="footer-link">Deliverables</a>
         <a href="#how-it-works" class="footer-link">How It Works</a>
         <a href="#retainer" class="footer-link">Retainer Model</a>
       </div>
       <div class="footer-col">
         <span class="footer-heading">Company</span>
         <a href="#philosophy" class="footer-link">About</a>
-        <a href="#global" class="footer-link">Global Operations</a>
       </div>
     </div>
     <div class="footer-bottom">
