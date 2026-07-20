@@ -153,7 +153,7 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">05</div>
       <h3>AI Penetration Testing</h3>
-      <p>Specialised security assessments of AI/ML systems, LLM applications, and autonomous agents. Testing against the OWASP LLM Top 10 — prompt injection, model poisoning, data leakage, and adversarial attacks across the AI stack.</p>
+      <p>Specialised security assessments of AI/ML systems, LLM applications, and autonomous agents. Testing against the OWASP LLM Top 10: prompt injection, model poisoning, data leakage, and adversarial attacks across the AI stack.</p>
     </div>
     <div class="expertise-card">
       <div class="expertise-number">06</div>
@@ -182,7 +182,7 @@ app.innerHTML = `
     <div class="step">
       <div class="step-number">01</div>
       <h3>The 45-minute audit</h3>
-      <p>We sit down with your team and map your infrastructure, tooling, and risk surface. No slides, no demo — just a shared document and honest answers. By the end of the call, we know if we can help.</p>
+      <p>We sit down with your team and map your infrastructure, tooling, and risk surface. No slides, no demo: just a shared document and honest answers. By the end of the call, we know if we can help.</p>
     </div>
     <div class="step">
       <div class="step-number">02</div>
@@ -192,12 +192,12 @@ app.innerHTML = `
     <div class="step">
       <div class="step-number">03</div>
       <h3>Monitoring goes live</h3>
-      <p>Week two: SOC dashboards are up, alerts are routing to the right people, and your first pentest is on the calendar. You don't need to read a manual — we walk your team through what changed and why.</p>
+      <p>Week two: SOC dashboards are up, alerts are routing to the right people, and your first pentest is on the calendar. You don't need to read a manual: we walk your team through what changed and why.</p>
     </div>
     <div class="step">
       <div class="step-number">04</div>
       <h3>You forget we're here</h3>
-      <p>That's the goal. Monitoring runs, reports land in your inbox, and when something breaks — we're already on it. Quarterly reviews keep the roadmap sharp. You run your business; we run your security operations.</p>
+      <p>That's the goal. Monitoring runs, reports land in your inbox, and when something breaks, we're already on it. Quarterly reviews keep the roadmap sharp. You run your business; we run your security operations.</p>
     </div>
   </div>
   </div>
@@ -214,7 +214,7 @@ app.innerHTML = `
   <div class="section-header">
     <span class="section-tag">THE RETAINER MODEL</span>
     <h2>One number, one team, zero friction.</h2>
-    <p class="section-desc">The retainer isn't a pricing scheme — it's the structural decision that makes partnership possible. No scopes, no change orders, no resetting context every engagement.</p>
+    <p class="section-desc">The retainer isn't a pricing scheme: it's the structural decision that makes partnership possible. No scopes, no change orders, no resetting context every engagement.</p>
   </div>
   <div class="retainer-grid">
     <div class="retainer-card">
@@ -225,7 +225,7 @@ app.innerHTML = `
         <circle cx="12" cy="14" r="1.5" fill="currentColor"/>
       </svg>
       <h3>Your environment, already known</h3>
-      <p>We don't start every call with "what's your setup?" — we monitor it daily. When a threat hits, we're already inside your infrastructure, not dialling in from cold.</p>
+      <p>We don't start every call with "what's your setup?" We monitor it daily. When a threat hits, we're already inside your infrastructure, not dialling in from cold.</p>
     </div>
     <div class="retainer-card">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
@@ -236,7 +236,7 @@ app.innerHTML = `
         <path d="M8 12l2.5 2.5L16 11"/>
       </svg>
       <h3>We eat our own cooking</h3>
-      <p>Your risk profile is our dashboard. When your security posture improves, our retention renews. There's no incentive to drag work out — we succeed only when your attack surface shrinks.</p>
+      <p>Your risk profile is our dashboard. When your security posture improves, our retention renews. There's no incentive to drag work out: we succeed only when your attack surface shrinks.</p>
     </div>
     <div class="retainer-card">
       <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" width="24" height="24">
@@ -256,7 +256,7 @@ app.innerHTML = `
         <circle cx="12" cy="10" r="1.5" fill="currentColor"/>
       </svg>
       <h3>Onboarding, baked in</h3>
-      <p>Baseline assessment, agent deployment, SIEM configuration — it's all part of the first month, not a separate proposal. You pay one number from day one. No surprises because there's nothing to surprise you with.</p>
+      <p>Baseline assessment, agent deployment, SIEM configuration: it's all part of the first month, not a separate proposal. You pay one number from day one. No surprises because there's nothing to surprise you with.</p>
     </div>
   </div>
   </div>
@@ -357,7 +357,7 @@ app.innerHTML = `
             </svg>
           </div>
           <h3>AI Penetration Testing</h3>
-          <p>Specialised red-teaming of AI/ML systems mapped to the OWASP LLM Top 10 — prompt injections, model extraction, training data poisoning, and adversarial robustness testing.</p>
+          <p>Specialised red-teaming of AI/ML systems mapped to the OWASP LLM Top 10: prompt injections, model extraction, training data poisoning, and adversarial robustness testing.</p>
         </div>
         <div class="tab-card">
           <div class="tab-card-icon">
