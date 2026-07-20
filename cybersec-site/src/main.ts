@@ -175,29 +175,29 @@ app.innerHTML = `
   <div class="container">
   <div class="section-header">
     <span class="section-tag">HOW IT WORKS</span>
-    <h2>From first conversation to active protection.</h2>
-    <p class="section-desc">No long sales cycles. No hidden setup fees. You get a partner who understands your environment and starts delivering value immediately.</p>
+    <h2>Two weeks to a known environment.</h2>
+    <p class="section-desc">We don't do pilots, proofs of concept, or discovery phases that stretch into quarters. Here's exactly how the first month looks.</p>
   </div>
   <div class="steps">
     <div class="step">
       <div class="step-number">01</div>
-      <h3>Discovery Call</h3>
-      <p>We learn about your infrastructure, team, and current security posture. No pitch just understanding what you need.</p>
+      <h3>The 45-minute audit</h3>
+      <p>We sit down with your team and map your infrastructure, tooling, and risk surface. No slides, no demo — just a shared document and honest answers. By the end of the call, we know if we can help.</p>
     </div>
     <div class="step">
       <div class="step-number">02</div>
-      <h3>Security Baseline</h3>
-      <p>We run an initial assessment across your environment networks, cloud, endpoints, identities, and AI/LLM pipelines to identify your highest priority risks.</p>
+      <h3>We touch everything</h3>
+      <p>Week one: agents deployed, SIEM connected, cloud configs reviewed, AI pipelines inventoried. We find what's exposed, what's misconfigured, and what's running unattended. You get a ranked list of what matters most.</p>
     </div>
     <div class="step">
       <div class="step-number">03</div>
-      <h3>Retainer Setup</h3>
-      <p>We configure your SOC monitoring, deploy agents where needed, and schedule your first penetration test and AI security assessment. Everything in one monthly retainer.</p>
+      <h3>Monitoring goes live</h3>
+      <p>Week two: SOC dashboards are up, alerts are routing to the right people, and your first pentest is on the calendar. You don't need to read a manual — we walk your team through what changed and why.</p>
     </div>
     <div class="step">
       <div class="step-number">04</div>
-      <h3>Ongoing Operations</h3>
-      <p>Continuous monitoring, quarterly reviews, real-time incident response, biannual pentesting, and AI model integrity reviews with a direct line to the person running your security.</p>
+      <h3>You forget we're here</h3>
+      <p>That's the goal. Monitoring runs, reports land in your inbox, and when something breaks — we're already on it. Quarterly reviews keep the roadmap sharp. You run your business; we run your security operations.</p>
     </div>
   </div>
   </div>
