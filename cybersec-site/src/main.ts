@@ -339,7 +339,7 @@ app.innerHTML = `
   <div class="section-header">
     <span class="section-tag">RETAINER MODEL</span>
     <h2>Cybersecurity Retainer Model</h2>
-    <p class="section-desc">Our retainer model provides continuous access to our cybersecurity expertise, ensuring proactive protection, rapid response, and ongoing improvement of your cloud, AI, and enterprise security posture.</p>
+    <p class="section-desc">Our retainer model provides continuous access to our cybersecurity expertise, ensuring proactive protection, rapid response, and ongoing improvement of your cloud, AI, and enterprise security posture. Prefer a one-time engagement? All services are available as standalone projects too.</p>
   </div>
   <h3 class="retainer-subheading">What's Included</h3>
   <div class="retainer-single">
