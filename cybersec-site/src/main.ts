@@ -21,8 +21,51 @@ app.innerHTML = `
   </div>
 </nav>
 
+<a href="#hero" class="skip-link">Skip to main content</a>
+
 <section id="hero">
   <div class="hero-bg"></div>
+  <div class="hero-visual">
+    <svg viewBox="0 0 600 600" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <linearGradient id="hv-grad" x1="0" y1="0" x2="600" y2="600">
+          <stop offset="0%" stop-color="#dc2626" stop-opacity="0.12"/>
+          <stop offset="50%" stop-color="#dc2626" stop-opacity="0.03"/>
+          <stop offset="100%" stop-color="#f59e0b" stop-opacity="0.06"/>
+        </linearGradient>
+      </defs>
+      <!-- Outer hexagon -->
+      <path d="M300 40 L520 170 L520 430 L300 560 L80 430 L80 170 Z" stroke="url(#hv-grad)" stroke-width="1.5"/>
+      <!-- Inner hexagon -->
+      <path d="M300 100 L460 200 L460 400 L300 500 L140 400 L140 200 Z" stroke="url(#hv-grad)" stroke-width="1" opacity="0.6"/>
+      <!-- Center shield shape -->
+      <path d="M300 160 L380 210 L380 320 C380 380 300 420 300 420 C300 420 220 380 220 320 L220 210 Z" stroke="#dc2626" stroke-width="2" opacity="0.15"/>
+      <!-- Cross lines -->
+      <line x1="300" y1="40" x2="300" y2="160" stroke="#dc2626" stroke-width="1" opacity="0.1"/>
+      <line x1="300" y1="420" x2="300" y2="560" stroke="#dc2626" stroke-width="1" opacity="0.1"/>
+      <line x1="80" y1="170" x2="220" y2="210" stroke="#dc2626" stroke-width="1" opacity="0.1"/>
+      <line x1="520" y1="170" x2="380" y2="210" stroke="#dc2626" stroke-width="1" opacity="0.1"/>
+      <line x1="80" y1="430" x2="220" y2="320" stroke="#dc2626" stroke-width="1" opacity="0.1"/>
+      <line x1="520" y1="430" x2="380" y2="320" stroke="#dc2626" stroke-width="1" opacity="0.1"/>
+      <!-- Corner dots -->
+      <circle cx="300" cy="40" r="3" fill="#dc2626" opacity="0.2"/>
+      <circle cx="520" cy="170" r="3" fill="#dc2626" opacity="0.2"/>
+      <circle cx="520" cy="430" r="3" fill="#dc2626" opacity="0.2"/>
+      <circle cx="300" cy="560" r="3" fill="#dc2626" opacity="0.2"/>
+      <circle cx="80" cy="430" r="3" fill="#dc2626" opacity="0.2"/>
+      <circle cx="80" cy="170" r="3" fill="#dc2626" opacity="0.2"/>
+      <!-- Inner nodes -->
+      <circle cx="300" cy="210" r="2" fill="#f59e0b" opacity="0.25"/>
+      <circle cx="220" cy="265" r="2" fill="#f59e0b" opacity="0.25"/>
+      <circle cx="380" cy="265" r="2" fill="#f59e0b" opacity="0.25"/>
+      <circle cx="300" cy="340" r="2" fill="#f59e0b" opacity="0.25"/>
+      <!-- Network lines between nodes -->
+      <line x1="300" y1="210" x2="220" y2="265" stroke="#dc2626" stroke-width="0.8" opacity="0.08"/>
+      <line x1="300" y1="210" x2="380" y2="265" stroke="#dc2626" stroke-width="0.8" opacity="0.08"/>
+      <line x1="220" y1="265" x2="300" y2="340" stroke="#dc2626" stroke-width="0.8" opacity="0.08"/>
+      <line x1="380" y1="265" x2="300" y2="340" stroke="#dc2626" stroke-width="0.8" opacity="0.08"/>
+    </svg>
+  </div>
   <div class="hero-layout">
     <div class="hero-text animate-on-scroll">
       <h1>Built by Engineers.<br>Trusted by Teams.</h1>
@@ -56,7 +99,10 @@ app.innerHTML = `
           </select>
           <label for="message" class="visually-hidden">Tell us about your security needs</label>
           <textarea id="message" name="message" placeholder="Tell us about your security needs..." rows="3" required></textarea>
-          <button type="submit" class="btn-primary">Send message</button>
+          <button type="submit" class="btn-primary">
+            <span class="btn-text">Send message</span>
+            <svg class="btn-spinner" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
+          </button>
           <div class="form-status" role="alert" aria-live="polite"></div>
         </form>
     </div>
@@ -431,7 +477,7 @@ app.innerHTML = `
     </div>
     <div class="footer-bottom">
       <span>&copy; 2026 fuse-cec.io. All rights reserved.</span>
-      <span class="footer-legal">Privacy Policy | Terms of Service</span>
+      <span class="footer-legal">Built in Kampala, Uganda</span>
     </div>
   </div>
   </div>
@@ -534,12 +580,13 @@ contactForm?.addEventListener('submit', async e => {
   e.preventDefault()
   const status = contactForm.querySelector<HTMLDivElement>('.form-status')!
   const btn = contactForm.querySelector<HTMLButtonElement>('button[type="submit"]')!
+  const btnText = btn.querySelector<HTMLSpanElement>('.btn-text')!
   const data = new FormData(contactForm)
 
   status.textContent = ''
   status.className = 'form-status'
   btn.disabled = true
-  btn.textContent = 'Sending...'
+  btnText.textContent = 'Sending...'
 
   try {
     const res = await fetch('https://formspree.io/f/xqerbgkr', {
@@ -568,7 +615,7 @@ contactForm?.addEventListener('submit', async e => {
   }
 
   btn.disabled = false
-  btn.textContent = 'Send message'
+  btnText.textContent = 'Send message'
 })
 
 // Phone placeholder with default East Africa code
