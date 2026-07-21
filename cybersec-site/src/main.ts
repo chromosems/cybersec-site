@@ -466,6 +466,7 @@ app.innerHTML = `
         <li>Annual focused assessment (web app or network)</li>
         <li>Vulnerability tracking dashboard</li>
         <li>1-time mobile money / USSD testing</li>
+        <li>Security awareness guidance</li>
         <li>Monthly security report</li>
         <li>Email support, 24-hour response</li>
       </ul>
@@ -498,7 +499,7 @@ app.innerHTML = `
         <li>DPA 2019 + ISO 27001 + full BOU compliance</li>
         <li>Quarterly mobile money / USSD testing</li>
         <li>Full incident response, on-site Kampala (unlimited)</li>
-        <li>Named engineer, up to 40 hrs/month dedicated</li>
+        <li>Fractional security engineer, up to 40 hrs/month dedicated</li>
         <li>Monthly board-ready security report</li>
         <li>Microsoft Teams + email, 4-hour response</li>
       </ul>
@@ -548,13 +549,19 @@ app.innerHTML = `
           <td>Data Protection / ISO 27001</td>
           <td>Not included</td>
           <td class="recommended-cell">Review twice yearly</td>
-          <td>Ongoing + full BOU compliance</td>
+          <td>Ongoing</td>
         </tr>
         <tr>
           <td>BOU compliance</td>
           <td>Not included</td>
           <td class="recommended-cell">Guidance & advisory</td>
           <td>Full audit preparation + on-site</td>
+        </tr>
+        <tr>
+          <td>Security awareness & training</td>
+          <td>Guidance included</td>
+          <td class="recommended-cell">Quarterly training session</td>
+          <td>Monthly program + phishing simulation</td>
         </tr>
         <tr>
           <td>Mobile money / USSD</td>
@@ -578,7 +585,7 @@ app.innerHTML = `
           <td>Support</td>
           <td>Email, 24h response</td>
           <td class="recommended-cell">Teams + email, 8h response</td>
-          <td>Named engineer, 40 hrs/month + 4h response</td>
+          <td>Fractional engineer, 40 hrs/month + 4h response</td>
         </tr>
       </tbody>
     </table>
