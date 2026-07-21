@@ -569,25 +569,25 @@ app.innerHTML = `
     <p class="section-desc">Selected engagements that demonstrate how we help Ugandan and East African organizations improve their security posture and meet regulatory requirements.</p>
   </div>
   <div class="cases-grid animate-on-scroll">
-    <div class="case-card">
+    <div class="case-card case-ai">
       <span class="case-tag">Mobile Money Security</span>
       <h3>Mobile Money API Security for Ugandan Fintech</h3>
       <p>A Kampala-based fintech processing mobile money transactions for 50,000+ users suspected their API had vulnerabilities that could enable fraud. We performed API penetration testing, USSD session analysis, and agent network security review to identify attack vectors specific to East African mobile money infrastructure.</p>
       <p class="case-impact">Three critical API vulnerabilities patched, USSD session fixation resolved, agent authentication strengthened, saving an estimated UGX 120M in potential fraud losses.</p>
     </div>
-    <div class="case-card">
+    <div class="case-card case-pentest">
       <span class="case-tag">Banking Security</span>
       <h3>Core Banking Assessment for Ugandan Microfinance</h3>
       <p>A microfinance institution with 15 branches needed to meet Bank of Uganda cybersecurity guidelines before their annual audit. We assessed their core banking system, ATM network, digital channels, and third-party integrations for security gaps and compliance violations.</p>
       <p class="case-impact">Eight BOU compliance gaps closed, ATM network segmented from core systems, digital channel encryption upgraded, audit passed without findings.</p>
     </div>
-    <div class="case-card">
+    <div class="case-card case-siem">
       <span class="case-tag">Security Monitoring</span>
       <h3>Monitoring Setup for Ugandan NGO Cloud Migration</h3>
       <p>A health-focused NGO migrating patient data to AWS had no visibility into their cloud environment. We set up practical security monitoring with log collection, alerting rules, and Slack notifications tuned for their limited IT team and budget.</p>
       <p class="case-impact">Security monitoring active across 12 AWS services, 8 alerting rules deployed, mean incident awareness time reduced from days to under 30 minutes.</p>
     </div>
-    <div class="case-card">
+    <div class="case-card case-cloud">
       <span class="case-tag">Data Protection</span>
       <h3>Data Protection Act Compliance for Kampala Health Tech</h3>
       <p>A health technology startup collecting patient data needed to comply with the Uganda Data Protection and Privacy Act 2019 before launching their platform. We performed a data protection assessment, built their data inventory, and created breach response procedures.</p>
@@ -610,35 +610,35 @@ app.innerHTML = `
     <h2>Common questions.</h2>
   </div>
   <div class="faq-list">
-    <div class="faq-item">
+    <div class="faq-item faq-red">
       <div class="faq-header">
         <span class="faq-number">01</span>
         <h3>How long does a penetration test take?</h3>
       </div>
       <p>Most penetration tests take 5 to 10 business days depending on scope. A single web application might take 3 days, while a full network + web + API assessment for a mid-size organization typically takes 7 to 10 days. We provide a precise timeline during scoping.</p>
     </div>
-    <div class="faq-item">
+    <div class="faq-item faq-blue">
       <div class="faq-header">
         <span class="faq-number">02</span>
         <h3>Do you work with our existing IT team?</h3>
       </div>
       <p>Yes. We collaborate with your internal IT or security team, not replace them. Our role is to find gaps they might have missed and provide a remediation roadmap they can execute. We also offer ongoing retainer support if you need hands-on help.</p>
     </div>
-    <div class="faq-item">
+    <div class="faq-item faq-amber">
       <div class="faq-header">
         <span class="faq-number">03</span>
         <h3>What happens after the assessment is complete?</h3>
       </div>
       <p>You receive a detailed report with findings ranked by severity, evidence, and specific remediation steps. For retainer clients, we then track remediation progress and re-test to verify fixes. For one-time projects, we are available for follow-up questions.</p>
     </div>
-    <div class="faq-item">
+    <div class="faq-item faq-emerald">
       <div class="faq-header">
         <span class="faq-number">04</span>
         <h3>Is our data safe during testing?</h3>
       </div>
       <p>Absolutely. We operate under a signed confidentiality agreement and follow responsible disclosure practices. We never exploit vulnerabilities beyond what is necessary to demonstrate risk, and we avoid testing during your business-critical hours unless agreed.</p>
     </div>
-    <div class="faq-item">
+    <div class="faq-item faq-purple">
       <div class="faq-header">
         <span class="faq-number">05</span>
         <h3>Do you offer services outside Uganda?</h3>
