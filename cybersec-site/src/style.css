@@ -1807,6 +1807,22 @@ footer {
   padding-left: 34px;
 }
 
+/* FAQ color themes */
+.faq-red .faq-number { color: #dc2626; }
+.faq-red:hover::before { background: #dc2626; }
+
+.faq-blue .faq-number { color: #2563eb; }
+.faq-blue:hover::before { background: #2563eb; }
+
+.faq-amber .faq-number { color: #d97706; }
+.faq-amber:hover::before { background: #d97706; }
+
+.faq-emerald .faq-number { color: #059669; }
+.faq-emerald:hover::before { background: #059669; }
+
+.faq-purple .faq-number { color: #7c3aed; }
+.faq-purple:hover::before { background: #7c3aed; }
+
 /* CTA band */
 
 .cta-band {

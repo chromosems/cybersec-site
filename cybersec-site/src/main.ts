@@ -575,36 +575,35 @@ app.innerHTML = `
     <h2>Common questions.</h2>
   </div>
   <div class="faq-list">
-    <div class="faq-item">
+    <div class="faq-item faq-red">
       <div class="faq-header">
         <span class="faq-number">01</span>
         <h3>How long does a penetration test take?</h3>
       </div>
       <p>Most penetration tests take 5 to 10 business days depending on scope. A single web application might take 3 days, while a full network + web + API assessment for a mid-size organization typically takes 7 to 10 days. We provide a precise timeline during scoping.</p>
     </div>
-    <div class="faq-item">
+    <div class="faq-item faq-blue">
       <div class="faq-header">
         <span class="faq-number">02</span>
-
         <h3>Do you work with our existing IT team?</h3>
       </div>
       <p>Yes. We collaborate with your internal IT or security team, not replace them. Our role is to find gaps they might have missed and provide a remediation roadmap they can execute. We also offer ongoing retainer support if you need hands-on help.</p>
     </div>
-    <div class="faq-item">
+    <div class="faq-item faq-amber">
       <div class="faq-header">
         <span class="faq-number">03</span>
         <h3>What happens after the assessment is complete?</h3>
       </div>
       <p>You receive a detailed report with findings ranked by severity, evidence, and specific remediation steps. For retainer clients, we then track remediation progress and re-test to verify fixes. For one-time projects, we are available for follow-up questions.</p>
     </div>
-    <div class="faq-item">
+    <div class="faq-item faq-emerald">
       <div class="faq-header">
         <span class="faq-number">04</span>
         <h3>Is our data safe during testing?</h3>
       </div>
       <p>Absolutely. We operate under a signed confidentiality agreement and follow responsible disclosure practices. We never exploit vulnerabilities beyond what is necessary to demonstrate risk, and we avoid testing during your business-critical hours unless agreed.</p>
     </div>
-    <div class="faq-item">
+    <div class="faq-item faq-purple">
       <div class="faq-header">
         <span class="faq-number">05</span>
         <h3>Do you offer services outside Uganda?</h3>
