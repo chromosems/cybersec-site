@@ -1740,11 +1740,60 @@ footer {
 
 .faq-item {
   border-bottom: 1px solid #e2e4e9;
-  padding: 24px 0;
+  padding: 28px 0;
+  position: relative;
+  padding-left: 0;
+  transition: padding-left 0.25s, background 0.25s;
+}
+
+.faq-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  background: var(--accent);
+  border-radius: 0 3px 3px 0;
+  transition: width 0.25s;
+}
+
+.faq-item:hover {
+  padding-left: 20px;
+  background: rgba(220, 38, 38, 0.02);
+}
+
+.faq-item:hover::before {
+  width: 3px;
 }
 
 .faq-item:first-child {
   padding-top: 0;
+}
+
+.faq-item:first-child:hover {
+  padding-left: 20px;
+}
+
+.faq-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.faq-number {
+  font-family: var(--mono);
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--accent);
+  letter-spacing: 1px;
+  min-width: 24px;
+}
+
+.faq-icon {
+  color: var(--accent);
+  flex-shrink: 0;
 }
 
 .faq-item h3 {
@@ -1752,14 +1801,15 @@ footer {
   font-size: 16px;
   font-weight: 600;
   color: #0a0c10;
-  margin-bottom: 10px;
   line-height: 1.4;
+  margin: 0;
 }
 
 .faq-item p {
   font-size: 14px;
   line-height: 1.7;
   color: #4a5060;
+  padding-left: 34px;
 }
 
 /* CTA band */

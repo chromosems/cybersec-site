@@ -576,23 +576,43 @@ app.innerHTML = `
   </div>
   <div class="faq-list">
     <div class="faq-item">
-      <h3>How long does a penetration test take?</h3>
+      <div class="faq-header">
+        <span class="faq-number">01</span>
+        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+        <h3>How long does a penetration test take?</h3>
+      </div>
       <p>Most penetration tests take 5 to 10 business days depending on scope. A single web application might take 3 days, while a full network + web + API assessment for a mid-size organization typically takes 7 to 10 days. We provide a precise timeline during scoping.</p>
     </div>
     <div class="faq-item">
-      <h3>Do you work with our existing IT team?</h3>
+      <div class="faq-header">
+        <span class="faq-number">02</span>
+        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+        <h3>Do you work with our existing IT team?</h3>
+      </div>
       <p>Yes. We collaborate with your internal IT or security team, not replace them. Our role is to find gaps they might have missed and provide a remediation roadmap they can execute. We also offer ongoing retainer support if you need hands-on help.</p>
     </div>
     <div class="faq-item">
-      <h3>What happens after the assessment is complete?</h3>
+      <div class="faq-header">
+        <span class="faq-number">03</span>
+        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
+        <h3>What happens after the assessment is complete?</h3>
+      </div>
       <p>You receive a detailed report with findings ranked by severity, evidence, and specific remediation steps. For retainer clients, we then track remediation progress and re-test to verify fixes. For one-time projects, we are available for follow-up questions.</p>
     </div>
     <div class="faq-item">
-      <h3>Is our data safe during testing?</h3>
+      <div class="faq-header">
+        <span class="faq-number">04</span>
+        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg>
+        <h3>Is our data safe during testing?</h3>
+      </div>
       <p>Absolutely. We operate under a signed confidentiality agreement and follow responsible disclosure practices. We never exploit vulnerabilities beyond what is necessary to demonstrate risk, and we avoid testing during your business-critical hours unless agreed.</p>
     </div>
     <div class="faq-item">
-      <h3>Do you offer services outside Uganda?</h3>
+      <div class="faq-header">
+        <span class="faq-number">05</span>
+        <svg class="faq-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg>
+        <h3>Do you offer services outside Uganda?</h3>
+      </div>
       <p>Yes. While our primary focus is East Africa, we serve clients globally. Our cloud security, penetration testing, and compliance services are delivered remotely. On-site work is available in Uganda and neighboring countries.</p>
     </div>
   </div>
