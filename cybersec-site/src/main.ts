@@ -74,7 +74,7 @@ app.innerHTML = `
     </div>
     <div class="hero-form-col animate-on-scroll">
       <div class="hero-form-card">
-        <h3>How Can We Help</h3>
+        <h3>How Can We Help?</h3>
         <p class="hero-form-sub">Tell us about your security needs and we'll get back to you within 24 hours.</p>
         <form id="contact-form" aria-label="Contact form">
           <label for="name" class="visually-hidden">Your name</label>
@@ -121,18 +121,18 @@ app.innerHTML = `
   <div class="container">
   <div class="section-header">
     <span class="section-tag">ABOUT US</span>
-    <h2>Engineering driven cybersecurity.</h2>
-    <p class="section-desc">fuse-cec.io is a cybersecurity engineering and consulting company specializing in AI security, penetration testing, cloud security, DevSecOps, detection engineering, and compliance across cloud and on-premise IT infrastructure. Our mission is to help organizations protect and harden existing environments while building secure, resilient, and compliant systems through engineering-driven security solutions.</p>
+    <h2>Engineering-driven cybersecurity.</h2>
+    <p class="section-desc">fuse-cec.io is a cybersecurity engineering and consulting company specializing in AI security, penetration testing, cloud security, DevSecOps, detection engineering, and compliance across cloud and on-premises IT infrastructure. Our mission is to help organizations protect and harden existing environments while building secure, resilient, and compliant systems through engineering-driven security solutions.</p>
   </div>
   <div class="philosophy-cards animate-on-scroll">
     <div class="philosophy-card">
       <h3>Why Companies Choose Us</h3>
       <ul class="choose-list">
         <li><span class="choose-bullet"></span> Full spectrum coverage: AI to AD to cloud</li>
-        <li><span class="choose-bullet"></span> Engineer led delivery</li>
+        <li><span class="choose-bullet"></span> Engineer-led delivery</li>
         <li><span class="choose-bullet"></span> Offensive + defensive in one practice</li>
-        <li><span class="choose-bullet"></span> Automation first approach</li>
-        <li><span class="choose-bullet"></span> Compliance ready outcomes</li>
+        <li><span class="choose-bullet"></span> Automation-first approach</li>
+        <li><span class="choose-bullet"></span> Compliance-ready outcomes</li>
       </ul>
     </div>
     <div class="philosophy-card">
@@ -150,7 +150,7 @@ app.innerHTML = `
     </div>
     <div class="philosophy-card">
       <h3>Our Impact</h3>
-      <p>We harden AI applications, close network and identity attack paths, reduce cloud misconfigurations, sharpen detection rules, automate security guardrails, and build compliance into every architecture. Delivering measurable risk reduction across the full attack surface.</p>
+      <p>We harden AI applications, close network and identity attack paths, reduce cloud misconfigurations, sharpen detection rules, automate security guardrails, and build compliance into every architecture, delivering measurable risk reduction across the full attack surface.</p>
     </div>
   </div>
   </div>
@@ -172,7 +172,7 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">01</div>
       <h3>AI Security & Adversarial Testing</h3>
-      <p>We secure AI-driven applications against modern threats including prompt injection, model poisoning, jailbreak attacks, data leakage, and adversarial manipulation. Our engineers test AI pipelines end to end to ensure your AI systems remain safe, reliable, and compliant.</p>
+      <p>We secure AI-driven applications against modern threats including prompt injection, model poisoning, jailbreak attacks, data leakage, and adversarial manipulation. Our engineers test AI pipelines end-to-end to ensure your AI systems remain safe, reliable, and compliant.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -220,7 +220,7 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">04</div>
       <h3>Cloud Security Architecture</h3>
-      <p>Build secure by design cloud environments across Azure, GCP, and AWS with identity hardening, segmentation, and workload protection.</p>
+      <p>Build secure-by-design cloud environments across Azure, GCP, and AWS with identity hardening, segmentation, and workload protection.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -252,7 +252,7 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">06</div>
       <h3>Detection Engineering & SIEM Optimization</h3>
-      <p>Enhance visibility and reduce response time with high fidelity detection rules and log coverage.</p>
+      <p>Enhance visibility and reduce response time with high-fidelity detection rules and log coverage.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -280,7 +280,6 @@ app.innerHTML = `
         </ul>
       </div>
       <button class="read-more-btn">Read more</button>
-    </div>
     </div>
   </div>
   </div>
@@ -313,7 +312,7 @@ app.innerHTML = `
     <div class="step">
       <div class="step-number">03</div>
       <h3>Execution</h3>
-      <p>Our engineers perform the agreed security work: architecture, testing, automation, or detection engineering.</p>
+      <p>Our engineers perform the agreed-upon security work: architecture, testing, automation, or detection engineering.</p>
     </div>
     <div class="step">
       <div class="step-number">04</div>
@@ -323,7 +322,7 @@ app.innerHTML = `
     <div class="step">
       <div class="step-number">05</div>
       <h3>Support & Follow-Up</h3>
-      <p>We help you implement improvements and strengthen long term security posture.</p>
+      <p>We help you implement improvements and strengthen long-term security posture.</p>
     </div>
   </div>
   </div>
@@ -364,7 +363,7 @@ app.innerHTML = `
     <ul class="retainer-list">
       <li>Predictable monthly cost</li>
       <li>Faster response times</li>
-      <li>Continuous improvement instead of one off fixes</li>
+      <li>Continuous improvement instead of one-off fixes</li>
       <li>Access to senior cybersecurity engineers</li>
       <li>Proactive identification of vulnerabilities</li>
       <li>Ideal for organizations with growing cloud or AI workloads</li>
@@ -403,14 +402,14 @@ app.innerHTML = `
   <div class="section-header">
     <span class="section-tag">CASE STUDIES</span>
     <h2>Real engagements, real outcomes.</h2>
-    <p class="section-desc">Selected engagements that demonstrate how we help organisations improve their security posture across the full attack surface.</p>
+    <p class="section-desc">Selected engagements that demonstrate how we help organizations improve their security posture across the full attack surface.</p>
   </div>
   <div class="cases-grid animate-on-scroll">
     <div class="case-card case-ai">
       <span class="case-tag">AI Security</span>
       <h3>AI Red Team for Fintech</h3>
-      <p>A financial platform processing sensitive customer data wanted to adopt LLM-powered features but needed assurance against adversarial attacks. We performed full AI red team engagement covering prompt injection, model extraction, training data poisoning, and jailbreak testing across their AI pipeline.</p>
-      <p class="case-impact">3 prompt injection vectors identified and remediated, LLM guardrails deployed, secure model deployment pipeline established.</p>
+      <p>A financial platform processing sensitive customer data wanted to adopt LLM-powered features but needed assurance against adversarial attacks. We performed a full AI red team engagement covering prompt injection, model extraction, training data poisoning, and jailbreak testing across their AI pipeline.</p>
+      <p class="case-impact">Three prompt-injection vectors identified and remediated, LLM guardrails deployed, and a secure model deployment pipeline established.</p>
     </div>
     <div class="case-card case-pentest">
       <span class="case-tag">Penetration Testing</span>
@@ -456,7 +455,7 @@ app.innerHTML = `
     <div class="footer-grid">
       <div class="footer-col">
         <span class="logo">fuse-cec<span class="logo-accent">.io</span></span>
-        <p class="footer-tag">Industrial grade cybersecurity for mid market enterprises.</p>
+        <p class="footer-tag">Industrial-grade cybersecurity for mid-market companies.</p>
       </div>
       <div class="footer-col">
         <span class="footer-heading">Contact</span>
