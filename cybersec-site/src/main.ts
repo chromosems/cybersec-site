@@ -431,7 +431,7 @@ app.innerHTML = `
       <div class="retainer-tier">Basic</div>
       <ul class="retainer-tier-list">
         <li>Quarterly cloud security review, 1 environment</li>
-        <li>Security monitoring setup + twice-yearly review</li>
+        <li>Monthly security monitoring</li>
         <li>Data Protection Act gap assessment</li>
         <li>Remote incident response advisory</li>
         <li>Email support, 24-hour response</li>
@@ -442,7 +442,7 @@ app.innerHTML = `
       <div class="retainer-tier">Standard</div>
       <ul class="retainer-tier-list">
         <li>Monthly cloud security review, up to 3 environments</li>
-        <li>Security monitoring with monthly tuning</li>
+        <li>Monthly security monitoring + tuning</li>
         <li>Data Protection Act quarterly review</li>
         <li>Mobile money API review once yearly</li>
         <li>Remote incident response included</li>
