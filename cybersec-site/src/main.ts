@@ -425,59 +425,40 @@ app.innerHTML = `
     <p class="section-desc">Our retainer model provides continuous access to our cybersecurity expertise, ensuring proactive protection, rapid response, and ongoing improvement of your cloud, mobile money, and enterprise security posture. Prefer a one-time engagement? All services are available as standalone projects too.</p>
   </div>
   <h3 class="retainer-subheading">Retainer Tiers</h3>
-  <p class="section-desc" style="text-align: center; margin-bottom: 32px;">All tiers include twice-yearly penetration testing with scope tailored to your environment. Not all organizations need mobile money or USSD testing; we scope each engagement to what you actually run.</p>
+  <p class="section-desc" style="text-align: center; margin-bottom: 8px; max-width: 640px; margin-left: auto; margin-right: auto;">Every retainer includes twice-yearly penetration testing with scope tailored to your environment.</p>
   <div class="retainer-grid-3 animate-on-scroll">
     <div class="retainer-card">
       <div class="retainer-tier">Basic</div>
-      <div class="retainer-category">Penetration Testing</div>
-      <p class="retainer-detail">Twice-yearly, full scope tailored to your infrastructure</p>
-      <div class="retainer-category">Cloud Security</div>
-      <p class="retainer-detail">Quarterly review, 1 cloud environment</p>
-      <div class="retainer-category">Security Monitoring</div>
-      <p class="retainer-detail">Setup + alert review twice yearly</p>
-      <div class="retainer-category">Compliance</div>
-      <p class="retainer-detail">Data Protection Act gap assessment (once)</p>
-      <div class="retainer-category">Mobile Money / USSD</div>
-      <p class="retainer-detail">Not included</p>
-      <div class="retainer-category">Incident Response</div>
-      <p class="retainer-detail">Remote advisory</p>
-      <div class="retainer-category">Support</div>
-      <p class="retainer-detail">Email, 24-hour response</p>
+      <ul class="retainer-tier-list">
+        <li>Quarterly cloud security review, 1 environment</li>
+        <li>Security monitoring setup + twice-yearly review</li>
+        <li>Data Protection Act gap assessment</li>
+        <li>Remote incident response advisory</li>
+        <li>Email support, 24-hour response</li>
+      </ul>
     </div>
     <div class="retainer-card retainer-recommended">
       <div class="retainer-badge">Recommended</div>
       <div class="retainer-tier">Standard</div>
-      <div class="retainer-category">Penetration Testing</div>
-      <p class="retainer-detail">Twice-yearly, full scope tailored to your infrastructure</p>
-      <div class="retainer-category">Cloud Security</div>
-      <p class="retainer-detail">Monthly review, up to 3 cloud environments</p>
-      <div class="retainer-category">Security Monitoring</div>
-      <p class="retainer-detail">Monthly tuning and false-positive reduction</p>
-      <div class="retainer-category">Compliance</div>
-      <p class="retainer-detail">Data Protection Act quarterly review</p>
-      <div class="retainer-category">Mobile Money / USSD</div>
-      <p class="retainer-detail">API security review once yearly</p>
-      <div class="retainer-category">Incident Response</div>
-      <p class="retainer-detail">Remote response included</p>
-      <div class="retainer-category">Support</div>
-      <p class="retainer-detail">Slack + email, 8-hour response</p>
+      <ul class="retainer-tier-list">
+        <li>Monthly cloud security review, up to 3 environments</li>
+        <li>Security monitoring with monthly tuning</li>
+        <li>Data Protection Act quarterly review</li>
+        <li>Mobile money API review once yearly</li>
+        <li>Remote incident response included</li>
+        <li>Slack + email support, 8-hour response</li>
+      </ul>
     </div>
     <div class="retainer-card">
       <div class="retainer-tier">Premium</div>
-      <div class="retainer-category">Penetration Testing</div>
-      <p class="retainer-detail">Twice-yearly, full scope tailored to your infrastructure</p>
-      <div class="retainer-category">Cloud Security</div>
-      <p class="retainer-detail">Bi-weekly review, unlimited cloud environments</p>
-      <div class="retainer-category">Security Monitoring</div>
-      <p class="retainer-detail">Continuous monitoring + weekly tuning</p>
-      <div class="retainer-category">Compliance</div>
-      <p class="retainer-detail">Data Protection Act ongoing + BOU alignment</p>
-      <div class="retainer-category">Mobile Money / USSD</div>
-      <p class="retainer-detail">Quarterly USSD + API testing</p>
-      <div class="retainer-category">Incident Response</div>
-      <p class="retainer-detail">Full response, on-site in Kampala</p>
-      <div class="retainer-category">Support</div>
-      <p class="retainer-detail">Dedicated engineer, 4-hour response</p>
+      <ul class="retainer-tier-list">
+        <li>Bi-weekly cloud security review, unlimited environments</li>
+        <li>Continuous security monitoring + weekly tuning</li>
+        <li>Data Protection Act ongoing + BOU alignment</li>
+        <li>Quarterly mobile money and USSD testing</li>
+        <li>Full incident response, on-site in Kampala</li>
+        <li>Dedicated engineer, 4-hour response</li>
+      </ul>
     </div>
   </div>
   <div class="retainer-cta">
