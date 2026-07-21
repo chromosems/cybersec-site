@@ -463,8 +463,10 @@ app.innerHTML = `
       <ul class="retainer-tier-list">
         <li>Quarterly cloud security review</li>
         <li>Security monitoring setup</li>
-        <li>DPA 2019 / ISO 27001 gap assessment</li>
+        <li>Annual focused assessment (web app or network)</li>
+        <li>Vulnerability tracking dashboard</li>
         <li>1-time mobile money / USSD testing</li>
+        <li>Monthly security report</li>
         <li>Email support, 24-hour response</li>
       </ul>
     </div>
@@ -475,9 +477,13 @@ app.innerHTML = `
       <ul class="retainer-tier-list">
         <li>Monthly cloud security review</li>
         <li>Monthly security monitoring + tuning</li>
+        <li>Twice-yearly moderate scope pentest</li>
+        <li>Vulnerability remediation tracking</li>
         <li>DPA 2019 + ISO 27001 review twice yearly</li>
+        <li>BOU compliance guidance</li>
         <li>Mobile money / USSD testing once yearly</li>
-        <li>Remote incident response included</li>
+        <li>Remote incident response (up to 20 hrs/year)</li>
+        <li>Quarterly executive summary</li>
         <li>Microsoft Teams + email, 8-hour response</li>
       </ul>
     </div>
@@ -487,10 +493,14 @@ app.innerHTML = `
       <ul class="retainer-tier-list">
         <li>Bi-weekly cloud security review</li>
         <li>Continuous monitoring + monthly tuning</li>
-        <li>DPA 2019 + ISO 27001 + BOU compliance</li>
+        <li>Quarterly full-scope penetration testing</li>
+        <li>Active vulnerability management & remediation</li>
+        <li>DPA 2019 + ISO 27001 + full BOU compliance</li>
         <li>Quarterly mobile money / USSD testing</li>
-        <li>Full incident response, on-site Kampala</li>
-        <li>Dedicated engineer, 4-hour response</li>
+        <li>Full incident response, on-site Kampala (unlimited)</li>
+        <li>Named engineer, up to 40 hrs/month dedicated</li>
+        <li>Monthly board-ready security report</li>
+        <li>Microsoft Teams + email, 4-hour response</li>
       </ul>
     </div>
   </div>
@@ -512,7 +522,15 @@ app.innerHTML = `
       <tbody>
         <tr>
           <td>Penetration testing</td>
-          <td colspan="3" class="table-highlight">Twice-yearly, full scope</td>
+          <td>Annual focused (web app or network)</td>
+          <td class="recommended-cell">Twice-yearly, moderate scope</td>
+          <td>Quarterly, full scope</td>
+        </tr>
+        <tr>
+          <td>Vulnerability management</td>
+          <td>Tracking dashboard</td>
+          <td class="recommended-cell">Tracking + remediation support</td>
+          <td>Active management & remediation</td>
         </tr>
         <tr>
           <td>Cloud security reviews</td>
@@ -528,9 +546,15 @@ app.innerHTML = `
         </tr>
         <tr>
           <td>Data Protection / ISO 27001</td>
-          <td>Gap assessment (once)</td>
+          <td>Not included</td>
           <td class="recommended-cell">Review twice yearly</td>
-          <td>Ongoing + BOU alignment</td>
+          <td>Ongoing + full BOU compliance</td>
+        </tr>
+        <tr>
+          <td>BOU compliance</td>
+          <td>Not included</td>
+          <td class="recommended-cell">Guidance & advisory</td>
+          <td>Full audit preparation + on-site</td>
         </tr>
         <tr>
           <td>Mobile money / USSD</td>
@@ -541,14 +565,20 @@ app.innerHTML = `
         <tr>
           <td>Incident response</td>
           <td>Not included</td>
-          <td class="recommended-cell">Remote included</td>
-          <td>Full, on-site Kampala</td>
+          <td class="recommended-cell">Remote, up to 20 hrs/year</td>
+          <td>Full on-site Kampala, unlimited</td>
+        </tr>
+        <tr>
+          <td>Reporting</td>
+          <td>Monthly security report</td>
+          <td class="recommended-cell">Monthly report + quarterly exec summary</td>
+          <td>Monthly board-ready report + quarterly exec summary</td>
         </tr>
         <tr>
           <td>Support</td>
-          <td>Email, 24h</td>
-          <td class="recommended-cell">Teams + email, 8h</td>
-          <td>Dedicated engineer, 4h</td>
+          <td>Email, 24h response</td>
+          <td class="recommended-cell">Teams + email, 8h response</td>
+          <td>Named engineer, 40 hrs/month + 4h response</td>
         </tr>
       </tbody>
     </table>
