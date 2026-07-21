@@ -590,9 +590,6 @@ app.innerHTML = `
       </tbody>
     </table>
   </div>
-    <div class="retainer-cta">
-    <a href="#hero" class="btn-primary">Book Free Assessment</a>
-    <p class="retainer-cta-text">Start with a free security posture assessment. We will recommend whether a retainer or one-time project fits your needs.</p>
   </div>
   </div>
 </section>

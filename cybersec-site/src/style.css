@@ -1677,17 +1677,6 @@ footer {
   text-align: center;
 }
 
-.retainer-cta {
-  text-align: center;
-  margin-top: 40px;
-}
-
-.retainer-cta-text {
-  font-size: 14px;
-  color: var(--text);
-  margin-top: 12px;
-}
-
 /* Retainer comparison table */
 
 .retainer-table-wrapper {
