@@ -150,7 +150,7 @@ app.innerHTML = `
     </div>
     <div class="philosophy-card">
       <h3>Our Impact</h3>
-      <p>We help organizations comply with the Uganda Data Protection Act, secure mobile money platforms against fraud, meet Bank of Uganda cybersecurity guidelines, close network and identity attack paths, reduce cloud misconfigurations, build practical security monitoring, and respond to incidents fast, delivering measurable risk reduction across the full attack surface.</p>
+      <p>We help organizations reduce security risk, achieve regulatory compliance, and build customer trust. Whether it is passing a Bank of Uganda audit, protecting mobile money transactions, or responding to a breach, we deliver measurable security outcomes that protect your business.</p>
     </div>
   </div>
   </div>
@@ -172,8 +172,8 @@ app.innerHTML = `
   <div class="expertise-grid animate-on-scroll">
     <div class="expertise-card">
       <div class="expertise-number">01</div>
-      <h3>Penetration Testing (Network, Web, API)</h3>
-      <p>Comprehensive offensive security testing across your infrastructure. Internal and external networks, web applications, APIs, and Active Directory environments.</p>
+      <h3>Penetration Testing & Vulnerability Management</h3>
+      <p>Comprehensive offensive security testing and ongoing vulnerability management across your infrastructure. We find weaknesses through penetration testing of networks, web applications, and APIs, then track and manage vulnerabilities to ensure they are resolved.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -181,7 +181,8 @@ app.innerHTML = `
           <li>Web application security assessment</li>
           <li>API security testing (REST, GraphQL)</li>
           <li>Active Directory attack path analysis</li>
-          <li>Remediation roadmap</li>
+          <li>Ongoing vulnerability scanning & tracking</li>
+          <li>Remediation roadmap with prioritization</li>
         </ul>
       </div>
       <button class="read-more-btn">Read more</button>
