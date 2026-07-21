@@ -27,6 +27,7 @@ app.innerHTML = `
     <div class="hero-text">
       <h1>Built by Engineers.<br>Trusted by Teams.</h1>
       <p class="hero-sub">AI security, penetration testing, cloud architecture, and detection engineering for modern digital environments.</p>
+      <p class="hero-trust">Serving engineering teams across East Africa and globally.</p>
     </div>
     <div class="hero-form-col">
       <div class="hero-form-card">
@@ -398,7 +399,6 @@ app.innerHTML = `
         <span class="footer-heading">Contact</span>
         <span class="footer-link">Kampala, Uganda</span>
         <span class="footer-link">info@fuse-cec.io</span>
-        <span class="footer-link">Mon-Fri 8am-6pm EAT</span>
       </div>
       <div class="footer-col">
         <span class="footer-heading">Services</span>
