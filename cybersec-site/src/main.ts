@@ -90,7 +90,7 @@ app.innerHTML = `
           <label for="service" class="visually-hidden">How we can help you</label>
           <select id="service" name="service" class="hero-form-select" required>
             <option value="" disabled selected>How we can help you</option>
-            <option value="compliance">Uganda Data Protection Act 2019 Compliance</option>
+            <option value="compliance">Data Protection & Compliance (DPA 2019 / ISO 27001)</option>
             <option value="mobile-money">Mobile Money & USSD Security</option>
             <option value="fintech-banking">Fintech & Banking Security (BOU Compliance)</option>
             <option value="penetration-testing">Penetration Testing (Network, Web, API)</option>
@@ -165,7 +165,7 @@ app.innerHTML = `
       <ul class="choose-list">
         <li><span class="choose-bullet"></span> Penetration Testing (Network, Web, API)</li>
         <li><span class="choose-bullet"></span> Cloud Security for African SMEs</li>
-        <li><span class="choose-bullet"></span> Uganda Data Protection Act 2019 Compliance</li>
+        <li><span class="choose-bullet"></span> Data Protection & Compliance (DPA 2019, ISO 27001, NIST)</li>
         <li><span class="choose-bullet"></span> Mobile Money & USSD Security</li>
         <li><span class="choose-bullet"></span> Fintech & Banking Security (BOU Compliance)</li>
         <li><span class="choose-bullet"></span> Security Monitoring & Alerting</li>
@@ -230,15 +230,17 @@ app.innerHTML = `
     </div>
     <div class="expertise-card">
       <div class="expertise-number">03</div>
-      <h3>Uganda Data Protection Act 2019 Compliance</h3>
-      <p>Help your organization comply with Uganda's Data Protection and Privacy Act 2019. We build data inventories, consent frameworks, breach response plans, and documentation to meet Data Protection Office requirements.</p>
+      <h3>Data Protection & Compliance</h3>
+      <p>Align your organization with Uganda's Data Protection and Privacy Act 2019, supported by ISO 27001, NIST Cybersecurity Framework, and CIS Controls. We build data inventories, consent frameworks, breach response plans, and documentation to meet Data Protection Office requirements and international security standards.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
-          <li>Data mapping & inventory</li>
+          <li>Data mapping & inventory per DPA 2019</li>
           <li>Consent mechanism audit</li>
           <li>Breach notification procedures</li>
           <li>DPO documentation & registration support</li>
+          <li>ISO 27001 gap assessment & roadmap</li>
+          <li>NIST CSF & CIS Controls alignment</li>
           <li>Compliance gap assessment</li>
         </ul>
       </div>
@@ -458,7 +460,7 @@ app.innerHTML = `
       <ul class="retainer-tier-list">
         <li>Quarterly cloud security review</li>
         <li>Security monitoring setup</li>
-        <li>Data Protection Act gap assessment</li>
+        <li>DPA 2019 / ISO 27001 gap assessment</li>
         <li>1-time mobile money / USSD testing</li>
         <li>Email support, 24-hour response</li>
       </ul>
@@ -470,7 +472,7 @@ app.innerHTML = `
       <ul class="retainer-tier-list">
         <li>Monthly cloud security review</li>
         <li>Monthly security monitoring + tuning</li>
-        <li>Data Protection Act review twice yearly</li>
+        <li>DPA 2019 + ISO 27001 review twice yearly</li>
         <li>Mobile money / USSD testing once yearly</li>
         <li>Remote incident response included</li>
         <li>Slack + email, 8-hour response</li>
@@ -482,7 +484,7 @@ app.innerHTML = `
       <ul class="retainer-tier-list">
         <li>Bi-weekly cloud security review</li>
         <li>Continuous monitoring + monthly tuning</li>
-        <li>Data Protection Act + BOU compliance</li>
+        <li>DPA 2019 + ISO 27001 + BOU compliance</li>
         <li>Quarterly mobile money / USSD testing</li>
         <li>Full incident response, on-site Kampala</li>
         <li>Dedicated engineer, 4-hour response</li>
@@ -522,7 +524,7 @@ app.innerHTML = `
           <td>Continuous + monthly tuning</td>
         </tr>
         <tr>
-          <td>Data Protection Act</td>
+          <td>Data Protection / ISO 27001</td>
           <td>Gap assessment (once)</td>
           <td class="recommended-cell">Review twice yearly</td>
           <td>Ongoing + BOU alignment</td>
@@ -589,9 +591,9 @@ app.innerHTML = `
     </div>
     <div class="case-card case-cloud">
       <span class="case-tag">Data Protection</span>
-      <h3>Data Protection Act Compliance for Kampala Health Tech</h3>
-      <p>A health technology startup collecting patient data needed to comply with the Uganda Data Protection and Privacy Act 2019 before launching their platform. We performed a data protection assessment, built their data inventory, and created breach response procedures.</p>
-      <p class="case-impact">Full data inventory completed, consent framework implemented, breach response plan documented, Data Protection Office registration submitted successfully.</p>
+      <h3>Data Protection & ISO 27001 Compliance for Kampala Health Tech</h3>
+      <p>A health technology startup collecting patient data needed to comply with the Uganda Data Protection and Privacy Act 2019 and align with ISO 27001 before launching their platform. We performed a data protection assessment, built their data inventory, mapped controls to ISO 27001 Annex A, and created breach response procedures.</p>
+      <p class="case-impact">Full data inventory completed, consent framework implemented, ISO 27001 gap assessment delivered with remediation roadmap, breach response plan documented, Data Protection Office registration submitted successfully.</p>
     </div>
   </div>
   </div>
