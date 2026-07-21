@@ -1481,17 +1481,73 @@ footer {
   margin: 0 auto;
 }
 
-.retainer-tier {
+.retainer-card {
+  position: relative;
+  padding-top: 36px;
+}
+
+.retainer-badge {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: var(--accent);
+  color: #fff;
   font-family: var(--heading);
-  font-size: 20px;
+  font-size: 10px;
   font-weight: 700;
-  color: var(--accent);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 6px 0;
+  border-radius: 8px 8px 0 0;
+}
+
+.retainer-size {
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  color: #5c6370;
+  letter-spacing: 0.5px;
   margin-bottom: 8px;
 }
 
-#retainer .retainer-card p {
-  color: var(--text);
+.retainer-tier {
+  font-family: var(--heading);
+  font-size: 22px;
+  font-weight: 700;
+  color: #0a0c10;
+  margin-bottom: 16px;
+}
+
+.retainer-tier-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.retainer-tier-list li {
   font-size: 13px;
+  line-height: 1.7;
+  color: #4a5060;
+  padding: 5px 0 5px 16px;
+  position: relative;
+}
+
+.retainer-tier-list li::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 12px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+.retainer-recommended {
+  border-color: var(--accent);
+  box-shadow: 0 4px 20px rgba(220, 38, 38, 0.08);
 }
 
 .retainer-cta {

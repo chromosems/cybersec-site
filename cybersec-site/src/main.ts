@@ -372,16 +372,41 @@ app.innerHTML = `
   <h3 class="retainer-subheading">Retainer Tiers</h3>
   <div class="retainer-grid-3 animate-on-scroll">
     <div class="retainer-card">
+      <div class="retainer-size">1-50 employees</div>
       <div class="retainer-tier">Basic</div>
-      <p>For small teams needing periodic guidance</p>
+      <ul class="retainer-tier-list">
+        <li>Quarterly cloud security review</li>
+        <li>Bi-annual penetration testing</li>
+        <li>Detection rule updates twice yearly</li>
+        <li>1 cloud environment</li>
+        <li>Email support, 24-hour response</li>
+      </ul>
     </div>
-    <div class="retainer-card">
+    <div class="retainer-card retainer-recommended">
+      <div class="retainer-badge">Recommended</div>
+      <div class="retainer-size">51-200 employees</div>
       <div class="retainer-tier">Standard</div>
-      <p>For organizations with active cloud and AI workloads</p>
+      <ul class="retainer-tier-list">
+        <li>Monthly cloud security review</li>
+        <li>Quarterly penetration testing</li>
+        <li>Monthly detection engineering updates</li>
+        <li>AI security testing twice yearly</li>
+        <li>3 cloud environments</li>
+        <li>Slack support, 8-hour response</li>
+      </ul>
     </div>
     <div class="retainer-card">
+      <div class="retainer-size">201-500+ employees</div>
       <div class="retainer-tier">Premium</div>
-      <p>For companies requiring continuous support, rapid response, and regular penetration testing</p>
+      <ul class="retainer-tier-list">
+        <li>Bi-weekly cloud security review</li>
+        <li>Monthly penetration testing</li>
+        <li>Continuous detection engineering</li>
+        <li>Quarterly AI red teaming</li>
+        <li>Unlimited cloud environments</li>
+        <li>Dedicated security engineer</li>
+        <li>Slack and phone, 4-hour response</li>
+      </ul>
     </div>
   </div>
   <div class="retainer-cta">
