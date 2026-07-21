@@ -1557,7 +1557,7 @@ footer {
 /* Retainer comparison table */
 
 .retainer-table-wrapper {
-  max-width: 900px;
+  max-width: 920px;
   margin: 0 auto;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
@@ -1565,51 +1565,102 @@ footer {
 
 .retainer-table {
   width: 100%;
-  border-collapse: collapse;
+  border-collapse: separate;
+  border-spacing: 0;
   font-size: 14px;
   background: #fff;
   border: 1px solid #e2e4e9;
-  border-radius: 8px;
+  border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
 
+/* Header */
 .retainer-table thead th {
   background: #f7f8fa;
-  padding: 16px 12px;
-  text-align: left;
-  font-family: var(--heading);
-  font-size: 12px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  color: #5c6370;
+  padding: 20px 16px;
+  text-align: center;
   border-bottom: 1px solid #e2e4e9;
-  white-space: nowrap;
+  vertical-align: top;
 }
 
 .retainer-table thead th:first-child {
-  width: 30%;
+  width: 28%;
+  background: transparent;
+  border-bottom: 1px solid #e2e4e9;
 }
 
 .retainer-table thead th:not(:first-child) {
-  text-align: center;
-  width: 23.33%;
+  width: 24%;
 }
 
+.tier-name {
+  display: block;
+  font-family: var(--heading);
+  font-size: 18px;
+  font-weight: 700;
+  color: #0a0c10;
+  margin-bottom: 6px;
+}
+
+.tier-badge {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  font-family: var(--heading);
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 4px 10px;
+  border-radius: 4px;
+}
+
+.recommended-header {
+  background: rgba(220, 38, 38, 0.06) !important;
+  border-left: 2px solid var(--accent);
+  border-right: 2px solid var(--accent);
+  border-bottom: 1px solid var(--accent);
+}
+
+/* Banner row */
+.table-banner td {
+  background: rgba(220, 38, 38, 0.04);
+  color: var(--accent);
+  font-weight: 500;
+  font-size: 13px;
+  padding: 14px 16px;
+  text-align: center;
+  border-bottom: 1px solid #e2e4e9;
+}
+
+.banner-icon {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  background: var(--accent);
+  color: #fff;
+  border-radius: 50%;
+  line-height: 20px;
+  font-size: 12px;
+  margin-right: 6px;
+  text-align: center;
+}
+
+/* Body cells */
 .retainer-table tbody td {
-  padding: 14px 12px;
+  padding: 16px;
   border-bottom: 1px solid #e2e4e9;
   color: #4a5060;
   line-height: 1.5;
+  text-align: center;
+  vertical-align: top;
 }
 
 .retainer-table tbody td:first-child {
+  text-align: left;
   font-weight: 500;
   color: #0a0c10;
-}
-
-.retainer-table tbody td:not(:first-child) {
-  text-align: center;
   font-size: 13px;
 }
 
@@ -1621,47 +1672,49 @@ footer {
   background: #fafbfc;
 }
 
-.table-highlight {
-  background: rgba(220, 38, 38, 0.04);
-  color: var(--accent);
+/* Recommended column */
+.recommended-cell {
+  background: rgba(220, 38, 38, 0.03);
+  border-left: 2px solid var(--accent);
+  border-right: 2px solid var(--accent);
   font-weight: 500;
 }
 
-.recommended-col {
-  background: rgba(220, 38, 38, 0.03);
+.tier-note {
+  display: block;
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 2px;
+  font-weight: 400;
 }
 
-.table-badge {
-  display: inline-block;
-  background: var(--accent);
-  color: #fff;
-  font-size: 9px;
-  font-weight: 700;
-  letter-spacing: 0.5px;
-  text-transform: uppercase;
-  padding: 2px 6px;
-  border-radius: 3px;
-  margin-left: 6px;
-  vertical-align: middle;
+.not-included {
+  color: #9ca3af;
+  font-style: italic;
 }
 
+/* Responsive */
 @media (max-width: 700px) {
-  .retainer-grid-3 {
-    grid-template-columns: 1fr;
-  }
-  
   .retainer-table {
-    font-size: 12px;
+    font-size: 13px;
   }
   
   .retainer-table thead th,
   .retainer-table tbody td {
-    padding: 10px 8px;
+    padding: 12px 10px;
   }
   
-  .retainer-table thead th:first-child {
-    width: auto;
-    min-width: 140px;
+  .tier-name {
+    font-size: 15px;
+  }
+  
+  .tier-badge {
+    font-size: 9px;
+    padding: 3px 8px;
+  }
+  
+  .retainer-table tbody td:first-child {
+    min-width: 130px;
   }
 }
 

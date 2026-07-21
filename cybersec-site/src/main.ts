@@ -453,52 +453,60 @@ app.innerHTML = `
     <table class="retainer-table">
       <thead>
         <tr>
-          <th>Feature</th>
-          <th>Basic</th>
-          <th class="recommended-col">Standard <span class="table-badge">Recommended</span></th>
-          <th>Premium</th>
+          <th></th>
+          <th>
+            <span class="tier-name">Basic</span>
+          </th>
+          <th class="recommended-header">
+            <span class="tier-name">Standard</span>
+            <span class="tier-badge">Recommended</span>
+          </th>
+          <th>
+            <span class="tier-name">Premium</span>
+          </th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>Penetration testing</td>
-          <td colspan="3" class="table-highlight">Twice-yearly, full scope — network, web, API, AD</td>
+        <tr class="table-banner">
+          <td colspan="4">
+            <span class="banner-icon">&#10003;</span> Penetration testing included in all tiers — twice-yearly, full scope (network, web, API, Active Directory)
+          </td>
         </tr>
         <tr>
           <td>Cloud security reviews</td>
-          <td>Quarterly, 1 environment</td>
-          <td class="recommended-col">Monthly, up to 3 environments</td>
-          <td>Bi-weekly, unlimited</td>
+          <td>Quarterly<br><span class="tier-note">1 environment</span></td>
+          <td class="recommended-cell">Monthly<br><span class="tier-note">Up to 3 environments</span></td>
+          <td>Bi-weekly<br><span class="tier-note">Unlimited</span></td>
         </tr>
         <tr>
           <td>Security monitoring</td>
           <td>Monthly</td>
-          <td class="recommended-col">Monthly + tuning</td>
+          <td class="recommended-cell">Monthly + tuning</td>
           <td>Continuous + weekly tuning</td>
         </tr>
         <tr>
           <td>Data Protection Act</td>
-          <td>Gap assessment (once)</td>
-          <td class="recommended-col">Quarterly review</td>
+          <td>Gap assessment</td>
+          <td class="recommended-cell">Quarterly review</td>
           <td>Ongoing + BOU alignment</td>
         </tr>
         <tr>
           <td>Mobile money / USSD</td>
-          <td>Not included</td>
-          <td class="recommended-col">API review once yearly</td>
+          <td><span class="not-included">Not included</span></td>
+          <td class="recommended-cell">API review once yearly</td>
           <td>Quarterly testing</td>
         </tr>
         <tr>
           <td>Incident response</td>
           <td>Remote advisory</td>
-          <td class="recommended-col">Remote response included</td>
-          <td>Full response, on-site Kampala</td>
+          <td class="recommended-cell">Remote response included</td>
+          <td>Full, on-site in Kampala</td>
         </tr>
         <tr>
           <td>Support</td>
-          <td>Email, 24h</td>
-          <td class="recommended-col">Slack + email, 8h</td>
-          <td>Dedicated engineer, 4h</td>
+          <td>Email<br><span class="tier-note">24-hour response</span></td>
+          <td class="recommended-cell">Slack + email<br><span class="tier-note">8-hour response</span></td>
+          <td>Dedicated engineer<br><span class="tier-note">4-hour response</span></td>
         </tr>
       </tbody>
     </table>
