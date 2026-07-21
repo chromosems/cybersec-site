@@ -450,65 +450,101 @@ app.innerHTML = `
     <h2>Cybersecurity Retainer Model</h2>
     <p class="section-desc">Our retainer model provides continuous access to our cybersecurity expertise, ensuring proactive protection, rapid response, and ongoing improvement of your cloud infrastructure, mobile money platforms, and enterprise security posture. Prefer a one-time engagement? All services are available as standalone projects too.</p>
   </div>
-  <h3 class="retainer-subheading">Retainer Comparison</h3>
-  <div class="retainer-table-wrapper animate-on-scroll">
+  <h3 class="retainer-subheading">Retainer Tiers</h3>
+  <p class="section-desc" style="text-align: center; margin-bottom: 32px; max-width: 640px; margin-left: auto; margin-right: auto;">All tiers include twice-yearly penetration testing with scope tailored to your environment.</p>
+  <div class="retainer-grid-3 animate-on-scroll">
+    <div class="retainer-card">
+      <div class="retainer-tier">Basic</div>
+      <p class="retainer-for">Best for small teams getting started with security</p>
+      <ul class="retainer-tier-list">
+        <li>Quarterly cloud security review</li>
+        <li>Security monitoring setup</li>
+        <li>Data Protection Act gap assessment</li>
+        <li>1-time mobile money / USSD testing</li>
+        <li>Email support, 24-hour response</li>
+      </ul>
+    </div>
+    <div class="retainer-card retainer-recommended">
+      <div class="retainer-badge">Recommended</div>
+      <div class="retainer-tier">Standard</div>
+      <p class="retainer-for">Best for growing organizations with active infrastructure</p>
+      <ul class="retainer-tier-list">
+        <li>Monthly cloud security review</li>
+        <li>Monthly security monitoring + tuning</li>
+        <li>Data Protection Act review twice yearly</li>
+        <li>Mobile money / USSD testing once yearly</li>
+        <li>Remote incident response included</li>
+        <li>Slack + email, 8-hour response</li>
+      </ul>
+    </div>
+    <div class="retainer-card">
+      <div class="retainer-tier">Premium</div>
+      <p class="retainer-for">Best for regulated organizations requiring continuous coverage</p>
+      <ul class="retainer-tier-list">
+        <li>Bi-weekly cloud security review</li>
+        <li>Continuous monitoring + monthly tuning</li>
+        <li>Data Protection Act + BOU compliance</li>
+        <li>Quarterly mobile money / USSD testing</li>
+        <li>Full incident response, on-site Kampala</li>
+        <li>Dedicated engineer, 4-hour response</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="retainer-compare-toggle">
+    <button id="compare-toggle" class="compare-btn">Compare all features</button>
+  </div>
+
+  <div id="compare-table" class="retainer-table-wrapper" style="display: none;">
     <table class="retainer-table">
       <thead>
         <tr>
-          <th></th>
-          <th>
-            <span class="tier-name">Basic</span>
-          </th>
-          <th class="recommended-header">
-            <span class="tier-name">Standard</span>
-            <span class="tier-badge">Recommended</span>
-          </th>
-          <th>
-            <span class="tier-name">Premium</span>
-          </th>
+          <th>Feature</th>
+          <th>Basic</th>
+          <th class="recommended-header">Standard</th>
+          <th>Premium</th>
         </tr>
       </thead>
       <tbody>
-        <tr class="table-banner">
-          <td colspan="4">
-            <span class="banner-icon">&#10003;</span> Penetration testing included in all tiers — twice-yearly, full scope (network, web, API, Active Directory)
-          </td>
+        <tr>
+          <td>Penetration testing</td>
+          <td colspan="3" class="table-highlight">Twice-yearly, full scope</td>
         </tr>
         <tr>
           <td>Cloud security reviews</td>
-          <td>Quarterly<br><span class="tier-note">1 environment</span></td>
-          <td class="recommended-cell">Monthly<br><span class="tier-note">Up to 3 environments</span></td>
-          <td>Bi-weekly<br><span class="tier-note">Unlimited</span></td>
+          <td>Quarterly, 1 env</td>
+          <td class="recommended-cell">Monthly, up to 3 env</td>
+          <td>Bi-weekly, unlimited</td>
         </tr>
         <tr>
           <td>Security monitoring</td>
-          <td>Monthly</td>
+          <td>Setup only</td>
           <td class="recommended-cell">Monthly + tuning</td>
-          <td>Continuous + weekly tuning</td>
+          <td>Continuous + monthly tuning</td>
         </tr>
         <tr>
           <td>Data Protection Act</td>
-          <td>Gap assessment</td>
-          <td class="recommended-cell">Quarterly review</td>
+          <td>Gap assessment (once)</td>
+          <td class="recommended-cell">Review twice yearly</td>
           <td>Ongoing + BOU alignment</td>
         </tr>
         <tr>
           <td>Mobile money / USSD</td>
-          <td>Once yearly</td>
+          <td>1-time testing</td>
           <td class="recommended-cell">Once yearly</td>
           <td>Quarterly testing</td>
         </tr>
         <tr>
           <td>Incident response</td>
-          <td>Remote advisory</td>
-          <td class="recommended-cell">Remote response included</td>
-          <td>Full, on-site in Kampala</td>
+          <td>Not included</td>
+          <td class="recommended-cell">Remote included</td>
+          <td>Full, on-site Kampala</td>
         </tr>
         <tr>
           <td>Support</td>
-          <td>Email<br><span class="tier-note">24-hour response</span></td>
-          <td class="recommended-cell">Slack + email<br><span class="tier-note">8-hour response</span></td>
-          <td>Dedicated engineer<br><span class="tier-note">4-hour response</span></td>
+          <td>Email, 24h</td>
+          <td class="recommended-cell">Slack + email, 8h</td>
+          <td>Dedicated engineer, 4h</td>
         </tr>
       </tbody>
     </table>
@@ -752,6 +788,17 @@ const animObserver = new IntersectionObserver(entries => {
 }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' })
 
 document.querySelectorAll('.animate-on-scroll').forEach(el => animObserver.observe(el))
+
+// ------ Retainer comparison toggle ------
+
+const compareToggle = document.querySelector<HTMLButtonElement>('#compare-toggle')
+const compareTable = document.querySelector<HTMLDivElement>('#compare-table')
+compareToggle?.addEventListener('click', () => {
+  const isOpen = compareTable?.style.display !== 'none'
+  if (compareTable) compareTable.style.display = isOpen ? 'none' : 'block'
+  compareToggle.textContent = isOpen ? 'Compare all features' : 'Hide comparison'
+  compareToggle.classList.toggle('active', !isOpen)
+})
 
 // ------ Form submission ------
 
