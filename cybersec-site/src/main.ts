@@ -24,21 +24,26 @@ app.innerHTML = `
 <section id="hero">
   <div class="hero-bg"></div>
   <div class="hero-layout">
-    <div class="hero-text">
+    <div class="hero-text animate-on-scroll">
       <h1>Built by Engineers.<br>Trusted by Teams.</h1>
       <p class="hero-sub">AI security, penetration testing, cloud architecture, and detection engineering for modern digital environments.</p>
       <p class="hero-trust">Serving engineering teams across East Africa and globally.</p>
     </div>
-    <div class="hero-form-col">
+    <div class="hero-form-col animate-on-scroll">
       <div class="hero-form-card">
         <h3>How Can We Help</h3>
         <p class="hero-form-sub">Tell us about your security needs and we'll get back to you within 24 hours.</p>
-        <form id="contact-form">
-          <input type="text" name="name" placeholder="Your name" required minlength="2" autocomplete="name">
-          <input type="email" name="email" placeholder="Email address" required autocomplete="email">
-          <input type="tel" name="phone" placeholder="Phone number" required pattern="[0-9+\-()\s]+" title="Numbers and phone characters only (+, -, parentheses)" inputmode="numeric">
-          <input type="text" name="company" placeholder="Company" required autocomplete="organization">
-          <select name="service" class="hero-form-select" required>
+        <form id="contact-form" aria-label="Contact form">
+          <label for="name" class="visually-hidden">Your name</label>
+          <input id="name" type="text" name="name" placeholder="Your name" required minlength="2" autocomplete="name">
+          <label for="email" class="visually-hidden">Email address</label>
+          <input id="email" type="email" name="email" placeholder="Email address" required autocomplete="email">
+          <label for="phone" class="visually-hidden">Phone number</label>
+          <input id="phone" type="tel" name="phone" placeholder="Phone number" required pattern="[0-9+\-()\s]+" title="Numbers and phone characters only (+, -, parentheses)" inputmode="numeric">
+          <label for="company" class="visually-hidden">Company</label>
+          <input id="company" type="text" name="company" placeholder="Company" required autocomplete="organization">
+          <label for="service" class="visually-hidden">How we can help you</label>
+          <select id="service" name="service" class="hero-form-select" required>
             <option value="" disabled selected>How we can help you</option>
             <option value="ai-security">AI Security & Adversarial Testing</option>
             <option value="ai-hardening">AI Application Hardening</option>
@@ -49,12 +54,25 @@ app.innerHTML = `
             <option value="compliance">Compliance & Governance</option>
             <option value="other">Other</option>
           </select>
-          <textarea name="message" placeholder="Tell us about your security needs..." rows="3" required></textarea>
+          <label for="message" class="visually-hidden">Tell us about your security needs</label>
+          <textarea id="message" name="message" placeholder="Tell us about your security needs..." rows="3" required></textarea>
           <button type="submit" class="btn-primary">Send message</button>
-          <div class="form-status" role="alert"></div>
+          <div class="form-status" role="alert" aria-live="polite"></div>
         </form>
     </div>
+  </div>
+  <div class="certs-bar">
+    <p class="certs-label">Our engineers hold certifications in</p>
+    <div class="certs-list">
+      <span class="cert-badge">PNPT</span>
+      <span class="cert-badge">SC-200</span>
+      <span class="cert-badge">AI Hacking</span>
+      <span class="cert-badge">Securing AI</span>
+      <span class="cert-badge">Cloud Engineer</span>
+      <span class="cert-badge">Security &amp; Identity</span>
+      <span class="cert-badge">Splunk Cyber Defense</span>
     </div>
+  </div>
   </div>
 </section>
 
@@ -64,14 +82,14 @@ app.innerHTML = `
   </svg>
 </div>
 
-<section id="philosophy" class="section-light">
+<section id="philosophy" class="section-light animate-on-scroll">
   <div class="container">
   <div class="section-header">
     <span class="section-tag">ABOUT US</span>
     <h2>Engineering driven cybersecurity.</h2>
     <p class="section-desc">fuse-cec.io is a cybersecurity engineering and consulting company specializing in AI security, penetration testing, cloud security, DevSecOps, detection engineering, and compliance across cloud and on-premise IT infrastructure. Our mission is to help organizations protect and harden existing environments while building secure, resilient, and compliant systems through engineering-driven security solutions.</p>
   </div>
-  <div class="philosophy-cards">
+  <div class="philosophy-cards animate-on-scroll">
     <div class="philosophy-card">
       <h3>Why Companies Choose Us</h3>
       <ul class="choose-list">
@@ -109,13 +127,13 @@ app.innerHTML = `
   </svg>
 </div>
 
-<section id="expertise">
+<section id="expertise" class="animate-on-scroll">
   <div class="container">
   <div class="section-header">
     <span class="section-tag">OUR EXPERTISE</span>
     <h2>Our Expertise</h2>
   </div>
-  <div class="expertise-grid">
+  <div class="expertise-grid animate-on-scroll">
     <div class="expertise-card">
       <div class="expertise-number">01</div>
       <h3>AI Security & Adversarial Testing</h3>
@@ -239,14 +257,14 @@ app.innerHTML = `
   </svg>
 </div>
 
-<section id="how-it-works" class="section-light">
+<section id="how-it-works" class="section-light animate-on-scroll">
   <div class="container">
   <div class="section-header">
     <span class="section-tag">HOW IT WORKS</span>
     <h2>How It Works</h2>
     <p class="section-desc">Our engagement model is simple, transparent, and designed to deliver measurable security outcomes.</p>
   </div>
-  <div class="steps">
+  <div class="steps animate-on-scroll">
     <div class="step">
       <div class="step-number">01</div>
       <h3>Initial Consultation</h3>
@@ -282,7 +300,7 @@ app.innerHTML = `
   </svg>
 </div>
 
-<section id="retainer">
+<section id="retainer" class="animate-on-scroll">
   <div class="container">
   <div class="section-header">
     <span class="section-tag">RETAINER MODEL</span>
@@ -318,7 +336,7 @@ app.innerHTML = `
     </ul>
   </div>
   <h3 class="retainer-subheading">Retainer Tiers</h3>
-  <div class="retainer-grid-3">
+  <div class="retainer-grid-3 animate-on-scroll">
     <div class="retainer-card">
       <div class="retainer-tier">Basic</div>
       <p>For small teams needing periodic guidance</p>
@@ -345,14 +363,14 @@ app.innerHTML = `
   </svg>
 </div>
 
-<section id="case-studies" class="section-light">
+<section id="case-studies" class="section-light animate-on-scroll">
   <div class="container">
   <div class="section-header">
     <span class="section-tag">CASE STUDIES</span>
     <h2>Real engagements, real outcomes.</h2>
     <p class="section-desc">Selected engagements that demonstrate how we help organisations improve their security posture across the full attack surface.</p>
   </div>
-  <div class="cases-grid">
+  <div class="cases-grid animate-on-scroll">
     <div class="case-card case-ai">
       <span class="case-tag">AI Security</span>
       <h3>AI Red Team for Fintech</h3>
@@ -387,6 +405,16 @@ app.innerHTML = `
   </svg>
 </div>
 
+<section id="cta" class="cta-band animate-on-scroll">
+  <div class="container">
+    <div class="cta-content">
+      <h2>Ready to harden your security?</h2>
+      <p>Get a free consultation. We respond within 24 hours.</p>
+      <a href="#hero" class="btn-primary">Get Started</a>
+    </div>
+  </div>
+</section>
+
 <footer>
   <div class="container">
   <div class="footer-inner" style="padding: 0; max-width: none;">
@@ -419,6 +447,10 @@ app.innerHTML = `
   </div>
   </div>
 </footer>
+
+<button class="back-to-top" aria-label="Back to top" title="Back to top">
+  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+</button>
 `
 
 // ------ Read more toggles ------
@@ -459,6 +491,53 @@ document.querySelectorAll('.nav-center a').forEach(link => {
   })
 })
 
+// ------ Sticky nav + scroll spy + back-to-top ------
+
+const nav = document.querySelector('nav')
+const backToTop = document.querySelector<HTMLButtonElement>('.back-to-top')
+const navLinks = document.querySelectorAll<HTMLAnchorElement>('.nav-center a[href^="#"]')
+const sections = document.querySelectorAll<HTMLElement>('section[id]')
+
+// Sticky nav scrolled state
+window.addEventListener('scroll', () => {
+  const scrolled = window.scrollY > 60
+  nav?.classList.toggle('nav-scrolled', scrolled)
+  backToTop?.classList.toggle('visible', scrolled)
+})
+
+// Back to top
+backToTop?.addEventListener('click', () => {
+  window.scrollTo({ top: 0, behavior: 'smooth' })
+})
+
+// Scroll spy
+const observerOptions = { rootMargin: '-40% 0px -55% 0px', threshold: 0 }
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      const id = entry.target.getAttribute('id')
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${id}`)
+      })
+    }
+  })
+}, observerOptions)
+
+sections.forEach(section => observer.observe(section))
+
+// ------ Scroll animations ------
+
+const animObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible')
+      animObserver.unobserve(entry.target)
+    }
+  })
+}, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' })
+
+document.querySelectorAll('.animate-on-scroll').forEach(el => animObserver.observe(el))
+
 // ------ Form submission ------
 
 const contactForm = document.querySelector<HTMLFormElement>('#contact-form')
@@ -483,6 +562,13 @@ contactForm?.addEventListener('submit', async e => {
       status.textContent = 'Thanks! We will get back to you within 24 hours.'
       status.classList.add('form-status-success')
       contactForm.reset()
+      if (typeof gtag !== 'undefined') {
+        gtag('event', 'generate_lead', {
+          event_category: 'engagement',
+          event_label: 'contact_form',
+          value: 1
+        })
+      }
     } else {
       status.textContent = 'Something went wrong. Please try again or email us directly.'
       status.classList.add('form-status-error')
@@ -496,23 +582,6 @@ contactForm?.addEventListener('submit', async e => {
   btn.textContent = 'Send message'
 })
 
-// ------ Auto-detect phone country code ------
-
-const dialCodes: Record<string, string> = {
-  UG: '+256', KE: '+254', TZ: '+255', RW: '+250', BI: '+257', SS: '+211',
-  US: '+1', GB: '+44', AE: '+971', SA: '+966', QA: '+974', ZA: '+27',
-  NG: '+234', EG: '+20', IN: '+91', CN: '+86', JP: '+81', DE: '+49',
-  FR: '+33', NL: '+31', AU: '+61', FI: '+358', SE: '+46', NO: '+47',
-  DK: '+45', ES: '+34', IT: '+39', PT: '+351', CH: '+41', AT: '+43',
-  BE: '+32', IE: '+353', PL: '+48', CZ: '+420', SK: '+421', HU: '+36',
-  RO: '+40', BG: '+359', GR: '+30', TR: '+90', RU: '+7',
-}
-
-fetch('https://ipapi.co/json/')
-  .then(r => r.json())
-  .then(d => {
-    const code = dialCodes[d.country] || '+256'
-    const input = document.querySelector<HTMLInputElement>('input[name="phone"]')
-    if (input && !input.value) input.placeholder = `Phone number (${code}...)`
-  })
-  .catch(() => {})
+// Phone placeholder with default East Africa code
+const phoneInput = document.querySelector<HTMLInputElement>('input[name="phone"]')
+if (phoneInput) phoneInput.placeholder = 'Phone number (+256...)'
