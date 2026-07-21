@@ -1555,6 +1555,14 @@ footer {
   margin-top: 28px;
 }
 
+#compare-table {
+  display: none;
+}
+
+#compare-table.is-open {
+  display: block;
+}
+
 .compare-btn {
   background: transparent;
   border: 1px solid var(--border);

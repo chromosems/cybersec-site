@@ -451,7 +451,6 @@ app.innerHTML = `
     <p class="section-desc">Our retainer model provides continuous access to our cybersecurity expertise, ensuring proactive protection, rapid response, and ongoing improvement of your cloud infrastructure, mobile money platforms, and enterprise security posture. Prefer a one-time engagement? All services are available as standalone projects too.</p>
   </div>
   <h3 class="retainer-subheading">Retainer Tiers</h3>
-  <p class="section-desc" style="text-align: center; margin-bottom: 32px; max-width: 640px; margin-left: auto; margin-right: auto;">All tiers include twice-yearly penetration testing with scope tailored to your environment.</p>
   <div class="retainer-grid-3 animate-on-scroll">
     <div class="retainer-card">
       <div class="retainer-tier">Basic</div>
@@ -495,7 +494,7 @@ app.innerHTML = `
     <button id="compare-toggle" class="compare-btn">Compare all features</button>
   </div>
 
-  <div id="compare-table" class="retainer-table-wrapper" style="display: none;">
+  <div id="compare-table" class="retainer-table-wrapper">
     <table class="retainer-table">
       <thead>
         <tr>
@@ -794,8 +793,8 @@ document.querySelectorAll('.animate-on-scroll').forEach(el => animObserver.obser
 const compareToggle = document.querySelector<HTMLButtonElement>('#compare-toggle')
 const compareTable = document.querySelector<HTMLDivElement>('#compare-table')
 compareToggle?.addEventListener('click', () => {
-  const isOpen = compareTable?.style.display !== 'none'
-  if (compareTable) compareTable.style.display = isOpen ? 'none' : 'block'
+  const isOpen = compareTable?.classList.contains('is-open')
+  compareTable?.classList.toggle('is-open', !isOpen)
   compareToggle.textContent = isOpen ? 'Compare all features' : 'Hide comparison'
   compareToggle.classList.toggle('active', !isOpen)
 })
