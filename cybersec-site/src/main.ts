@@ -572,28 +572,68 @@ app.innerHTML = `
   </div>
   <div class="cases-grid animate-on-scroll">
     <div class="case-card case-ai">
-      <span class="case-tag">Mobile Money Security</span>
-      <h3>Mobile Money API Security for Ugandan Fintech</h3>
-      <p>A Kampala-based fintech processing mobile money transactions for 50,000+ users suspected their API had vulnerabilities that could enable fraud. We performed API penetration testing, USSD session analysis, and agent network security review to identify attack vectors specific to East African mobile money infrastructure.</p>
-      <p class="case-impact">Three critical API vulnerabilities patched, USSD session fixation resolved, agent authentication strengthened, saving an estimated UGX 120M in potential fraud losses.</p>
+      <div class="case-terminal-bar">
+        <div class="case-terminal-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="case-terminal-title">PS C:\cases> Get-CaseStudy -Id "mobile-money-api"</span>
+      </div>
+      <div class="case-terminal-body">
+        <span class="case-tag">Mobile Money Security</span>
+        <h3>Mobile Money API Security for Ugandan Fintech</h3>
+        <p><span class="case-prompt">&gt;</span> A Kampala-based fintech processing mobile money transactions for 50,000+ users suspected their API had vulnerabilities that could enable fraud. We performed API penetration testing, USSD session analysis, and agent network security review to identify attack vectors specific to East African mobile money infrastructure.</p>
+        <p class="case-impact"><span class="case-prompt">&gt;</span> Three critical API vulnerabilities patched, USSD session fixation resolved, agent authentication strengthened, saving an estimated UGX 120M in potential fraud losses.</p>
+      </div>
     </div>
     <div class="case-card case-pentest">
-      <span class="case-tag">Banking Security</span>
-      <h3>Core Banking Assessment for Ugandan Microfinance</h3>
-      <p>A microfinance institution with 15 branches needed to meet Bank of Uganda cybersecurity guidelines before their annual audit. We assessed their core banking system, ATM network, digital channels, and third-party integrations for security gaps and compliance violations.</p>
-      <p class="case-impact">Eight BOU compliance gaps closed, ATM network segmented from core systems, digital channel encryption upgraded, audit passed without findings.</p>
+      <div class="case-terminal-bar">
+        <div class="case-terminal-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="case-terminal-title">PS C:\cases> Get-CaseStudy -Id "core-banking-pentest"</span>
+      </div>
+      <div class="case-terminal-body">
+        <span class="case-tag">Banking Security</span>
+        <h3>Core Banking Assessment for Ugandan Microfinance</h3>
+        <p><span class="case-prompt">&gt;</span> A microfinance institution with 15 branches needed to meet Bank of Uganda cybersecurity guidelines before their annual audit. We assessed their core banking system, ATM network, digital channels, and third-party integrations for security gaps and compliance violations.</p>
+        <p class="case-impact"><span class="case-prompt">&gt;</span> Eight BOU compliance gaps closed, ATM network segmented from core systems, digital channel encryption upgraded, audit passed without findings.</p>
+      </div>
     </div>
     <div class="case-card case-siem">
-      <span class="case-tag">Security Monitoring</span>
-      <h3>Monitoring Setup for Ugandan NGO Cloud Migration</h3>
-      <p>A health-focused NGO migrating patient data to AWS had no visibility into their cloud environment. We set up practical security monitoring with log collection, alerting rules, and Slack notifications tuned for their limited IT team and budget.</p>
-      <p class="case-impact">Security monitoring active across 12 AWS services, 8 alerting rules deployed, mean incident awareness time reduced from days to under 30 minutes.</p>
+      <div class="case-terminal-bar">
+        <div class="case-terminal-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="case-terminal-title">PS C:\cases> Get-CaseStudy -Id "ngo-cloud-monitoring"</span>
+      </div>
+      <div class="case-terminal-body">
+        <span class="case-tag">Security Monitoring</span>
+        <h3>Monitoring Setup for Ugandan NGO Cloud Migration</h3>
+        <p><span class="case-prompt">&gt;</span> A health-focused NGO migrating patient data to AWS had no visibility into their cloud environment. We set up practical security monitoring with log collection, alerting rules, and Slack notifications tuned for their limited IT team and budget.</p>
+        <p class="case-impact"><span class="case-prompt">&gt;</span> Security monitoring active across 12 AWS services, 8 alerting rules deployed, mean incident awareness time reduced from days to under 30 minutes.</p>
+      </div>
     </div>
     <div class="case-card case-cloud">
-      <span class="case-tag">Data Protection</span>
-      <h3>Data Protection & ISO 27001 Compliance for Kampala Health Tech</h3>
-      <p>A health technology startup collecting patient data needed to comply with the Uganda Data Protection and Privacy Act 2019 and align with ISO 27001 before launching their platform. We performed a data protection assessment, built their data inventory, mapped controls to ISO 27001 Annex A, and created breach response procedures.</p>
-      <p class="case-impact">Full data inventory completed, consent framework implemented, ISO 27001 gap assessment delivered with remediation roadmap, breach response plan documented, Data Protection Office registration submitted successfully.</p>
+      <div class="case-terminal-bar">
+        <div class="case-terminal-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="case-terminal-title">PS C:\cases> Get-CaseStudy -Id "data-protection-iso"</span>
+      </div>
+      <div class="case-terminal-body">
+        <span class="case-tag">Data Protection</span>
+        <h3>Data Protection & ISO 27001 Compliance for Kampala Health Tech</h3>
+        <p><span class="case-prompt">&gt;</span> A health technology startup collecting patient data needed to comply with the Uganda Data Protection and Privacy Act 2019 and align with ISO 27001 before launching their platform. We performed a data protection assessment, built their data inventory, mapped controls to ISO 27001 Annex A, and created breach response procedures.</p>
+        <p class="case-impact"><span class="case-prompt">&gt;</span> Full data inventory completed, consent framework implemented, ISO 27001 gap assessment delivered with remediation roadmap, breach response plan documented, Data Protection Office registration submitted successfully.</p>
+      </div>
     </div>
   </div>
   </div>
