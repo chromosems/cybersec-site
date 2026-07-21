@@ -215,11 +215,12 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">02</div>
       <h3>Cloud Security for African SMEs</h3>
-      <p>Secure cloud environments across AWS, Azure, and GCP with identity hardening, network segmentation, and data protection designed for resource-conscious but security-aware organizations.</p>
+      <p>Secure cloud and hybrid environments across AWS, Azure, and GCP — plus on-premise setups — with identity hardening, network segmentation, and data protection designed for resource-conscious but security-aware organizations.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
-          <li>Cloud architecture review</li>
+          <li>Cloud & hybrid architecture review</li>
+          <li>On-premise security assessment</li>
           <li>Identity & access hardening</li>
           <li>Data encryption configuration</li>
           <li>Network segmentation</li>
@@ -231,14 +232,14 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">03</div>
       <h3>Data Protection & Compliance</h3>
-      <p>Align your organization with Uganda's Data Protection and Privacy Act 2019, supported by ISO 27001, NIST Cybersecurity Framework, and CIS Controls. We build data inventories, consent frameworks, breach response plans, and documentation to meet Data Protection Office requirements and international security standards.</p>
+      <p>Align your organization with Uganda's Data Protection and Privacy Act 2019, supported by NITA-U guidance, ISO 27001, NIST Cybersecurity Framework, and CIS Controls. We build data inventories, consent frameworks, breach response plans, and documentation to meet Personal Data Protection Office requirements and international security standards.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>Data mapping & inventory per DPA 2019</li>
           <li>Consent mechanism audit</li>
           <li>Breach notification procedures</li>
-          <li>DPO documentation & registration support</li>
+          <li>PDPO documentation & NITA-U registration support</li>
           <li>ISO 27001 gap assessment & roadmap</li>
           <li>NIST CSF & CIS Controls alignment</li>
           <li>Compliance gap assessment</li>
@@ -249,12 +250,13 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">04</div>
       <h3>Mobile Money & USSD Security</h3>
-      <p>Secure mobile money platforms, USSD applications, and payment APIs against fraud, replay attacks, session hijacking, and agent network exploitation. Critical for fintechs, banks, and mobile network operators in East Africa.</p>
+      <p>Secure mobile money platforms, USSD applications, and payment APIs against fraud, replay attacks, session hijacking, and agent network exploitation. We understand Uganda's MTN Mobile Money and Airtel Money ecosystems, including aggregator APIs and agent network risks. Critical for fintechs, banks, SACCOs, and mobile network operators in East Africa.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>USSD session security testing</li>
-          <li>Mobile money API penetration testing</li>
+          <li>MTN & Airtel Money API penetration testing</li>
+          <li>Aggregator & third-party integration review</li>
           <li>Agent network security review</li>
           <li>Fraud vector analysis</li>
           <li>PIN and OTP bypass testing</li>
@@ -265,14 +267,15 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">05</div>
       <h3>Fintech & Banking Security (BOU Compliance)</h3>
-      <p>Penetration testing and security assessments aligned with Bank of Uganda cybersecurity guidelines. Covering core banking systems, ATM networks, digital channels, and third-party integrations.</p>
+      <p>Penetration testing and security assessments aligned with Bank of Uganda cybersecurity guidelines. Covering core banking systems, SACCOs, Microfinance Deposit-taking Institutions (MDIs), ATM networks, digital channels, and third-party integrations.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>Core banking system assessment</li>
+          <li>SACCO & MDI security review</li>
           <li>ATM network security review</li>
           <li>Digital channel penetration testing</li>
-          <li>SWIFT integration security</li>
+          <li>Mobile money aggregator & API security</li>
           <li>BOU compliance gap analysis</li>
         </ul>
       </div>
@@ -287,7 +290,7 @@ app.innerHTML = `
         <ul>
           <li>Log source configuration</li>
           <li>Alerting rule development</li>
-          <li>Email/Slack notification setup</li>
+          <li>Email & Microsoft Teams notification setup</li>
           <li>False-positive tuning</li>
           <li>Monthly alert review & optimization</li>
         </ul>
@@ -325,43 +328,11 @@ app.innerHTML = `
   <div class="section-header">
     <span class="section-tag">ADVANCED CAPABILITIES</span>
     <h2>Global-grade expertise.</h2>
-    <p class="section-desc">For organizations with mature security programs, international operations, or AI-first products, we bring advanced capabilities that go beyond foundational security. These services are typically engaged alongside our primary offering or as standalone deep-dive assessments.</p>
+    <p class="section-desc">For organizations with mature security programs or international operations, we bring advanced capabilities that go beyond foundational security. These services are typically engaged alongside our primary offering or as standalone deep-dive assessments.</p>
   </div>
   <div class="expertise-grid animate-on-scroll">
     <div class="expertise-card">
       <div class="expertise-number">01</div>
-      <h3>AI Security & Adversarial Testing</h3>
-      <p>We secure AI-driven applications against modern threats including prompt injection, model poisoning, jailbreak attacks, data leakage, and adversarial manipulation. Our engineers test AI pipelines end-to-end to ensure your AI systems remain safe, reliable, and compliant.</p>
-      <div class="deliverables">
-        <span class="deliverables-heading">What we deliver:</span>
-        <ul>
-          <li>AI model penetration testing</li>
-          <li>LLM prompt injection testing</li>
-          <li>AI supply chain security</li>
-          <li>Secure model deployment guidance</li>
-          <li>AI red teaming scenarios</li>
-        </ul>
-      </div>
-      <button class="read-more-btn">Read more</button>
-    </div>
-    <div class="expertise-card">
-      <div class="expertise-number">02</div>
-      <h3>AI Application Hardening</h3>
-      <p>We help organizations build secure AI applications by integrating guardrails, monitoring, and safe execution controls into their AI workflows.</p>
-      <div class="deliverables">
-        <span class="deliverables-heading">What we deliver:</span>
-        <ul>
-          <li>Secure LLM architecture design</li>
-          <li>Safety guardrail implementation</li>
-          <li>AI logging & monitoring setup</li>
-          <li>Abuse detection and anomaly rules</li>
-          <li>Secure API integration for AI systems</li>
-        </ul>
-      </div>
-      <button class="read-more-btn">Read more</button>
-    </div>
-    <div class="expertise-card">
-      <div class="expertise-number">03</div>
       <h3>Security Automation & DevSecOps</h3>
       <p>Accelerate development while improving security through automated guardrails and CI/CD pipeline hardening.</p>
       <div class="deliverables">
@@ -377,7 +348,7 @@ app.innerHTML = `
       <button class="read-more-btn">Read more</button>
     </div>
     <div class="expertise-card">
-      <div class="expertise-number">04</div>
+      <div class="expertise-number">02</div>
       <h3>Enterprise SIEM Optimization</h3>
       <p>Enhance visibility and reduce response time with high-fidelity detection rules and log coverage using enterprise-grade platforms.</p>
       <div class="deliverables">
@@ -388,6 +359,38 @@ app.innerHTML = `
           <li>Log normalization</li>
           <li>Cloud API monitoring</li>
           <li>Identity anomaly detection</li>
+        </ul>
+      </div>
+      <button class="read-more-btn">Read more</button>
+    </div>
+    <div class="expertise-card">
+      <div class="expertise-number">03</div>
+      <h3>AI Security & Adversarial Testing</h3>
+      <p>We secure AI-driven applications against modern threats including prompt injection, model poisoning, jailbreak attacks, data leakage, and adversarial manipulation. Our engineers test AI pipelines end-to-end to ensure your AI systems remain safe, reliable, and compliant.</p>
+      <div class="deliverables">
+        <span class="deliverables-heading">What we deliver:</span>
+        <ul>
+          <li>AI model penetration testing</li>
+          <li>LLM prompt injection testing</li>
+          <li>AI supply chain security</li>
+          <li>Secure model deployment guidance</li>
+          <li>AI red teaming scenarios</li>
+        </ul>
+      </div>
+      <button class="read-more-btn">Read more</button>
+    </div>
+    <div class="expertise-card">
+      <div class="expertise-number">04</div>
+      <h3>AI Application Hardening</h3>
+      <p>We help organizations build secure AI applications by integrating guardrails, monitoring, and safe execution controls into their AI workflows.</p>
+      <div class="deliverables">
+        <span class="deliverables-heading">What we deliver:</span>
+        <ul>
+          <li>Secure LLM architecture design</li>
+          <li>Safety guardrail implementation</li>
+          <li>AI logging & monitoring setup</li>
+          <li>Abuse detection and anomaly rules</li>
+          <li>Secure API integration for AI systems</li>
         </ul>
       </div>
       <button class="read-more-btn">Read more</button>
@@ -475,7 +478,7 @@ app.innerHTML = `
         <li>DPA 2019 + ISO 27001 review twice yearly</li>
         <li>Mobile money / USSD testing once yearly</li>
         <li>Remote incident response included</li>
-        <li>Slack + email, 8-hour response</li>
+        <li>Microsoft Teams + email, 8-hour response</li>
       </ul>
     </div>
     <div class="retainer-card">
@@ -544,7 +547,7 @@ app.innerHTML = `
         <tr>
           <td>Support</td>
           <td>Email, 24h</td>
-          <td class="recommended-cell">Slack + email, 8h</td>
+          <td class="recommended-cell">Teams + email, 8h</td>
           <td>Dedicated engineer, 4h</td>
         </tr>
       </tbody>
@@ -599,7 +602,7 @@ app.innerHTML = `
       <div class="case-terminal-body">
         <span class="case-tag">Banking Security</span>
         <h3>Core Banking Assessment for Ugandan Microfinance</h3>
-        <p><span class="case-prompt">&gt;</span> A microfinance institution with 15 branches needed to meet Bank of Uganda cybersecurity guidelines before their annual audit. We assessed their core banking system, ATM network, digital channels, and third-party integrations for security gaps and compliance violations.</p>
+        <p><span class="case-prompt">&gt;</span> A microfinance deposit-taking institution (MDI) with 15 branches needed to meet Bank of Uganda cybersecurity guidelines before their annual audit. We assessed their core banking system, ATM network, digital channels, and third-party integrations for security gaps and compliance violations.</p>
         <p class="case-impact"><span class="case-prompt">&gt;</span> Eight BOU compliance gaps closed, ATM network segmented from core systems, digital channel encryption upgraded, audit passed without findings.</p>
       </div>
     </div>
@@ -615,7 +618,7 @@ app.innerHTML = `
       <div class="case-terminal-body">
         <span class="case-tag">Security Monitoring</span>
         <h3>Monitoring Setup for Ugandan NGO Cloud Migration</h3>
-        <p><span class="case-prompt">&gt;</span> A health-focused NGO migrating patient data to AWS had no visibility into their cloud environment. We set up practical security monitoring with log collection, alerting rules, and Slack notifications tuned for their limited IT team and budget.</p>
+        <p><span class="case-prompt">&gt;</span> A health-focused NGO migrating patient data to AWS had no visibility into their cloud environment. We set up practical security monitoring with log collection, alerting rules, and Microsoft Teams notifications tuned for their limited IT team and budget.</p>
         <p class="case-impact"><span class="case-prompt">&gt;</span> Security monitoring active across 12 AWS services, 8 alerting rules deployed, mean incident awareness time reduced from days to under 30 minutes.</p>
       </div>
     </div>
@@ -632,7 +635,7 @@ app.innerHTML = `
         <span class="case-tag">Data Protection</span>
         <h3>Data Protection & ISO 27001 Compliance for Kampala Health Tech</h3>
         <p><span class="case-prompt">&gt;</span> A health technology startup collecting patient data needed to comply with the Uganda Data Protection and Privacy Act 2019 and align with ISO 27001 before launching their platform. We performed a data protection assessment, built their data inventory, mapped controls to ISO 27001 Annex A, and created breach response procedures.</p>
-        <p class="case-impact"><span class="case-prompt">&gt;</span> Full data inventory completed, consent framework implemented, ISO 27001 gap assessment delivered with remediation roadmap, breach response plan documented, Data Protection Office registration submitted successfully.</p>
+        <p class="case-impact"><span class="case-prompt">&gt;</span> Full data inventory completed, consent framework implemented, ISO 27001 gap assessment delivered with remediation roadmap, breach response plan documented, Personal Data Protection Office registration submitted successfully.</p>
       </div>
     </div>
   </div>
@@ -713,7 +716,7 @@ app.innerHTML = `
     <div class="footer-grid">
       <div class="footer-col">
         <span class="logo">fuse-cec<span class="logo-accent">.io</span></span>
-        <p class="footer-tag">Industrial-grade cybersecurity for East African organizations.</p>
+        <p class="footer-tag">Enterprise-grade cybersecurity for East African organizations.</p>
       </div>
       <div class="footer-col">
         <span class="footer-heading">Contact</span>
