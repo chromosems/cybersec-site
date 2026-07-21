@@ -372,7 +372,6 @@ app.innerHTML = `
   <h3 class="retainer-subheading">Retainer Tiers</h3>
   <div class="retainer-grid-3 animate-on-scroll">
     <div class="retainer-card">
-      <div class="retainer-size">1-50 employees</div>
       <div class="retainer-tier">Basic</div>
       <ul class="retainer-tier-list">
         <li>Quarterly cloud security review</li>
@@ -384,7 +383,6 @@ app.innerHTML = `
     </div>
     <div class="retainer-card retainer-recommended">
       <div class="retainer-badge">Recommended</div>
-      <div class="retainer-size">51-200 employees</div>
       <div class="retainer-tier">Standard</div>
       <ul class="retainer-tier-list">
         <li>Monthly cloud security review</li>
@@ -396,7 +394,6 @@ app.innerHTML = `
       </ul>
     </div>
     <div class="retainer-card">
-      <div class="retainer-size">201-500+ employees</div>
       <div class="retainer-tier">Premium</div>
       <ul class="retainer-tier-list">
         <li>Bi-weekly cloud security review</li>

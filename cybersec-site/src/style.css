@@ -1503,15 +1503,6 @@ footer {
   border-radius: 8px 8px 0 0;
 }
 
-.retainer-size {
-  font-family: var(--mono);
-  font-size: 11px;
-  font-weight: 600;
-  color: #5c6370;
-  letter-spacing: 0.5px;
-  margin-bottom: 8px;
-}
-
 .retainer-tier {
   font-family: var(--heading);
   font-size: 22px;
