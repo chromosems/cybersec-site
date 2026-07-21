@@ -10,6 +10,7 @@ app.innerHTML = `
       <a href="#hero">Home</a>
       <a href="#philosophy">About</a>
       <a href="#expertise">Services</a>
+      <a href="#advanced">Advanced</a>
       <a href="#how-it-works">How It Works</a>
       <a href="#case-studies">Case Studies</a>
       <a href="#hero" class="nav-btn nav-btn-internal">Book free assessment</a>
