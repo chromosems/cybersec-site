@@ -11,7 +11,7 @@ app.innerHTML = `
       <a href="#philosophy">About</a>
       <a href="#expertise">Services</a>
       <a href="#advanced">Advanced</a>
-      <a href="/faq.html">FAQ</a>
+      <a href="#faq">FAQ</a>
       <a href="#how-it-works">How It Works</a>
       <a href="#case-studies">Case Studies</a>
       <a href="#hero" class="nav-btn nav-btn-internal">Book free assessment</a>
@@ -557,6 +557,43 @@ app.innerHTML = `
       <h3>Data Protection Act Compliance for Kampala Health Tech</h3>
       <p>A health technology startup collecting patient data needed to comply with the Uganda Data Protection and Privacy Act 2019 before launching their platform. We performed a data protection assessment, built their data inventory, and created breach response procedures.</p>
       <p class="case-impact">Full data inventory completed, consent framework implemented, breach response plan documented, Data Protection Office registration submitted successfully.</p>
+    </div>
+  </div>
+  </div>
+</section>
+
+<div class="section-wave">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+    <path d="M0,80 C360,20 1080,20 1440,80 L1440,0 L0,0 Z" fill="#f7f8fa"/>
+  </svg>
+</div>
+
+<section id="faq" class="section-light animate-on-scroll">
+  <div class="container">
+  <div class="section-header">
+    <span class="section-tag">FAQ</span>
+    <h2>Common questions.</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3>How long does a penetration test take?</h3>
+      <p>Most penetration tests take 5 to 10 business days depending on scope. A single web application might take 3 days, while a full network + web + API assessment for a mid-size organization typically takes 7 to 10 days. We provide a precise timeline during scoping.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you work with our existing IT team?</h3>
+      <p>Yes. We collaborate with your internal IT or security team, not replace them. Our role is to find gaps they might have missed and provide a remediation roadmap they can execute. We also offer ongoing retainer support if you need hands-on help.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What happens after the assessment is complete?</h3>
+      <p>You receive a detailed report with findings ranked by severity, evidence, and specific remediation steps. For retainer clients, we then track remediation progress and re-test to verify fixes. For one-time projects, we are available for follow-up questions.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is our data safe during testing?</h3>
+      <p>Absolutely. We operate under a signed confidentiality agreement and follow responsible disclosure practices. We never exploit vulnerabilities beyond what is necessary to demonstrate risk, and we avoid testing during your business-critical hours unless agreed.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you offer services outside Uganda?</h3>
+      <p>Yes. While our primary focus is East Africa, we serve clients globally. Our cloud security, penetration testing, and compliance services are delivered remotely. On-site work is available in Uganda and neighboring countries.</p>
     </div>
   </div>
   </div>
