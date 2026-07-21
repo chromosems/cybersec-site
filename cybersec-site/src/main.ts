@@ -462,7 +462,7 @@ app.innerHTML = `
       <p class="retainer-for">Best for small teams getting started with security</p>
       <ul class="retainer-tier-list">
         <li>Quarterly cloud security review</li>
-        <li>Security monitoring setup</li>
+        <li>Security monitoring setup + continuous log collection</li>
         <li>Annual focused assessment (web app or network)</li>
         <li>Vulnerability tracking dashboard</li>
         <li>1-time mobile money / USSD testing</li>
@@ -541,8 +541,8 @@ app.innerHTML = `
         </tr>
         <tr>
           <td>Security monitoring</td>
-          <td>Setup only</td>
-          <td class="recommended-cell">Monthly + tuning</td>
+          <td>Setup + continuous log collection</td>
+          <td class="recommended-cell">Monthly review + tuning</td>
           <td>Continuous + monthly tuning</td>
         </tr>
         <tr>
