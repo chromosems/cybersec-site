@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — fuse-cec.io</title>
+  <meta name="description" content="Common questions about fuse-cec.io cybersecurity services for East African organizations.">
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #9ca3af;
+      background: #15171c;
+      -webkit-font-smoothing: antialiased;
+    }
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      color: #9ca3af;
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 500;
+      margin-bottom: 40px;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: #f3f4f6; }
+    .back-link svg {
+      width: 16px;
+      height: 16px;
+    }
+    .logo {
+      font-family: 'Space Grotesk', 'Inter', sans-serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 48px;
+    }
+    .logo-accent { color: #dc2626; }
+    h1 {
+      font-family: 'Space Grotesk', 'Inter', sans-serif;
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 700;
+      color: #f3f4f6;
+      line-height: 1.1;
+      letter-spacing: -0.5px;
+      margin-bottom: 48px;
+    }
+    .faq-item {
+      border-bottom: 1px solid #2a2d35;
+      padding: 32px 0;
+    }
+    .faq-item:first-child { padding-top: 0; }
+    .faq-item:last-child { border-bottom: none; }
+    .faq-item h2 {
+      font-family: 'Space Grotesk', 'Inter', sans-serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #f3f4f6;
+      margin-bottom: 12px;
+      line-height: 1.3;
+    }
+    .faq-item p {
+      font-size: 15px;
+      line-height: 1.7;
+      color: #9ca3af;
+    }
+    .cta {
+      margin-top: 48px;
+      padding: 32px;
+      background: #1c1e26;
+      border: 1px solid #2a2d35;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .cta h2 {
+      font-family: 'Space Grotesk', 'Inter', sans-serif;
+      font-size: 20px;
+      font-weight: 700;
+      color: #f3f4f6;
+      margin-bottom: 8px;
+    }
+    .cta p {
+      font-size: 14px;
+      color: #9ca3af;
+      margin-bottom: 20px;
+    }
+    .btn {
+      display: inline-block;
+      font-family: 'Space Grotesk', 'Inter', sans-serif;
+      background: #dc2626;
+      color: #fff;
+      font-weight: 600;
+      font-size: 14px;
+      padding: 14px 32px;
+      border-radius: 4px;
+      text-decoration: none;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: box-shadow 0.25s;
+    }
+    .btn:hover {
+      box-shadow: 0 0 40px rgba(220, 38, 38, 0.2);
+    }
+    .footer {
+      margin-top: 60px;
+      padding-top: 24px;
+      border-top: 1px solid #2a2d35;
+      text-align: center;
+      font-size: 13px;
+      color: #5c6370;
+    }
+    @media (max-width: 600px) {
+      .container { padding: 40px 16px; }
+      h1 { font-size: 26px; }
+      .faq-item h2 { font-size: 16px; }
+      .faq-item p { font-size: 14px; }
+    }
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <a href="/" class="back-link">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2"><path stroke-linecap="round" stroke-linejoin="round" d="M10 19l-7-7m0 0l7-7m-7 7h18"/></svg>
+      Back to home
+    </a>
+
+    <div class="logo">fuse-cec<span class="logo-accent">.io</span></div>
+
+    <h1>Common questions.</h1>
+
+    <div class="faq-item">
+      <h2>How long does a penetration test take?</h2>
+      <p>Most penetration tests take 5 to 10 business days depending on scope. A single web application might take 3 days, while a full network + web + API assessment for a mid-size organization typically takes 7 to 10 days. We provide a precise timeline during scoping.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>Do you work with our existing IT team?</h2>
+      <p>Yes. We collaborate with your internal IT or security team, not replace them. Our role is to find gaps they might have missed and provide a remediation roadmap they can execute. We also offer ongoing retainer support if you need hands-on help.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>What happens after the assessment is complete?</h2>
+      <p>You receive a detailed report with findings ranked by severity, evidence, and specific remediation steps. For retainer clients, we then track remediation progress and re-test to verify fixes. For one-time projects, we are available for follow-up questions.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>Is our data safe during testing?</h2>
+      <p>Absolutely. We operate under a signed confidentiality agreement and follow responsible disclosure practices. We never exploit vulnerabilities beyond what is necessary to demonstrate risk, and we avoid testing during your business-critical hours unless agreed.</p>
+    </div>
+
+    <div class="faq-item">
+      <h2>Do you offer services outside Uganda?</h2>
+      <p>Yes. While our primary focus is East Africa, we serve clients globally. Our cloud security, penetration testing, and compliance services are delivered remotely. On-site work is available in Uganda and neighboring countries.</p>
+    </div>
+
+    <div class="cta">
+      <h2>Still have questions?</h2>
+      <p>Book a free consultation and we will answer anything specific to your environment.</p>
+      <a href="/" class="btn">Book Free Assessment</a>
+    </div>
+
+    <div class="footer">
+      &copy; 2026 fuse-cec.io. Built in Kampala, Uganda.
+    </div>
+  </div>
+</body>
+</html>

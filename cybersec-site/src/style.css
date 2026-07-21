@@ -1731,37 +1731,6 @@ footer {
   }
 }
 
-/* FAQ */
-
-.faq-list {
-  max-width: 720px;
-  margin: 0 auto;
-}
-
-.faq-item {
-  border-bottom: 1px solid #e2e4e9;
-  padding: 24px 0;
-}
-
-.faq-item:first-child {
-  padding-top: 0;
-}
-
-.faq-item h3 {
-  font-family: var(--heading);
-  font-size: 16px;
-  font-weight: 600;
-  color: #0a0c10;
-  margin-bottom: 10px;
-  line-height: 1.4;
-}
-
-.faq-item p {
-  font-size: 14px;
-  line-height: 1.7;
-  color: #4a5060;
-}
-
 /* CTA band */
 
 .cta-band {
