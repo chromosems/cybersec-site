@@ -69,7 +69,7 @@ app.innerHTML = `
   <div class="hero-layout">
     <div class="hero-text animate-on-scroll">
       <h1>Built by Engineers.<br>Trusted by Teams.</h1>
-      <p class="hero-sub">Penetration testing, data protection compliance, mobile money security, and banking security for East African organizations.</p>
+      <p class="hero-sub">Penetration testing, cloud security, data protection compliance, mobile money security, and banking security for East African organizations.</p>
       <p class="hero-trust">Serving engineering teams across East Africa and globally.</p>
     </div>
     <div class="hero-form-col animate-on-scroll">
@@ -122,7 +122,7 @@ app.innerHTML = `
   <div class="section-header">
     <span class="section-tag">ABOUT US</span>
     <h2>Engineering-driven cybersecurity.</h2>
-    <p class="section-desc">fuse-cec.io is a cybersecurity engineering and consulting company based in Kampala, Uganda. We specialize in data protection compliance, mobile money security, banking security aligned with Bank of Uganda guidelines, penetration testing, cloud security, and incident response for East African organizations. Our mission is to help organizations protect sensitive data, secure financial systems, and meet local regulatory requirements through engineering-driven security solutions.</p>
+    <p class="section-desc">fuse-cec.io is a cybersecurity engineering and consulting company based in Kampala, Uganda. We specialize in penetration testing, cloud security engineering, data protection compliance, mobile money security, banking security aligned with Bank of Uganda guidelines, and incident response for East African organizations. Our mission is to help organizations protect sensitive data, secure financial systems, and meet local regulatory requirements through engineering-driven security solutions.</p>
   </div>
   <div class="philosophy-cards animate-on-scroll">
     <div class="philosophy-card">
@@ -139,10 +139,10 @@ app.innerHTML = `
       <h3>What We Do</h3>
       <ul class="choose-list">
         <li><span class="choose-bullet"></span> Penetration Testing (Network, Web, API)</li>
+        <li><span class="choose-bullet"></span> Cloud Security for African SMEs</li>
         <li><span class="choose-bullet"></span> Uganda Data Protection Act 2019 Compliance</li>
         <li><span class="choose-bullet"></span> Mobile Money & USSD Security</li>
         <li><span class="choose-bullet"></span> Fintech & Banking Security (BOU Compliance)</li>
-        <li><span class="choose-bullet"></span> Cloud Security for African SMEs</li>
         <li><span class="choose-bullet"></span> Security Monitoring & Alerting</li>
         <li><span class="choose-bullet"></span> Incident Response & Recovery</li>
       </ul>
@@ -188,6 +188,22 @@ app.innerHTML = `
     </div>
     <div class="expertise-card">
       <div class="expertise-number">02</div>
+      <h3>Cloud Security for African SMEs</h3>
+      <p>Secure cloud environments across AWS, Azure, and GCP with identity hardening, network segmentation, and data protection designed for resource-conscious but security-aware organizations.</p>
+      <div class="deliverables">
+        <span class="deliverables-heading">What we deliver:</span>
+        <ul>
+          <li>Cloud architecture review</li>
+          <li>Identity & access hardening</li>
+          <li>Data encryption configuration</li>
+          <li>Network segmentation</li>
+          <li>Backup & recovery security</li>
+        </ul>
+      </div>
+      <button class="read-more-btn">Read more</button>
+    </div>
+    <div class="expertise-card">
+      <div class="expertise-number">03</div>
       <h3>Uganda Data Protection Act 2019 Compliance</h3>
       <p>Help your organization comply with Uganda's Data Protection and Privacy Act 2019. We build data inventories, consent frameworks, breach response plans, and documentation to meet Data Protection Office requirements.</p>
       <div class="deliverables">
@@ -203,7 +219,7 @@ app.innerHTML = `
       <button class="read-more-btn">Read more</button>
     </div>
     <div class="expertise-card">
-      <div class="expertise-number">03</div>
+      <div class="expertise-number">04</div>
       <h3>Mobile Money & USSD Security</h3>
       <p>Secure mobile money platforms, USSD applications, and payment APIs against fraud, replay attacks, session hijacking, and agent network exploitation. Critical for fintechs, banks, and mobile network operators in East Africa.</p>
       <div class="deliverables">
@@ -219,7 +235,7 @@ app.innerHTML = `
       <button class="read-more-btn">Read more</button>
     </div>
     <div class="expertise-card">
-      <div class="expertise-number">04</div>
+      <div class="expertise-number">05</div>
       <h3>Fintech & Banking Security (BOU Compliance)</h3>
       <p>Penetration testing and security assessments aligned with Bank of Uganda cybersecurity guidelines. Covering core banking systems, ATM networks, digital channels, and third-party integrations.</p>
       <div class="deliverables">
@@ -230,22 +246,6 @@ app.innerHTML = `
           <li>Digital channel penetration testing</li>
           <li>SWIFT integration security</li>
           <li>BOU compliance gap analysis</li>
-        </ul>
-      </div>
-      <button class="read-more-btn">Read more</button>
-    </div>
-    <div class="expertise-card">
-      <div class="expertise-number">05</div>
-      <h3>Cloud Security for African SMEs</h3>
-      <p>Secure cloud environments across AWS, Azure, and GCP with identity hardening, network segmentation, and data protection designed for resource-conscious but security-aware organizations.</p>
-      <div class="deliverables">
-        <span class="deliverables-heading">What we deliver:</span>
-        <ul>
-          <li>Cloud architecture review</li>
-          <li>Identity & access hardening</li>
-          <li>Data encryption configuration</li>
-          <li>Network segmentation</li>
-          <li>Backup & recovery security</li>
         </ul>
       </div>
       <button class="read-more-btn">Read more</button>
@@ -422,7 +422,7 @@ app.innerHTML = `
   <div class="section-header">
     <span class="section-tag">RETAINER MODEL</span>
     <h2>Cybersecurity Retainer Model</h2>
-    <p class="section-desc">Our retainer model provides continuous access to our cybersecurity expertise, ensuring proactive protection, rapid response, and ongoing improvement of your cloud, mobile money, and enterprise security posture. Prefer a one-time engagement? All services are available as standalone projects too.</p>
+    <p class="section-desc">Our retainer model provides continuous access to our cybersecurity expertise, ensuring proactive protection, rapid response, and ongoing improvement of your cloud infrastructure, mobile money platforms, and enterprise security posture. Prefer a one-time engagement? All services are available as standalone projects too.</p>
   </div>
   <h3 class="retainer-subheading">Retainer Tiers</h3>
   <p class="section-desc" style="text-align: center; margin-bottom: 8px; max-width: 640px; margin-left: auto; margin-right: auto;">Every retainer includes twice-yearly penetration testing covering network, web applications, APIs, and Active Directory — scoped to your environment.</p>
