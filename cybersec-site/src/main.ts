@@ -12,9 +12,9 @@ app.innerHTML = `
       <a href="#expertise">Services</a>
       <a href="#how-it-works">How It Works</a>
       <a href="#case-studies">Case Studies</a>
-      <a href="#hero" class="nav-btn nav-btn-internal">Get a free consultation</a>
+      <a href="#hero" class="nav-btn nav-btn-internal">Book free assessment</a>
     </div>
-    <a href="#hero" class="nav-btn nav-btn-external">Get a free consultation</a>
+    <a href="#hero" class="nav-btn nav-btn-external">Book free assessment</a>
     <button class="nav-toggle" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
     </button>
@@ -75,7 +75,7 @@ app.innerHTML = `
     <div class="hero-form-col animate-on-scroll">
       <div class="hero-form-card">
         <h3>How Can We Help?</h3>
-        <p class="hero-form-sub">Tell us about your security needs and we'll get back to you within 24 hours.</p>
+        <p class="hero-form-sub">Book your free security posture assessment. We respond within 24 hours.</p>
         <form id="contact-form" aria-label="Contact form">
           <label for="name" class="visually-hidden">Your name</label>
           <input id="name" type="text" name="name" placeholder="Your name" required minlength="2" autocomplete="name">
@@ -96,6 +96,29 @@ app.innerHTML = `
             <option value="monitoring">Security Monitoring & Alerting</option>
             <option value="incident-response">Incident Response & Recovery</option>
             <option value="other">Other</option>
+          </select>
+          <label for="company-size" class="visually-hidden">Company size</label>
+          <select id="company-size" name="company-size" class="hero-form-select">
+            <option value="" disabled selected>Company size</option>
+            <option value="1-10">1-10 employees</option>
+            <option value="11-50">11-50 employees</option>
+            <option value="51-200">51-200 employees</option>
+            <option value="201-500">201-500 employees</option>
+            <option value="500+">500+ employees</option>
+          </select>
+          <label for="security-maturity" class="visually-hidden">Current security maturity</label>
+          <select id="security-maturity" name="security-maturity" class="hero-form-select">
+            <option value="" disabled selected>Current security maturity</option>
+            <option value="none">No formal security program</option>
+            <option value="basic">Basic controls (firewall, antivirus)</option>
+            <option value="mature">Mature program with monitoring</option>
+          </select>
+          <label for="timeline" class="visually-hidden">Timeline</label>
+          <select id="timeline" name="timeline" class="hero-form-select">
+            <option value="" disabled selected>When do you need this?</option>
+            <option value="urgent">Urgent (within 2 weeks)</option>
+            <option value="1-3-months">1-3 months</option>
+            <option value="planning">Planning ahead (3+ months)</option>
           </select>
           <label for="message" class="visually-hidden">Tell us about your security needs</label>
           <textarea id="message" name="message" placeholder="Tell us about your security needs..." rows="3" required></textarea>
@@ -298,7 +321,7 @@ app.innerHTML = `
   <div class="section-header">
     <span class="section-tag">ADVANCED CAPABILITIES</span>
     <h2>Global-grade expertise.</h2>
-    <p class="section-desc">For organizations with mature security programs or international operations, we bring advanced capabilities in AI security, automation, and enterprise-grade detection engineering.</p>
+    <p class="section-desc">For organizations with mature security programs, international operations, or AI-first products, we bring advanced capabilities that go beyond foundational security. These services are typically engaged alongside our primary offering or as standalone deep-dive assessments.</p>
   </div>
   <div class="expertise-grid animate-on-scroll">
     <div class="expertise-card">
@@ -380,7 +403,7 @@ app.innerHTML = `
   <div class="section-header">
     <span class="section-tag">HOW IT WORKS</span>
     <h2>How It Works</h2>
-    <p class="section-desc">Our engagement model is simple, transparent, and designed to deliver measurable security outcomes.</p>
+    <p class="section-desc">Our engagement model is simple, transparent, and designed to deliver measurable security outcomes. Choose between a one-time project or an ongoing retainer, depending on your needs.</p>
   </div>
   <div class="steps animate-on-scroll">
     <div class="step">
@@ -425,46 +448,64 @@ app.innerHTML = `
     <h2>Cybersecurity Retainer Model</h2>
     <p class="section-desc">Our retainer model provides continuous access to our cybersecurity expertise, ensuring proactive protection, rapid response, and ongoing improvement of your cloud infrastructure, mobile money platforms, and enterprise security posture. Prefer a one-time engagement? All services are available as standalone projects too.</p>
   </div>
-  <h3 class="retainer-subheading">Retainer Tiers</h3>
-  <p class="section-desc" style="text-align: center; margin-bottom: 8px; max-width: 640px; margin-left: auto; margin-right: auto;">Every retainer includes twice-yearly penetration testing covering network, web applications, APIs, and Active Directory — scoped to your environment.</p>
-  <div class="retainer-grid-3 animate-on-scroll">
-    <div class="retainer-card">
-      <div class="retainer-tier">Basic</div>
-      <ul class="retainer-tier-list">
-        <li>Quarterly cloud security review, 1 environment</li>
-        <li>Monthly security monitoring</li>
-        <li>Data Protection Act gap assessment</li>
-        <li>Remote incident response advisory</li>
-        <li>Email support, 24-hour response</li>
-      </ul>
-    </div>
-    <div class="retainer-card retainer-recommended">
-      <div class="retainer-badge">Recommended</div>
-      <div class="retainer-tier">Standard</div>
-      <ul class="retainer-tier-list">
-        <li>Monthly cloud security review, up to 3 environments</li>
-        <li>Monthly security monitoring + tuning</li>
-        <li>Data Protection Act quarterly review</li>
-        <li>Mobile money API review once yearly</li>
-        <li>Remote incident response included</li>
-        <li>Slack + email support, 8-hour response</li>
-      </ul>
-    </div>
-    <div class="retainer-card">
-      <div class="retainer-tier">Premium</div>
-      <ul class="retainer-tier-list">
-        <li>Bi-weekly cloud security review, unlimited environments</li>
-        <li>Continuous security monitoring + weekly tuning</li>
-        <li>Data Protection Act ongoing + BOU alignment</li>
-        <li>Quarterly mobile money and USSD testing</li>
-        <li>Full incident response, on-site in Kampala</li>
-        <li>Dedicated engineer, 4-hour response</li>
-      </ul>
-    </div>
+  <h3 class="retainer-subheading">Retainer Comparison</h3>
+  <div class="retainer-table-wrapper animate-on-scroll">
+    <table class="retainer-table">
+      <thead>
+        <tr>
+          <th>Feature</th>
+          <th>Basic</th>
+          <th class="recommended-col">Standard <span class="table-badge">Recommended</span></th>
+          <th>Premium</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Penetration testing</td>
+          <td colspan="3" class="table-highlight">Twice-yearly, full scope — network, web, API, AD</td>
+        </tr>
+        <tr>
+          <td>Cloud security reviews</td>
+          <td>Quarterly, 1 environment</td>
+          <td class="recommended-col">Monthly, up to 3 environments</td>
+          <td>Bi-weekly, unlimited</td>
+        </tr>
+        <tr>
+          <td>Security monitoring</td>
+          <td>Monthly</td>
+          <td class="recommended-col">Monthly + tuning</td>
+          <td>Continuous + weekly tuning</td>
+        </tr>
+        <tr>
+          <td>Data Protection Act</td>
+          <td>Gap assessment (once)</td>
+          <td class="recommended-col">Quarterly review</td>
+          <td>Ongoing + BOU alignment</td>
+        </tr>
+        <tr>
+          <td>Mobile money / USSD</td>
+          <td>Not included</td>
+          <td class="recommended-col">API review once yearly</td>
+          <td>Quarterly testing</td>
+        </tr>
+        <tr>
+          <td>Incident response</td>
+          <td>Remote advisory</td>
+          <td class="recommended-col">Remote response included</td>
+          <td>Full response, on-site Kampala</td>
+        </tr>
+        <tr>
+          <td>Support</td>
+          <td>Email, 24h</td>
+          <td class="recommended-col">Slack + email, 8h</td>
+          <td>Dedicated engineer, 4h</td>
+        </tr>
+      </tbody>
+    </table>
   </div>
-  <div class="retainer-cta">
-    <a href="#hero" class="btn-primary">Get Started</a>
-    <p class="retainer-cta-text">Contact us to discuss which retainer tier fits your organization, regulatory requirements, and security needs.</p>
+    <div class="retainer-cta">
+    <a href="#hero" class="btn-primary">Book Free Assessment</a>
+    <p class="retainer-cta-text">Start with a free security posture assessment. We will recommend whether a retainer or one-time project fits your needs.</p>
   </div>
   </div>
 </section>
@@ -520,9 +561,9 @@ app.innerHTML = `
 <section id="cta" class="cta-band animate-on-scroll">
   <div class="container">
     <div class="cta-content">
-      <h2>Ready to harden your security?</h2>
-      <p>Get a free consultation. We respond within 24 hours.</p>
-      <a href="#hero" class="btn-primary">Get Started</a>
+      <h2>Get the same results for your organization.</h2>
+      <p>Book a free consultation and we will assess your security posture, identify gaps, and recommend a clear path forward.</p>
+      <a href="#hero" class="btn-primary">Book Free Assessment</a>
     </div>
   </div>
 </section>
