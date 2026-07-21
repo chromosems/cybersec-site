@@ -98,25 +98,25 @@ app.innerHTML = `
             <option value="incident-response">Incident Response & Recovery</option>
             <option value="other">Other</option>
           </select>
-          <label for="company-size" class="visually-hidden">Company size</label>
+          <label for="company-size" class="visually-hidden">Company size (optional)</label>
           <select id="company-size" name="company-size" class="hero-form-select">
-            <option value="" disabled selected>Company size</option>
+            <option value="" disabled selected>Company size (optional)</option>
             <option value="1-10">1-10 employees</option>
             <option value="11-50">11-50 employees</option>
             <option value="51-200">51-200 employees</option>
             <option value="201-500">201-500 employees</option>
             <option value="500+">500+ employees</option>
           </select>
-          <label for="security-maturity" class="visually-hidden">Current security maturity</label>
+          <label for="security-maturity" class="visually-hidden">Current security maturity (optional)</label>
           <select id="security-maturity" name="security-maturity" class="hero-form-select">
-            <option value="" disabled selected>Current security maturity</option>
+            <option value="" disabled selected>Current security maturity (optional)</option>
             <option value="none">No formal security program</option>
             <option value="basic">Basic controls (firewall, antivirus)</option>
             <option value="mature">Mature program with monitoring</option>
           </select>
-          <label for="timeline" class="visually-hidden">Timeline</label>
+          <label for="timeline" class="visually-hidden">Timeline (optional)</label>
           <select id="timeline" name="timeline" class="hero-form-select">
-            <option value="" disabled selected>When do you need this?</option>
+            <option value="" disabled selected>When do you need this? (optional)</option>
             <option value="urgent">Urgent (within 2 weeks)</option>
             <option value="1-3-months">1-3 months</option>
             <option value="planning">Planning ahead (3+ months)</option>
@@ -564,6 +564,43 @@ app.innerHTML = `
 <div class="section-wave">
   <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
     <path d="M0,80 C360,20 1080,20 1440,80 L1440,0 L0,0 Z" fill="#f7f8fa"/>
+  </svg>
+</div>
+
+<section id="faq" class="section-light animate-on-scroll">
+  <div class="container">
+  <div class="section-header">
+    <span class="section-tag">FAQ</span>
+    <h2>Common questions.</h2>
+  </div>
+  <div class="faq-list">
+    <div class="faq-item">
+      <h3>How long does a penetration test take?</h3>
+      <p>Most penetration tests take 5 to 10 business days depending on scope. A single web application might take 3 days, while a full network + web + API assessment for a mid-size organization typically takes 7 to 10 days. We provide a precise timeline during scoping.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you work with our existing IT team?</h3>
+      <p>Yes. We collaborate with your internal IT or security team, not replace them. Our role is to find gaps they might have missed and provide a remediation roadmap they can execute. We also offer ongoing retainer support if you need hands-on help.</p>
+    </div>
+    <div class="faq-item">
+      <h3>What happens after the assessment is complete?</h3>
+      <p>You receive a detailed report with findings ranked by severity, evidence, and specific remediation steps. For retainer clients, we then track remediation progress and re-test to verify fixes. For one-time projects, we are available for follow-up questions.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Is our data safe during testing?</h3>
+      <p>Absolutely. We operate under a signed confidentiality agreement and follow responsible disclosure practices. We never exploit vulnerabilities beyond what is necessary to demonstrate risk, and we avoid testing during your business-critical hours unless agreed.</p>
+    </div>
+    <div class="faq-item">
+      <h3>Do you offer services outside Uganda?</h3>
+      <p>Yes. While our primary focus is East Africa, we serve clients globally. Our cloud security, penetration testing, and compliance services are delivered remotely. On-site work is available in Uganda and neighboring countries.</p>
+    </div>
+  </div>
+  </div>
+</section>
+
+<div class="section-wave">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+    <path d="M0,0 C360,60 1080,60 1440,0 L1440,80 L0,80 Z" fill="#f7f8fa"/>
   </svg>
 </div>
 
