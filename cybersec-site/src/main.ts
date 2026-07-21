@@ -492,8 +492,8 @@ app.innerHTML = `
         </tr>
         <tr>
           <td>Mobile money / USSD</td>
-          <td>1-time testing</td>
-          <td class="recommended-cell">API review once yearly</td>
+          <td>Once yearly</td>
+          <td class="recommended-cell">Once yearly</td>
           <td>Quarterly testing</td>
         </tr>
         <tr>
