@@ -570,24 +570,36 @@ app.innerHTML = `
   </div>
   <div class="cases-grid animate-on-scroll">
     <div class="case-card case-ai">
+      <div class="case-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect><line x1="12" y1="18" x2="12.01" y2="18"></line></svg>
+      </div>
       <span class="case-tag">Mobile Money Security</span>
       <h3>Mobile Money API Security for Ugandan Fintech</h3>
       <p>A Kampala-based fintech processing mobile money transactions for 50,000+ users suspected their API had vulnerabilities that could enable fraud. We performed API penetration testing, USSD session analysis, and agent network security review to identify attack vectors specific to East African mobile money infrastructure.</p>
       <p class="case-impact">Three critical API vulnerabilities patched, USSD session fixation resolved, agent authentication strengthened, saving an estimated UGX 120M in potential fraud losses.</p>
     </div>
     <div class="case-card case-pentest">
+      <div class="case-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18"></path><path d="M5 21V7l8-4 8 4v14"></path><path d="M9 21v-6h6v6"></path></svg>
+      </div>
       <span class="case-tag">Banking Security</span>
       <h3>Core Banking Assessment for Ugandan Microfinance</h3>
       <p>A microfinance institution with 15 branches needed to meet Bank of Uganda cybersecurity guidelines before their annual audit. We assessed their core banking system, ATM network, digital channels, and third-party integrations for security gaps and compliance violations.</p>
       <p class="case-impact">Eight BOU compliance gaps closed, ATM network segmented from core systems, digital channel encryption upgraded, audit passed without findings.</p>
     </div>
     <div class="case-card case-siem">
+      <div class="case-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path><circle cx="12" cy="12" r="3"></circle></svg>
+      </div>
       <span class="case-tag">Security Monitoring</span>
       <h3>Monitoring Setup for Ugandan NGO Cloud Migration</h3>
       <p>A health-focused NGO migrating patient data to AWS had no visibility into their cloud environment. We set up practical security monitoring with log collection, alerting rules, and Slack notifications tuned for their limited IT team and budget.</p>
       <p class="case-impact">Security monitoring active across 12 AWS services, 8 alerting rules deployed, mean incident awareness time reduced from days to under 30 minutes.</p>
     </div>
     <div class="case-card case-cloud">
+      <div class="case-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+      </div>
       <span class="case-tag">Data Protection</span>
       <h3>Data Protection Act Compliance for Kampala Health Tech</h3>
       <p>A health technology startup collecting patient data needed to comply with the Uganda Data Protection and Privacy Act 2019 before launching their platform. We performed a data protection assessment, built their data inventory, and created breach response procedures.</p>
