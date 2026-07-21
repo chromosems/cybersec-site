@@ -61,18 +61,7 @@ app.innerHTML = `
         </form>
     </div>
   </div>
-  <div class="certs-bar">
-    <p class="certs-label">Our engineers hold certifications in</p>
-    <div class="certs-list">
-      <span class="cert-badge">PNPT</span>
-      <span class="cert-badge">SC-200</span>
-      <span class="cert-badge">AI Hacking</span>
-      <span class="cert-badge">Securing AI</span>
-      <span class="cert-badge">Cloud Engineer</span>
-      <span class="cert-badge">Security &amp; Identity</span>
-      <span class="cert-badge">Splunk Cyber Defense</span>
-    </div>
-  </div>
+
   </div>
 </section>
 
