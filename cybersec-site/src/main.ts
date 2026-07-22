@@ -132,7 +132,6 @@ app.innerHTML = `
         </form>
     </div>
   </div>
-
   </div>
 </section>
 
@@ -434,6 +433,8 @@ app.innerHTML = `
     <h2>Cybersecurity Retainer Model</h2>
     <p class="section-desc">Our retainer model provides continuous access to our cybersecurity expertise, ensuring proactive protection, rapid response, and ongoing improvement of your cloud infrastructure, mobile money platforms, and enterprise security posture. Prefer a one-time engagement? All services are available as standalone projects too.</p>
   </div>
+  </div>
+
   <h3 class="retainer-subheading">Retainer Tiers</h3>
   <div class="retainer-grid-3 animate-on-scroll">
     <div class="retainer-card tier-basic">
@@ -485,6 +486,7 @@ app.innerHTML = `
     </div>
   </div>
 
+  <div class="container">
   <div class="retainer-compare-toggle">
     <button id="compare-toggle" class="compare-btn">Compare all features</button>
   </div>
@@ -568,7 +570,6 @@ app.innerHTML = `
         </tr>
       </tbody>
     </table>
-  </div>
   </div>
   </div>
 </section>
