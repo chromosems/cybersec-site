@@ -70,9 +70,9 @@ app.innerHTML = `
   </div>
   <div class="hero-layout">
     <div class="hero-text animate-on-scroll">
-      <h1>Stop Mobile Money Fraud.<br>Pass the BOU Audit.<br>Protect Patient Data.</h1>
-      <p class="hero-sub">Offensive security and compliance for fintechs, banks, SACCOs, and health tech in Uganda and East Africa. Real vulnerabilities. Real fixes. No generic reports.</p>
-      <p class="hero-trust">Kampala-based. East African-focused.</p>
+      <h1>Built by Engineers.<br>Trusted by Teams.</h1>
+      <p class="hero-sub">Full-spectrum cybersecurity for organizations in East Africa — offensive testing, cloud defense, data protection, mobile money security, and incident response.</p>
+      <p class="hero-trust">Kampala-based. Serving teams across East Africa.</p>
     </div>
     <div class="hero-form-col animate-on-scroll">
       <div class="hero-form-card">
