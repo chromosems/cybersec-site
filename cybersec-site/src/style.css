@@ -1553,6 +1553,8 @@ footer {
 .retainer-card {
   position: relative;
   padding-top: 36px;
+  display: flex;
+  flex-direction: column;
 }
 
 .retainer-badge {
@@ -1586,6 +1588,7 @@ footer {
   list-style: none;
   padding: 0;
   margin: 0;
+  flex: 1;
 }
 
 .retainer-tier-list li {
