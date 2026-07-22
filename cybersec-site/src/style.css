@@ -729,12 +729,24 @@ section::before {
   flex: 1;
 }
 
+.expertise-note {
+  font-size: 12px;
+  font-style: italic;
+  color: var(--accent);
+  margin-top: 8px;
+  padding-left: 12px;
+  border-left: 2px solid var(--accent);
+  opacity: 0.85;
+}
+
 /* Case Studies - PowerShell Terminal Windows */
 
 .cases-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
+  max-width: 900px;
+  margin: 0 auto;
 }
 
 .case-card {
@@ -826,6 +838,19 @@ section::before {
   --prompt-color: #ff6b6b;
 }
 
+/* SIEM theme - Amber/Orange */
+.case-siem {
+  --theme-color: #ffb347;
+  --theme-glow: rgba(255, 179, 71, 0.15);
+  --theme-bg: rgba(255, 179, 71, 0.08);
+  --theme-border: rgba(255, 179, 71, 0.15);
+  --term-bg: #1a140c;
+  --term-text: #e4d6c0;
+  --term-heading: #ffffff;
+  --term-accent: #ffb347;
+  --prompt-color: #ffb347;
+}
+
 /* Cloud theme - Matrix Green */
 .case-cloud {
   --theme-color: #50fa7b;
@@ -841,6 +866,7 @@ section::before {
 
 .case-ai .case-terminal-body,
 .case-pentest .case-terminal-body,
+.case-siem .case-terminal-body,
 .case-cloud .case-terminal-body {
   background: var(--term-bg);
   color: var(--term-text);

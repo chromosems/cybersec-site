@@ -71,7 +71,7 @@ app.innerHTML = `
   <div class="hero-layout">
     <div class="hero-text animate-on-scroll">
       <h1>Built by Engineers.<br>Trusted by Teams.</h1>
-      <p class="hero-sub">Enterprise cybersecurity for East Africa. We deliver adversarial testing, cloud defense, data protection compliance, and incident response as a single, integrated practice.</p>
+      <p class="hero-sub">Enterprise cybersecurity for East Africa. We find the vulnerabilities others miss — from breached credentials in HaveIBeenPwned to AWS subdomain takeovers and outdated servers vulnerable to HTTP request smuggling — then work alongside your team to fix them.</p>
       <p class="hero-trust">Headquartered in Kampala. Operating across East Africa.</p>
     </div>
     <div class="hero-form-col animate-on-scroll">
@@ -251,6 +251,7 @@ app.innerHTML = `
       <div class="expertise-number">04</div>
       <h3>Penetration Testing & Vulnerability Management</h3>
       <p>Comprehensive offensive security testing and ongoing vulnerability management across your infrastructure. We find weaknesses through penetration testing of networks, web applications, and APIs, then track and manage vulnerabilities to ensure they are resolved.</p>
+      <p class="expertise-note">Recent engagement: Identified historically breached corporate credentials enabling lateral movement and privilege escalation.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -268,6 +269,7 @@ app.innerHTML = `
       <div class="expertise-number">05</div>
       <h3>Cloud Security for African SMEs</h3>
       <p>Secure cloud and hybrid environments across AWS, Azure, and GCP — plus on-premise setups — with identity hardening, network segmentation, and data protection designed for resource-conscious but security-aware organizations.</p>
+      <p class="expertise-note">Recent engagement: Discovered AWS subdomain takeover risk and outdated Nginx servers vulnerable to HTTP request smuggling and DoS.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -615,6 +617,22 @@ app.innerHTML = `
         <h3>Core Banking Assessment for Ugandan Microfinance</h3>
         <p><span class="case-prompt">&gt;</span> A microfinance deposit-taking institution (MDI) with 15 branches needed to meet Bank of Uganda cybersecurity guidelines before their annual audit. We assessed their core banking system, ATM network, digital channels, and third-party integrations for security gaps and compliance violations.</p>
         <p class="case-impact"><span class="case-prompt">&gt;</span> Eight BOU compliance gaps closed, ATM network segmented from core systems, digital channel encryption upgraded, audit passed without findings.</p>
+      </div>
+    </div>
+    <div class="case-card case-siem">
+      <div class="case-terminal-bar">
+        <div class="case-terminal-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="case-terminal-title">PS C:\cases> Get-CaseStudy -Id "fintech-infra-pentest"</span>
+      </div>
+      <div class="case-terminal-body">
+        <span class="case-tag">Infrastructure Pentest</span>
+        <h3>External Security Assessment for East African Fintech Platform</h3>
+        <p><span class="case-prompt">&gt;</span> A digital financial services provider offering mobile money, microfinance, and digital savings needed to understand their external attack surface before scaling. We performed a two-week external penetration test covering web applications, cloud infrastructure, and corporate identity exposure.</p>
+        <p class="case-impact"><span class="case-prompt">&gt;</span> Critical findings included historically breached corporate credentials enabling lateral movement, an AWS subdomain with takeover risk, and an outdated Nginx server vulnerable to HTTP request smuggling and DoS. All findings were remediated with specific CVE patches and hardening guidance.</p>
       </div>
     </div>
     <div class="case-card case-cloud">
