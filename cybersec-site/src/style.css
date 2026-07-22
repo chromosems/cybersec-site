@@ -670,7 +670,7 @@ section::before {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
-  align-items: start;
+  align-items: stretch;
 }
 
 .expertise-card {
@@ -680,6 +680,8 @@ section::before {
   padding: 36px 28px;
   transition: box-shadow 0.3s, transform 0.2s;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .expertise-card:hover {
@@ -724,6 +726,7 @@ section::before {
   font-size: 14px;
   line-height: 1.7;
   color: #4a5060;
+  flex: 1;
 }
 
 /* Case Studies - PowerShell Terminal Windows */
