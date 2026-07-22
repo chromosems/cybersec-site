@@ -11,9 +11,10 @@ app.innerHTML = `
       <a href="#philosophy">About</a>
       <a href="#expertise">Services</a>
       <a href="#advanced">Advanced</a>
-      <a href="#faq">FAQ</a>
-      <a href="#how-it-works">How It Works</a>
       <a href="#case-studies">Case Studies</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#retainer">Retainer</a>
+      <a href="#faq">FAQ</a>
       <a href="#hero" class="nav-btn nav-btn-internal">Book free assessment</a>
     </div>
     <a href="#hero" class="nav-btn nav-btn-external">Book free assessment</a>
@@ -95,8 +96,9 @@ app.innerHTML = `
             <option value="fintech-banking">Fintech & Banking Security (BOU Compliance)</option>
             <option value="penetration-testing">Penetration Testing (Network, Web, API)</option>
             <option value="cloud-security">Cloud Security for African SMEs</option>
-            <option value="monitoring">Security Monitoring & Alerting</option>
+            <option value="monitoring">External Security Monitoring</option>
             <option value="incident-response">Incident Response & Recovery</option>
+            <option value="retainer">Ongoing Security Retainer</option>
             <option value="other">Other</option>
           </select>
           <label for="company-size" class="visually-hidden">Company size (optional)</label>
@@ -170,7 +172,6 @@ app.innerHTML = `
         <li><span class="choose-bullet"></span> Security Monitoring & Alerting</li>
         <li><span class="choose-bullet"></span> Incident Response & Recovery</li>
       </ul>
-      <p style="margin-top: 12px; font-size: 13px; color: var(--text);">Delivered as one integrated practice, not fragmented engagements.</p>
     </div>
     <div class="philosophy-card">
       <h3>Our Impact</h3>
@@ -250,7 +251,6 @@ app.innerHTML = `
       <div class="expertise-number">04</div>
       <h3>Penetration Testing & Vulnerability Management</h3>
       <p>Comprehensive offensive security testing and ongoing vulnerability management across your infrastructure. We find weaknesses through penetration testing of networks, web applications, and APIs, then track and manage vulnerabilities to ensure they are resolved.</p>
-      <p class="expertise-note">Recent engagement: Identified historically breached corporate credentials enabling lateral movement and privilege escalation.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -268,7 +268,6 @@ app.innerHTML = `
       <div class="expertise-number">05</div>
       <h3>Cloud Security for African SMEs</h3>
       <p>Secure cloud and hybrid environments across AWS, Azure, and GCP — plus on-premise setups — with identity hardening, network segmentation, and data protection designed for resource-conscious but security-aware organizations.</p>
-      <p class="expertise-note">Recent engagement: Discovered AWS subdomain takeover risk and outdated Nginx servers vulnerable to HTTP request smuggling and DoS.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -426,6 +425,56 @@ app.innerHTML = `
   </svg>
 </div>
 
+<section id="case-studies" class="section-light animate-on-scroll">
+  <div class="container">
+  <div class="section-header">
+    <span class="section-tag">CASE STUDIES</span>
+    <h2>Real engagements across East Africa.</h2>
+    <p class="section-desc">Selected engagements that demonstrate how we help Ugandan and East African organizations improve their security posture and meet regulatory requirements.</p>
+  </div>
+  <div class="cases-grid animate-on-scroll">
+    <div class="case-card case-siem">
+      <div class="case-terminal-bar">
+        <div class="case-terminal-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="case-terminal-title">PS C:\cases> Get-CaseStudy -Id "fintech-infra-pentest"</span>
+      </div>
+      <div class="case-terminal-body">
+        <span class="case-tag">Infrastructure Pentest</span>
+        <h3>External Security Assessment for East African Fintech Platform</h3>
+        <p><span class="case-prompt">&gt;</span> A digital financial services provider offering mobile money, microfinance, and digital savings needed to understand their external attack surface before scaling. We performed a two-week external penetration test covering web applications, cloud infrastructure, and corporate identity exposure.</p>
+        <p class="case-impact"><span class="case-prompt">&gt;</span> Critical findings included historically breached corporate credentials enabling lateral movement, an AWS subdomain with takeover risk, and an outdated Nginx server vulnerable to HTTP request smuggling and DoS. All findings were remediated with specific CVE patches and hardening guidance.</p>
+      </div>
+    </div>
+    <div class="case-card case-cloud">
+      <div class="case-terminal-bar">
+        <div class="case-terminal-dots">
+          <span class="dot dot-red"></span>
+          <span class="dot dot-yellow"></span>
+          <span class="dot dot-green"></span>
+        </div>
+        <span class="case-terminal-title">PS C:\cases> Get-CaseStudy -Id "data-protection-iso"</span>
+      </div>
+      <div class="case-terminal-body">
+        <span class="case-tag">Data Protection</span>
+        <h3>Data Protection & ISO 27001 Compliance for Kampala Health Tech</h3>
+        <p><span class="case-prompt">&gt;</span> A health technology startup collecting patient data needed to comply with the Uganda Data Protection and Privacy Act 2019 and align with ISO 27001 before launching their platform. We performed a data protection assessment, built their data inventory, mapped controls to ISO 27001 Annex A, and created breach response procedures.</p>
+        <p class="case-impact"><span class="case-prompt">&gt;</span> Full data inventory completed, consent framework implemented, ISO 27001 gap assessment delivered with remediation roadmap, breach response plan documented, Personal Data Protection Office registration submitted successfully.</p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+
+<div class="section-wave">
+  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
+    <path d="M0,0 C360,60 1080,60 1440,0 L1440,80 L0,80 Z" fill="#f7f8fa"/>
+  </svg>
+</div>
+
 <section id="retainer" class="animate-on-scroll">
   <div class="container">
   <div class="section-header">
@@ -570,56 +619,6 @@ app.innerHTML = `
         </tr>
       </tbody>
     </table>
-  </div>
-  </div>
-</section>
-
-<div class="section-wave">
-  <svg viewBox="0 0 1440 80" preserveAspectRatio="none">
-    <path d="M0,0 C360,60 1080,60 1440,0 L1440,80 L0,80 Z" fill="#f7f8fa"/>
-  </svg>
-</div>
-
-<section id="case-studies" class="section-light animate-on-scroll">
-  <div class="container">
-  <div class="section-header">
-    <span class="section-tag">CASE STUDIES</span>
-    <h2>Real engagements across East Africa.</h2>
-    <p class="section-desc">Selected engagements that demonstrate how we help Ugandan and East African organizations improve their security posture and meet regulatory requirements.</p>
-  </div>
-  <div class="cases-grid animate-on-scroll">
-    <div class="case-card case-siem">
-      <div class="case-terminal-bar">
-        <div class="case-terminal-dots">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-        </div>
-        <span class="case-terminal-title">PS C:\cases> Get-CaseStudy -Id "fintech-infra-pentest"</span>
-      </div>
-      <div class="case-terminal-body">
-        <span class="case-tag">Infrastructure Pentest</span>
-        <h3>External Security Assessment for East African Fintech Platform</h3>
-        <p><span class="case-prompt">&gt;</span> A digital financial services provider offering mobile money, microfinance, and digital savings needed to understand their external attack surface before scaling. We performed a two-week external penetration test covering web applications, cloud infrastructure, and corporate identity exposure.</p>
-        <p class="case-impact"><span class="case-prompt">&gt;</span> Critical findings included historically breached corporate credentials enabling lateral movement, an AWS subdomain with takeover risk, and an outdated Nginx server vulnerable to HTTP request smuggling and DoS. All findings were remediated with specific CVE patches and hardening guidance.</p>
-      </div>
-    </div>
-    <div class="case-card case-cloud">
-      <div class="case-terminal-bar">
-        <div class="case-terminal-dots">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-        </div>
-        <span class="case-terminal-title">PS C:\cases> Get-CaseStudy -Id "data-protection-iso"</span>
-      </div>
-      <div class="case-terminal-body">
-        <span class="case-tag">Data Protection</span>
-        <h3>Data Protection & ISO 27001 Compliance for Kampala Health Tech</h3>
-        <p><span class="case-prompt">&gt;</span> A health technology startup collecting patient data needed to comply with the Uganda Data Protection and Privacy Act 2019 and align with ISO 27001 before launching their platform. We performed a data protection assessment, built their data inventory, mapped controls to ISO 27001 Annex A, and created breach response procedures.</p>
-        <p class="case-impact"><span class="case-prompt">&gt;</span> Full data inventory completed, consent framework implemented, ISO 27001 gap assessment delivered with remediation roadmap, breach response plan documented, Personal Data Protection Office registration submitted successfully.</p>
-      </div>
-    </div>
   </div>
   </div>
 </section>
