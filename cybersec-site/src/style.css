@@ -812,32 +812,6 @@ section::before {
 
 /* Terminal Color Themes */
 
-/* AI theme - PowerShell Blue */
-.case-ai {
-  --theme-color: #00bfff;
-  --theme-glow: rgba(0, 191, 255, 0.15);
-  --theme-bg: rgba(0, 191, 255, 0.08);
-  --theme-border: rgba(0, 191, 255, 0.15);
-  --term-bg: #0c1a2b;
-  --term-text: #c0d6e4;
-  --term-heading: #ffffff;
-  --term-accent: #00bfff;
-  --prompt-color: #00bfff;
-}
-
-/* Pentest theme - Alert Red */
-.case-pentest {
-  --theme-color: #ff6b6b;
-  --theme-glow: rgba(255, 107, 107, 0.15);
-  --theme-bg: rgba(255, 107, 107, 0.08);
-  --theme-border: rgba(255, 107, 107, 0.15);
-  --term-bg: #1a0c0c;
-  --term-text: #e4c0c0;
-  --term-heading: #ffffff;
-  --term-accent: #ff6b6b;
-  --prompt-color: #ff6b6b;
-}
-
 /* SIEM theme - Amber/Orange */
 .case-siem {
   --theme-color: #ffb347;
@@ -864,8 +838,6 @@ section::before {
   --prompt-color: #50fa7b;
 }
 
-.case-ai .case-terminal-body,
-.case-pentest .case-terminal-body,
 .case-siem .case-terminal-body,
 .case-cloud .case-terminal-body {
   background: var(--term-bg);

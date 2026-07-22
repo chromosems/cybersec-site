@@ -587,38 +587,6 @@ app.innerHTML = `
     <p class="section-desc">Selected engagements that demonstrate how we help Ugandan and East African organizations improve their security posture and meet regulatory requirements.</p>
   </div>
   <div class="cases-grid animate-on-scroll">
-    <div class="case-card case-ai">
-      <div class="case-terminal-bar">
-        <div class="case-terminal-dots">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-        </div>
-        <span class="case-terminal-title">PS C:\cases> Get-CaseStudy -Id "mobile-money-api"</span>
-      </div>
-      <div class="case-terminal-body">
-        <span class="case-tag">Mobile Money Security</span>
-        <h3>Mobile Money API Security for Ugandan Fintech</h3>
-        <p><span class="case-prompt">&gt;</span> A Kampala-based fintech processing mobile money transactions for 50,000+ users suspected their API had vulnerabilities that could enable fraud. We performed API penetration testing, USSD session analysis, and agent network security review to identify attack vectors specific to East African mobile money infrastructure.</p>
-        <p class="case-impact"><span class="case-prompt">&gt;</span> Three critical API vulnerabilities patched, USSD session fixation resolved, agent authentication strengthened, saving an estimated UGX 120M in potential fraud losses.</p>
-      </div>
-    </div>
-    <div class="case-card case-pentest">
-      <div class="case-terminal-bar">
-        <div class="case-terminal-dots">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-        </div>
-        <span class="case-terminal-title">PS C:\cases> Get-CaseStudy -Id "core-banking-pentest"</span>
-      </div>
-      <div class="case-terminal-body">
-        <span class="case-tag">Banking Security</span>
-        <h3>Core Banking Assessment for Ugandan Microfinance</h3>
-        <p><span class="case-prompt">&gt;</span> A microfinance deposit-taking institution (MDI) with 15 branches needed to meet Bank of Uganda cybersecurity guidelines before their annual audit. We assessed their core banking system, ATM network, digital channels, and third-party integrations for security gaps and compliance violations.</p>
-        <p class="case-impact"><span class="case-prompt">&gt;</span> Eight BOU compliance gaps closed, ATM network segmented from core systems, digital channel encryption upgraded, audit passed without findings.</p>
-      </div>
-    </div>
     <div class="case-card case-siem">
       <div class="case-terminal-bar">
         <div class="case-terminal-dots">
