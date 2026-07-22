@@ -314,20 +314,20 @@ app.innerHTML = `
   <div class="container">
   <div class="section-header">
     <span class="section-tag">ADVANCED CAPABILITIES</span>
-    <h2>Global-grade expertise.</h2>
-    <p class="section-desc">For organizations with mature security programs or international operations, we bring advanced capabilities that go beyond foundational security. These services are typically engaged alongside our primary offering or as standalone deep-dive assessments.</p>
+    <h2>For mature security programs.</h2>
+    <p class="section-desc">Advanced services for organizations that have covered the fundamentals and need deeper offensive testing, automated defense, or AI-specific security. Engaged as standalone deep-dives or alongside our primary services.</p>
   </div>
   <div class="expertise-grid animate-on-scroll">
     <div class="expertise-card">
       <div class="expertise-number">01</div>
       <h3>Security Automation & DevSecOps</h3>
-      <p>Accelerate development while improving security through automated guardrails and CI/CD pipeline hardening.</p>
+      <p>Automated security guardrails integrated into development pipelines. CI/CD hardening, infrastructure-as-code scanning, and policy enforcement without slowing delivery.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
-          <li>CI/CD security</li>
+          <li>CI/CD pipeline security review</li>
           <li>GitHub Advanced Security integration</li>
-          <li>IaC security (Terraform)</li>
+          <li>IaC scanning (Terraform, CloudFormation)</li>
           <li>Automated misconfiguration detection</li>
           <li>Policy-as-code implementation</li>
         </ul>
@@ -336,15 +336,15 @@ app.innerHTML = `
     </div>
     <div class="expertise-card">
       <div class="expertise-number">02</div>
-      <h3>Enterprise SIEM Optimization</h3>
-      <p>Enhance visibility and reduce response time with high-fidelity detection rules and log coverage using enterprise-grade platforms.</p>
+      <h3>Enterprise SIEM & Detection Engineering</h3>
+      <p>High-fidelity detection rules, log coverage optimization, and threat hunting queries tuned for East African threat landscapes. Practical SIEM tuning without enterprise bloat.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
           <li>Sentinel & Splunk detection rules</li>
-          <li>Threat hunting queries</li>
-          <li>Log normalization</li>
-          <li>Cloud API monitoring</li>
+          <li>Threat hunting query development</li>
+          <li>Log source normalization</li>
+          <li>Cloud API activity monitoring</li>
           <li>Identity anomaly detection</li>
         </ul>
       </div>
@@ -353,31 +353,16 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">03</div>
       <h3>AI Security & Adversarial Testing</h3>
-      <p>We secure AI-driven applications against modern threats including prompt injection, model poisoning, jailbreak attacks, data leakage, and adversarial manipulation. Our engineers test AI pipelines end-to-end to ensure your AI systems remain safe, reliable, and compliant.</p>
+      <p>Security testing for AI-driven applications. Prompt injection, model poisoning, jailbreak attacks, and supply chain risks. Testing and hardening in one engagement.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
+          <li>LLM prompt injection & jailbreak testing</li>
           <li>AI model penetration testing</li>
-          <li>LLM prompt injection testing</li>
-          <li>AI supply chain security</li>
-          <li>Secure model deployment guidance</li>
-          <li>AI red teaming scenarios</li>
-        </ul>
-      </div>
-      <button class="read-more-btn">Read more</button>
-    </div>
-    <div class="expertise-card">
-      <div class="expertise-number">04</div>
-      <h3>AI Application Hardening</h3>
-      <p>We help organizations build secure AI applications by integrating guardrails, monitoring, and safe execution controls into their AI workflows.</p>
-      <div class="deliverables">
-        <span class="deliverables-heading">What we deliver:</span>
-        <ul>
-          <li>Secure LLM architecture design</li>
+          <li>AI supply chain security review</li>
+          <li>Secure model deployment architecture</li>
           <li>Safety guardrail implementation</li>
-          <li>AI logging & monitoring setup</li>
-          <li>Abuse detection and anomaly rules</li>
-          <li>Secure API integration for AI systems</li>
+          <li>AI abuse detection & monitoring rules</li>
         </ul>
       </div>
       <button class="read-more-btn">Read more</button>
