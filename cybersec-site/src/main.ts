@@ -197,60 +197,8 @@ app.innerHTML = `
   <div class="expertise-grid animate-on-scroll">
     <div class="expertise-card">
       <div class="expertise-number">01</div>
-      <h3>Penetration Testing & Vulnerability Management</h3>
-      <p>Comprehensive offensive security testing and ongoing vulnerability management across your infrastructure. We find weaknesses through penetration testing of networks, web applications, and APIs, then track and manage vulnerabilities to ensure they are resolved.</p>
-      <div class="deliverables">
-        <span class="deliverables-heading">What we deliver:</span>
-        <ul>
-          <li>Internal & external network pentesting</li>
-          <li>Web application security assessment</li>
-          <li>API security testing (REST, GraphQL)</li>
-          <li>Active Directory attack path analysis</li>
-          <li>Ongoing vulnerability scanning & tracking</li>
-          <li>Remediation roadmap with prioritization</li>
-        </ul>
-      </div>
-      <button class="read-more-btn">Read more</button>
-    </div>
-    <div class="expertise-card">
-      <div class="expertise-number">02</div>
-      <h3>Cloud Security for African SMEs</h3>
-      <p>Secure cloud and hybrid environments across AWS, Azure, and GCP — plus on-premise setups — with identity hardening, network segmentation, and data protection designed for resource-conscious but security-aware organizations.</p>
-      <div class="deliverables">
-        <span class="deliverables-heading">What we deliver:</span>
-        <ul>
-          <li>Cloud & hybrid architecture review</li>
-          <li>On-premise security assessment</li>
-          <li>Identity & access hardening</li>
-          <li>Data encryption configuration</li>
-          <li>Network segmentation</li>
-          <li>Backup & recovery security</li>
-        </ul>
-      </div>
-      <button class="read-more-btn">Read more</button>
-    </div>
-    <div class="expertise-card">
-      <div class="expertise-number">03</div>
-      <h3>Data Protection & Compliance</h3>
-      <p>Align your organization with Uganda's Data Protection and Privacy Act 2019, supported by NITA-U guidance, ISO 27001, NIST Cybersecurity Framework, and CIS Controls. We build data inventories, consent frameworks, breach response plans, and documentation to meet Personal Data Protection Office requirements and international security standards.</p>
-      <div class="deliverables">
-        <span class="deliverables-heading">What we deliver:</span>
-        <ul>
-          <li>Data mapping & inventory per DPA 2019</li>
-          <li>Consent mechanism audit</li>
-          <li>Breach notification procedures</li>
-          <li>PDPO documentation & NITA-U registration support</li>
-          <li>ISO 27001 gap assessment & roadmap</li>
-          <li>NIST CSF & CIS Controls alignment</li>
-          <li>Compliance gap assessment</li>
-        </ul>
-      </div>
-      <button class="read-more-btn">Read more</button>
-    </div>
-    <div class="expertise-card">
-      <div class="expertise-number">04</div>
       <h3>Mobile Money & USSD Security</h3>
-      <p>Secure mobile money platforms, USSD applications, and payment APIs against fraud, replay attacks, session hijacking, and agent network exploitation. We understand Uganda's MTN Mobile Money and Airtel Money ecosystems, including aggregator APIs and agent network risks. Critical for fintechs, banks, SACCOs, and mobile network operators in East Africa.</p>
+      <p>We secure mobile money platforms, USSD applications, and payment APIs against fraud, replay attacks, session hijacking, and agent network exploitation. Deep expertise in Uganda's MTN Mobile Money and Airtel Money ecosystems, including aggregator APIs and agent network risks.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -265,7 +213,7 @@ app.innerHTML = `
       <button class="read-more-btn">Read more</button>
     </div>
     <div class="expertise-card">
-      <div class="expertise-number">05</div>
+      <div class="expertise-number">02</div>
       <h3>Fintech & Banking Security (BOU Compliance)</h3>
       <p>Penetration testing and security assessments aligned with Bank of Uganda cybersecurity guidelines. Covering core banking systems, SACCOs, Microfinance Deposit-taking Institutions (MDIs), ATM networks, digital channels, and third-party integrations.</p>
       <div class="deliverables">
@@ -282,9 +230,61 @@ app.innerHTML = `
       <button class="read-more-btn">Read more</button>
     </div>
     <div class="expertise-card">
+      <div class="expertise-number">03</div>
+      <h3>Data Protection & Compliance</h3>
+      <p>Align your organization with Uganda's Data Protection and Privacy Act 2019, supported by NITA-U guidance, ISO 27001, NIST Cybersecurity Framework, and CIS Controls. We build data inventories, consent frameworks, breach response plans, and documentation to meet Personal Data Protection Office requirements.</p>
+      <div class="deliverables">
+        <span class="deliverables-heading">What we deliver:</span>
+        <ul>
+          <li>Data mapping & inventory per DPA 2019</li>
+          <li>Consent mechanism audit</li>
+          <li>Breach notification procedures</li>
+          <li>PDPO documentation & NITA-U registration support</li>
+          <li>ISO 27001 gap assessment & roadmap</li>
+          <li>NIST CSF & CIS Controls alignment</li>
+          <li>Compliance gap assessment</li>
+        </ul>
+      </div>
+      <button class="read-more-btn">Read more</button>
+    </div>
+    <div class="expertise-card">
+      <div class="expertise-number">04</div>
+      <h3>Penetration Testing & Vulnerability Management</h3>
+      <p>Comprehensive offensive security testing and ongoing vulnerability management across your infrastructure. We find weaknesses through penetration testing of networks, web applications, and APIs, then track and manage vulnerabilities to ensure they are resolved.</p>
+      <div class="deliverables">
+        <span class="deliverables-heading">What we deliver:</span>
+        <ul>
+          <li>Internal & external network pentesting</li>
+          <li>Web application security assessment</li>
+          <li>API security testing (REST, GraphQL)</li>
+          <li>Active Directory attack path analysis</li>
+          <li>Ongoing vulnerability scanning & tracking</li>
+          <li>Remediation roadmap with prioritization</li>
+        </ul>
+      </div>
+      <button class="read-more-btn">Read more</button>
+    </div>
+    <div class="expertise-card">
+      <div class="expertise-number">05</div>
+      <h3>Cloud Security for African SMEs</h3>
+      <p>Secure cloud and hybrid environments across AWS, Azure, and GCP — plus on-premise setups — with identity hardening, network segmentation, and data protection designed for resource-conscious but security-aware organizations.</p>
+      <div class="deliverables">
+        <span class="deliverables-heading">What we deliver:</span>
+        <ul>
+          <li>Cloud & hybrid architecture review</li>
+          <li>On-premise security assessment</li>
+          <li>Identity & access hardening</li>
+          <li>Data encryption configuration</li>
+          <li>Network segmentation</li>
+          <li>Backup & recovery security</li>
+        </ul>
+      </div>
+      <button class="read-more-btn">Read more</button>
+    </div>
+    <div class="expertise-card">
       <div class="expertise-number">06</div>
-      <h3>Security Monitoring & Alerting</h3>
-      <p>Set up practical security monitoring without enterprise-grade budgets. Log collection, alerting rules, and notification workflows that catch real threats without drowning your team in noise.</p>
+      <h3>Security Operations & Incident Response</h3>
+      <p>Practical security monitoring, alerting, and rapid incident response — without enterprise-grade budgets. Log collection, alerting rules, and notification workflows that catch real threats, plus containment, forensics, and recovery when incidents occur.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -292,23 +292,10 @@ app.innerHTML = `
           <li>Alerting rule development</li>
           <li>Email & Microsoft Teams notification setup</li>
           <li>False-positive tuning</li>
-          <li>Monthly alert review & optimization</li>
-        </ul>
-      </div>
-      <button class="read-more-btn">Read more</button>
-    </div>
-    <div class="expertise-card">
-      <div class="expertise-number">07</div>
-      <h3>Incident Response & Recovery</h3>
-      <p>Rapid response when security incidents occur. Containment, forensics, eradication, and recovery support to minimize damage and restore operations quickly.</p>
-      <div class="deliverables">
-        <span class="deliverables-heading">What we deliver:</span>
-        <ul>
           <li>Incident containment & triage</li>
           <li>Digital forensics & evidence preservation</li>
           <li>Root cause analysis</li>
           <li>Recovery & restoration guidance</li>
-          <li>Post-incident hardening recommendations</li>
         </ul>
       </div>
       <button class="read-more-btn">Read more</button>
