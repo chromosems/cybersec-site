@@ -640,22 +640,6 @@ app.innerHTML = `
         <p class="case-impact"><span class="case-prompt">&gt;</span> Eight BOU compliance gaps closed, ATM network segmented from core systems, digital channel encryption upgraded, audit passed without findings.</p>
       </div>
     </div>
-    <div class="case-card case-siem">
-      <div class="case-terminal-bar">
-        <div class="case-terminal-dots">
-          <span class="dot dot-red"></span>
-          <span class="dot dot-yellow"></span>
-          <span class="dot dot-green"></span>
-        </div>
-        <span class="case-terminal-title">PS C:\cases> Get-CaseStudy -Id "ngo-cloud-monitoring"</span>
-      </div>
-      <div class="case-terminal-body">
-        <span class="case-tag">Security Monitoring</span>
-        <h3>Monitoring Setup for Ugandan NGO Cloud Migration</h3>
-        <p><span class="case-prompt">&gt;</span> A health-focused NGO migrating patient data to AWS had no visibility into their cloud environment. We set up practical security monitoring with log collection, alerting rules, and Microsoft Teams notifications tuned for their limited IT team and budget.</p>
-        <p class="case-impact"><span class="case-prompt">&gt;</span> Security monitoring active across 12 AWS services, 8 alerting rules deployed, mean incident awareness time reduced from days to under 30 minutes.</p>
-      </div>
-    </div>
     <div class="case-card case-cloud">
       <div class="case-terminal-bar">
         <div class="case-terminal-dots">

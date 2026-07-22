@@ -730,7 +730,7 @@ section::before {
 
 .cases-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(3, 1fr);
   gap: 24px;
 }
 
@@ -823,19 +823,6 @@ section::before {
   --prompt-color: #ff6b6b;
 }
 
-/* SIEM theme - Amber/Orange */
-.case-siem {
-  --theme-color: #ffb347;
-  --theme-glow: rgba(255, 179, 71, 0.15);
-  --theme-bg: rgba(255, 179, 71, 0.08);
-  --theme-border: rgba(255, 179, 71, 0.15);
-  --term-bg: #1a140c;
-  --term-text: #e4d6c0;
-  --term-heading: #ffffff;
-  --term-accent: #ffb347;
-  --prompt-color: #ffb347;
-}
-
 /* Cloud theme - Matrix Green */
 .case-cloud {
   --theme-color: #50fa7b;
@@ -851,7 +838,6 @@ section::before {
 
 .case-ai .case-terminal-body,
 .case-pentest .case-terminal-body,
-.case-siem .case-terminal-body,
 .case-cloud .case-terminal-body {
   background: var(--term-bg);
   color: var(--term-text);
