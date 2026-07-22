@@ -71,7 +71,7 @@ app.innerHTML = `
   <div class="hero-layout">
     <div class="hero-text animate-on-scroll">
       <h1>Built by Engineers.<br>Trusted by Teams.</h1>
-      <p class="hero-sub">Enterprise cybersecurity for East Africa. We deliver adversarial testing, cloud defense, data protection compliance, and incident response as a single, integrated practice.</p>
+      <p class="hero-sub">Enterprise cybersecurity for East Africa. Adversarial testing, cloud defense, external monitoring, data protection compliance, and incident response.</p>
       <p class="hero-trust">Headquartered in Kampala. Operating across East Africa.</p>
     </div>
     <div class="hero-form-col animate-on-scroll">
