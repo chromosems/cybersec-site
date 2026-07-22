@@ -1582,10 +1582,11 @@ footer {
 .retainer-grid-3 {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 28px;
-  max-width: 1200px;
+  gap: 32px;
+  max-width: 100%;
   margin: 0 auto;
   align-items: stretch;
+  padding: 0 20px;
 }
 
 .retainer-card {
@@ -1593,6 +1594,7 @@ footer {
   padding-top: 48px;
   display: flex;
   flex-direction: column;
+  min-width: 380px;
 }
 
 .retainer-badge {
@@ -1909,13 +1911,15 @@ footer {
 
 @media (min-width: 901px) {
   .retainer-grid-3 {
-    gap: 32px;
-    max-width: 1300px;
+    gap: 40px;
+    max-width: 100%;
+    padding: 0 40px;
   }
 
   .retainer-card {
-    padding: 36px 44px 32px;
+    padding: 36px 56px 32px;
     min-height: 480px;
+    min-width: 420px;
   }
 
   .retainer-tier {
