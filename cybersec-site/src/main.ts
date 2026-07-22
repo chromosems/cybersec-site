@@ -683,7 +683,7 @@ app.innerHTML = `
         <span class="faq-number">05</span>
         <h3>What types of organizations do you work with?</h3>
       </div>
-      <p>Fintechs, banks, SACCOs, microfinance deposit-taking institutions (MDIs), health tech, NGOs, and mobile network operators across East Africa. While our deepest expertise is in Uganda's mobile money and banking ecosystems, we deliver cloud security, penetration testing, and compliance services remotely to clients globally.</p>
+      <p>Fintechs, banks, SACCOs, microfinance deposit-taking institutions (MDIs), health tech, NGOs, and mobile network operators across East Africa. We also deliver cloud security, penetration testing, and compliance services remotely to clients globally.</p>
     </div>
   </div>
   </div>
