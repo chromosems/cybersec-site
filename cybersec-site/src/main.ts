@@ -381,34 +381,39 @@ app.innerHTML = `
   <div class="container">
   <div class="section-header">
     <span class="section-tag">HOW IT WORKS</span>
-    <h2>How It Works</h2>
-    <p class="section-desc">Our engagement model is simple, transparent, and designed to deliver measurable security outcomes. Choose between a one-time project or an ongoing retainer, depending on your needs.</p>
+    <h2>From discovery to verified remediation.</h2>
+    <p class="section-desc">We do not hand over a PDF and disappear. Our engineers work alongside your team to find vulnerabilities, fix them, and verify the fixes. Available as a one-time engagement or an ongoing retainer.</p>
   </div>
   <div class="steps animate-on-scroll">
     <div class="step">
       <div class="step-number">01</div>
-      <h3>Initial Consultation</h3>
-      <p>We discuss your environment, challenges, and security goals.</p>
+      <h3>Discovery</h3>
+      <p>We assess your current security posture, map your attack surface, and identify compliance gaps. You get a clear picture of where you stand before any work begins.</p>
     </div>
     <div class="step">
       <div class="step-number">02</div>
-      <h3>Assessment & Scoping</h3>
-      <p>We define the scope, deliverables, timelines, and required access.</p>
+      <h3>Scoping</h3>
+      <p>We agree on exact scope, timelines, and deliverables. Project or retainer — your choice. No scope creep, no surprise invoices.</p>
     </div>
     <div class="step">
       <div class="step-number">03</div>
-      <h3>Execution</h3>
-      <p>Our engineers perform the agreed-upon security work: architecture, testing, automation, or detection engineering.</p>
+      <h3>Testing & Engineering</h3>
+      <p>Our engineers perform the work: adversarial testing, cloud hardening, compliance build-out, or detection engineering. You receive daily progress updates.</p>
     </div>
     <div class="step">
       <div class="step-number">04</div>
-      <h3>Reporting & Delivery</h3>
-      <p>You receive detailed documentation, findings, diagrams, and remediation guidance.</p>
+      <h3>Remediation Support</h3>
+      <p>We work hand-in-hand with your IT team to patch findings, harden configurations, and close security gaps. Not just advice — hands-on implementation.</p>
     </div>
     <div class="step">
       <div class="step-number">05</div>
-      <h3>Support & Follow-Up</h3>
-      <p>We help you implement improvements and strengthen long-term security posture.</p>
+      <h3>Verification & Delivery</h3>
+      <p>We re-test fixed vulnerabilities to confirm closure. You receive a board-ready report with ranked findings, evidence, and verified remediation status.</p>
+    </div>
+    <div class="step">
+      <div class="step-number">06</div>
+      <h3>Ongoing Posture Management</h3>
+      <p>For retainer clients: continuous monitoring, monthly reviews, and proactive defense improvements. Your security posture stays current as threats evolve.</p>
     </div>
   </div>
   </div>
