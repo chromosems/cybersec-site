@@ -647,43 +647,43 @@ app.innerHTML = `
   <div class="container">
   <div class="section-header">
     <span class="section-tag">FAQ</span>
-    <h2>Common questions.</h2>
+    <h2>Questions we hear often.</h2>
   </div>
   <div class="faq-list">
     <div class="faq-item faq-red">
       <div class="faq-header">
         <span class="faq-number">01</span>
-        <h3>How long does a penetration test take?</h3>
+        <h3>Do you help fix vulnerabilities, or just report them?</h3>
       </div>
-      <p>Most penetration tests take 5 to 10 business days depending on scope. A single web application might take 3 days, while a full network + web + API assessment for a mid-size organization typically takes 7 to 10 days. We provide a precise timeline during scoping.</p>
+      <p>Both. We do not hand over a PDF and disappear. Our engineers work alongside your IT team to patch findings, harden configurations, and close security gaps. We then re-test to verify fixes are holding. This is included in our retainer model and available as an add-on for one-time projects.</p>
     </div>
     <div class="faq-item faq-blue">
       <div class="faq-header">
         <span class="faq-number">02</span>
-        <h3>Do you work with our existing IT team?</h3>
+        <h3>What does a typical engagement look like?</h3>
       </div>
-      <p>Yes. We collaborate with your internal IT or security team, not replace them. Our role is to find gaps they might have missed and provide a remediation roadmap they can execute. We also offer ongoing retainer support if you need hands-on help.</p>
+      <p>A typical engagement runs through six stages: discovery (understanding your posture), scoping (agreeing on exact targets), testing & engineering (the hands-on work), remediation support (fixing findings together), verification (re-testing to confirm closure), and ongoing posture management (for retainer clients). You receive daily progress updates during testing and a board-ready report at delivery.</p>
     </div>
     <div class="faq-item faq-amber">
       <div class="faq-header">
         <span class="faq-number">03</span>
-        <h3>What happens after the assessment is complete?</h3>
+        <h3>Can you help us prepare for a BOU audit or DPA 2019 compliance?</h3>
       </div>
-      <p>You receive a detailed report with findings ranked by severity, evidence, and specific remediation steps. For retainer clients, we then track remediation progress and re-test to verify fixes. For one-time projects, we are available for follow-up questions.</p>
+      <p>Yes. We have deep experience with Bank of Uganda cybersecurity guidelines, Uganda's Data Protection and Privacy Act 2019, and ISO 27001. For banks and MDIs, we assess against BOU requirements and provide gap analysis with remediation roadmaps. For organizations handling sensitive data, we build data inventories, consent frameworks, and breach response plans aligned with DPA 2019, ISO 27001, and NIST frameworks.</p>
     </div>
     <div class="faq-item faq-emerald">
       <div class="faq-header">
         <span class="faq-number">04</span>
         <h3>Is our data safe during testing?</h3>
       </div>
-      <p>Absolutely. We operate under a signed confidentiality agreement and follow responsible disclosure practices. We never exploit vulnerabilities beyond what is necessary to demonstrate risk, and we avoid testing during your business-critical hours unless agreed.</p>
+      <p>Absolutely. We operate under signed confidentiality agreements and follow responsible disclosure practices. We never exploit vulnerabilities beyond what is necessary to demonstrate risk, and we schedule testing outside your business-critical hours unless you request otherwise.</p>
     </div>
     <div class="faq-item faq-purple">
       <div class="faq-header">
         <span class="faq-number">05</span>
-        <h3>Do you offer services outside Uganda?</h3>
+        <h3>What types of organizations do you work with?</h3>
       </div>
-      <p>Yes. While our primary focus is East Africa, we serve clients globally. Our cloud security, penetration testing, and compliance services are delivered remotely. On-site work is available in Uganda and neighboring countries.</p>
+      <p>Fintechs, banks, SACCOs, microfinance deposit-taking institutions (MDIs), health tech, NGOs, and mobile network operators across East Africa. While our deepest expertise is in Uganda's mobile money and banking ecosystems, we deliver cloud security, penetration testing, and compliance services remotely to clients globally.</p>
     </div>
   </div>
   </div>
