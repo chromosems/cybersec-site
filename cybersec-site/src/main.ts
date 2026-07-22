@@ -436,9 +436,9 @@ app.innerHTML = `
   </div>
   <h3 class="retainer-subheading">Retainer Tiers</h3>
   <div class="retainer-grid-3 animate-on-scroll">
-    <div class="retainer-card">
+    <div class="retainer-card tier-basic">
       <div class="retainer-tier">Basic</div>
-      <p class="retainer-for">Best for small teams getting started with security</p>
+      <p class="retainer-for">Small teams getting started with security</p>
       <ul class="retainer-tier-list">
         <li>Quarterly cloud security review</li>
         <li>Security monitoring setup + continuous log collection</li>
@@ -450,10 +450,10 @@ app.innerHTML = `
         <li>Email support, 24-hour response</li>
       </ul>
     </div>
-    <div class="retainer-card retainer-recommended">
+    <div class="retainer-card retainer-recommended tier-standard">
       <div class="retainer-badge">Recommended</div>
       <div class="retainer-tier">Standard</div>
-      <p class="retainer-for">Best for growing organizations with active infrastructure</p>
+      <p class="retainer-for">Growing organizations with active infrastructure</p>
       <ul class="retainer-tier-list">
         <li>Monthly cloud security review</li>
         <li>Monthly security monitoring + tuning</li>
@@ -467,9 +467,9 @@ app.innerHTML = `
         <li>Microsoft Teams + email, 8-hour response</li>
       </ul>
     </div>
-    <div class="retainer-card">
+    <div class="retainer-card tier-premium">
       <div class="retainer-tier">Premium</div>
-      <p class="retainer-for">Best for regulated organizations requiring continuous coverage</p>
+      <p class="retainer-for">Regulated organizations requiring continuous coverage</p>
       <ul class="retainer-tier-list">
         <li>Bi-weekly cloud security review</li>
         <li>Continuous monitoring + monthly tuning</li>
