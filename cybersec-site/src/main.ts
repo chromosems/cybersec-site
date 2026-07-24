@@ -72,7 +72,7 @@ app.innerHTML = `
   <div class="hero-layout">
     <div class="hero-text animate-on-scroll">
       <h1>Built by Engineers.<br>Trusted by Teams.</h1>
-      <p class="hero-sub">Enterprise cybersecurity for East Africa. Adversarial testing, cloud defense, external monitoring, data protection compliance, and incident response.</p>
+      <p class="hero-sub">Enterprise cybersecurity for East Africa. Adversarial testing, cloud defense, managed security monitoring, data protection compliance, and incident response.</p>
       <p class="hero-trust">Headquartered in Kampala. Operating across East Africa.</p>
     </div>
     <div class="hero-form-col animate-on-scroll">
@@ -96,7 +96,7 @@ app.innerHTML = `
             <option value="fintech-banking">Fintech & Banking Security (BOU Compliance)</option>
             <option value="penetration-testing">Penetration Testing (Network, Web, API)</option>
             <option value="cloud-security">Cloud Security for African SMEs</option>
-            <option value="monitoring">External Security Monitoring</option>
+            <option value="monitoring">Managed Security Monitoring</option>
             <option value="incident-response">Incident Response & Recovery</option>
             <option value="retainer">Ongoing Security Retainer</option>
             <option value="other">Other</option>
@@ -169,7 +169,7 @@ app.innerHTML = `
         <li><span class="choose-bullet"></span> Data Protection & Compliance (DPA 2019, ISO 27001, NIST)</li>
         <li><span class="choose-bullet"></span> Mobile Money & USSD Security</li>
         <li><span class="choose-bullet"></span> Fintech & Banking Security (BOU Compliance)</li>
-        <li><span class="choose-bullet"></span> Security Monitoring & Alerting</li>
+        <li><span class="choose-bullet"></span> Managed Security Monitoring</li>
         <li><span class="choose-bullet"></span> Incident Response & Recovery</li>
       </ul>
     </div>
@@ -284,7 +284,7 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">06</div>
       <h3>Security Operations & Incident Response</h3>
-      <p>Practical security monitoring, alerting, and rapid incident response — without enterprise-grade budgets. Log collection, alerting rules, and notification workflows that catch real threats, plus containment, forensics, and recovery when incidents occur.</p>
+      <p>Practical managed security monitoring and rapid incident response — without enterprise-grade budgets. Log collection, alerting rules, and notification workflows that catch real threats, plus containment, forensics, and recovery when incidents occur.</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -491,7 +491,7 @@ app.innerHTML = `
       <p class="retainer-for">Small teams getting started with security</p>
       <ul class="retainer-tier-list">
         <li>Quarterly cloud security review</li>
-        <li>Security monitoring setup + continuous log collection</li>
+        <li>Managed security monitoring setup + continuous log collection</li>
         <li>Annual focused assessment (web app or network)</li>
         <li>Vulnerability tracking dashboard</li>
         <li>1-time mobile money / USSD testing</li>
@@ -506,7 +506,7 @@ app.innerHTML = `
       <p class="retainer-for">Growing organizations with active infrastructure</p>
       <ul class="retainer-tier-list">
         <li>Monthly cloud security review</li>
-        <li>Monthly security monitoring + tuning</li>
+        <li>Monthly managed security monitoring + tuning</li>
         <li>Twice-yearly moderate scope pentest</li>
         <li>Vulnerability remediation tracking</li>
         <li>DPA 2019 + ISO 27001 review twice yearly</li>
@@ -522,7 +522,7 @@ app.innerHTML = `
       <p class="retainer-for">Regulated organizations requiring continuous coverage</p>
       <ul class="retainer-tier-list">
         <li>Bi-weekly cloud security review</li>
-        <li>Continuous monitoring + monthly tuning</li>
+        <li>Continuous managed security monitoring + monthly tuning</li>
         <li>Quarterly full-scope penetration testing</li>
         <li>Active vulnerability management & remediation</li>
         <li>DPA 2019 + ISO 27001 + full BOU compliance</li>
@@ -570,7 +570,7 @@ app.innerHTML = `
           <td>Bi-weekly, unlimited</td>
         </tr>
         <tr>
-          <td>Security monitoring</td>
+          <td>Managed security monitoring</td>
           <td>Setup + continuous log collection</td>
           <td class="recommended-cell">Monthly review + tuning</td>
           <td>Continuous + monthly tuning</td>
