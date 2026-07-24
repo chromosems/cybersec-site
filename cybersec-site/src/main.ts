@@ -85,7 +85,10 @@ app.innerHTML = `
           <label for="email" class="visually-hidden">Email address</label>
           <input id="email" type="email" name="email" placeholder="Email address" required autocomplete="email">
           <label for="phone" class="visually-hidden">Phone number</label>
-          <input id="phone" type="tel" name="phone" placeholder="Phone number" required pattern="[0-9+\-()\s]+" title="Numbers and phone characters only (+, -, parentheses)" inputmode="numeric">
+          <input id="phone" type="tel" name="phone" placeholder="Phone number (+256...)" required pattern="^\+[0-9]{1,4}[\s\-]?[0-9]{6,12}$" title="International format: +256 701 234 567" inputmode="tel">
+          <div class="form-honeypot" aria-hidden="true">
+            <input type="text" name="website" tabindex="-1" autocomplete="off">
+          </div>
           <label for="company" class="visually-hidden">Company</label>
           <input id="company" type="text" name="company" placeholder="Company" required autocomplete="organization">
           <label for="service" class="visually-hidden">How we can help you</label>
@@ -126,6 +129,9 @@ app.innerHTML = `
           </select>
           <label for="message" class="visually-hidden">Tell us about your security needs</label>
           <textarea id="message" name="message" placeholder="Tell us about your security needs..." rows="3" required></textarea>
+          <div class="form-privacy">
+            <p>By submitting, you agree to our privacy policy. We process your data to respond to your inquiry and do not share it with third parties beyond our secure form processor.</p>
+          </div>
           <button type="submit" class="btn-primary">
             <span class="btn-text">Send message</span>
             <svg class="btn-spinner" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
@@ -828,12 +834,28 @@ compareToggle?.addEventListener('click', () => {
 // ------ Form submission ------
 
 const contactForm = document.querySelector<HTMLFormElement>('#contact-form')
+let lastSubmitTime = 0
+const RATE_LIMIT_MS = 30000
+
 contactForm?.addEventListener('submit', async e => {
   e.preventDefault()
   const status = contactForm.querySelector<HTMLDivElement>('.form-status')!
   const btn = contactForm.querySelector<HTMLButtonElement>('button[type="submit"]')!
   const btnText = btn.querySelector<HTMLSpanElement>('.btn-text')!
   const data = new FormData(contactForm)
+
+  // Honeypot check — silently reject if filled (bot trap)
+  if (data.get('website')) {
+    return
+  }
+
+  // Rate limiting — max 1 submission per 30 seconds
+  const now = Date.now()
+  if (now - lastSubmitTime < RATE_LIMIT_MS) {
+    status.textContent = 'Please wait a moment before submitting again.'
+    status.classList.add('form-status-error')
+    return
+  }
 
   status.textContent = ''
   status.className = 'form-status'
@@ -847,6 +869,7 @@ contactForm?.addEventListener('submit', async e => {
       headers: { 'Accept': 'application/json' },
     })
     if (res.ok) {
+      lastSubmitTime = now
       status.textContent = 'Thanks! We will get back to you within 24 hours.'
       status.classList.add('form-status-success')
       contactForm.reset()
