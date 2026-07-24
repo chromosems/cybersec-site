@@ -850,13 +850,6 @@ contactForm?.addEventListener('submit', async e => {
       status.textContent = 'Thanks! We will get back to you within 24 hours.'
       status.classList.add('form-status-success')
       contactForm.reset()
-      if (typeof gtag !== 'undefined') {
-        gtag('event', 'generate_lead', {
-          event_category: 'engagement',
-          event_label: 'contact_form',
-          value: 1
-        })
-      }
     } else {
       status.textContent = 'Something went wrong. Please try again or email us directly.'
       status.classList.add('form-status-error')
