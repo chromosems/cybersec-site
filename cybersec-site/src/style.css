@@ -380,12 +380,13 @@ nav.nav-scrolled .nav-inner {
 }
 
 .hero-form-card {
-  background: #ffffff;
-  border: 1px solid #2a3040;
+  background: rgba(18, 22, 32, 0.95);
+  border: 1px solid rgba(220, 38, 38, 0.25);
   border-radius: 8px;
   padding: 32px 28px;
   position: relative;
   overflow: hidden;
+  backdrop-filter: blur(8px);
 }
 
 .hero-form-card::before {
@@ -403,13 +404,13 @@ nav.nav-scrolled .nav-inner {
   font-family: var(--heading);
   font-size: 20px;
   font-weight: 700;
-  color: #0a0c10;
+  color: #fff;
   margin-bottom: 8px;
 }
 
 .hero-form-sub {
   font-size: 14px;
-  color: #4a5060;
+  color: #9ca3af;
   margin-bottom: 24px;
   line-height: 1.5;
 }
@@ -423,15 +424,15 @@ nav.nav-scrolled .nav-inner {
 .hero-form-card input,
 .hero-form-card select,
 .hero-form-card textarea {
-  background: #f7f8fa;
-  border: 1px solid #e2e4e9;
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 6px;
   padding: 13px 16px;
-  color: #0a0c10;
+  color: #e2e4e9;
   font-size: 14px;
   font-family: var(--sans);
   outline: none;
-  transition: border-color 0.2s;
+  transition: border-color 0.2s, background 0.2s;
   resize: vertical;
 }
 
@@ -439,16 +440,17 @@ nav.nav-scrolled .nav-inner {
 .hero-form-card select:focus,
 .hero-form-card textarea:focus {
   border-color: var(--accent);
+  background: rgba(255, 255, 255, 0.09);
 }
 
 .hero-form-card input::placeholder,
 .hero-form-card textarea::placeholder {
-  color: #9ca3af;
+  color: #6a7080;
 }
 
 .hero-form-card select {
   appearance: none;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%239ca3af' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%236a7080' stroke-width='2'%3E%3Cpath d='M6 9l6 6 6-6'/%3E%3C/svg%3E");
   background-repeat: no-repeat;
   background-position: right 14px center;
   padding-right: 36px;
@@ -464,6 +466,42 @@ nav.nav-scrolled .nav-inner {
   width: 100%;
   text-align: center;
   margin-top: 4px;
+}
+
+/* Optional fields toggle */
+.form-optional {
+  margin-top: 4px;
+}
+
+.form-toggle {
+  background: transparent;
+  border: none;
+  color: var(--accent);
+  font-family: var(--sans);
+  font-size: 13px;
+  font-weight: 500;
+  padding: 0;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s;
+}
+
+.form-toggle:hover {
+  color: #ff6b6b;
+}
+
+.form-optional-fields {
+  display: none;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.form-optional-fields.expanded {
+  display: flex;
 }
 
 .form-status {

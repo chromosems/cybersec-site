@@ -71,14 +71,14 @@ app.innerHTML = `
   </div>
   <div class="hero-layout">
     <div class="hero-text animate-on-scroll">
-      <h1>Built by Engineers.<br>Trusted by Teams.</h1>
+      <h1>Built by Engineers.<br>Tested by Attackers.</h1>
       <p class="hero-sub">Enterprise cybersecurity for East Africa. Adversarial testing, cloud defense, managed security monitoring, data protection compliance, and incident response.</p>
       <p class="hero-trust">Headquartered in Kampala. Operating across East Africa.</p>
     </div>
     <div class="hero-form-col animate-on-scroll">
       <div class="hero-form-card">
-        <h3>How Can We Help?</h3>
-        <p class="hero-form-sub">Book your free security posture assessment. We respond within 24 hours.</p>
+        <h3>Book Your Assessment</h3>
+        <p class="hero-form-sub">Free security posture assessment. We respond within 24 hours.</p>
         <form id="contact-form" aria-label="Contact form">
           <label for="name" class="visually-hidden">Your name</label>
           <input id="name" type="text" name="name" placeholder="Your name" required minlength="2" autocomplete="name">
@@ -89,8 +89,6 @@ app.innerHTML = `
           <div class="form-honeypot" aria-hidden="true">
             <input type="text" name="website" tabindex="-1" autocomplete="off">
           </div>
-          <label for="company" class="visually-hidden">Company</label>
-          <input id="company" type="text" name="company" placeholder="Company" required autocomplete="organization">
           <label for="service" class="visually-hidden">How we can help you</label>
           <select id="service" name="service" class="hero-form-select" required>
             <option value="" disabled selected>How we can help you</option>
@@ -104,36 +102,43 @@ app.innerHTML = `
             <option value="retainer">Ongoing Security Retainer</option>
             <option value="other">Other</option>
           </select>
-          <label for="company-size" class="visually-hidden">Company size (optional)</label>
-          <select id="company-size" name="company-size" class="hero-form-select">
-            <option value="" disabled selected>Company size (optional)</option>
-            <option value="1-10">1-10 employees</option>
-            <option value="11-50">11-50 employees</option>
-            <option value="51-200">51-200 employees</option>
-            <option value="201-500">201-500 employees</option>
-            <option value="500+">500+ employees</option>
-          </select>
-          <label for="security-maturity" class="visually-hidden">Current security maturity (optional)</label>
-          <select id="security-maturity" name="security-maturity" class="hero-form-select">
-            <option value="" disabled selected>Current security maturity (optional)</option>
-            <option value="none">No formal security program</option>
-            <option value="basic">Basic controls (firewall, antivirus)</option>
-            <option value="mature">Mature program with monitoring</option>
-          </select>
-          <label for="timeline" class="visually-hidden">Timeline (optional)</label>
-          <select id="timeline" name="timeline" class="hero-form-select">
-            <option value="" disabled selected>When do you need this? (optional)</option>
-            <option value="urgent">Urgent (within 2 weeks)</option>
-            <option value="1-3-months">1-3 months</option>
-            <option value="planning">Planning ahead (3+ months)</option>
-          </select>
-          <label for="message" class="visually-hidden">Tell us about your security needs</label>
-          <textarea id="message" name="message" placeholder="Tell us about your security needs..." rows="3" required></textarea>
+          <div class="form-optional" id="form-optional">
+            <button type="button" class="form-toggle" id="form-toggle">Add more detail (optional)</button>
+            <div class="form-optional-fields" id="form-optional-fields">
+              <label for="company" class="visually-hidden">Company</label>
+              <input id="company" type="text" name="company" placeholder="Company" autocomplete="organization">
+              <label for="company-size" class="visually-hidden">Company size</label>
+              <select id="company-size" name="company-size" class="hero-form-select">
+                <option value="" disabled selected>Company size</option>
+                <option value="1-10">1-10 employees</option>
+                <option value="11-50">11-50 employees</option>
+                <option value="51-200">51-200 employees</option>
+                <option value="201-500">201-500 employees</option>
+                <option value="500+">500+ employees</option>
+              </select>
+              <label for="security-maturity" class="visually-hidden">Current security maturity</label>
+              <select id="security-maturity" name="security-maturity" class="hero-form-select">
+                <option value="" disabled selected>Current security maturity</option>
+                <option value="none">No formal security program</option>
+                <option value="basic">Basic controls (firewall, antivirus)</option>
+                <option value="mature">Mature program with monitoring</option>
+              </select>
+              <label for="timeline" class="visually-hidden">Timeline</label>
+              <select id="timeline" name="timeline" class="hero-form-select">
+                <option value="" disabled selected>When do you need this?</option>
+                <option value="urgent">Urgent (within 2 weeks)</option>
+                <option value="1-3-months">1-3 months</option>
+                <option value="planning">Planning ahead (3+ months)</option>
+              </select>
+              <label for="message" class="visually-hidden">Tell us about your security needs</label>
+              <textarea id="message" name="message" placeholder="Tell us about your security needs..." rows="3"></textarea>
+            </div>
+          </div>
           <div class="form-privacy">
             <p>By submitting, you agree to our privacy policy. We process your data to respond to your inquiry and do not share it with third parties beyond our secure form processor.</p>
           </div>
           <button type="submit" class="btn-primary">
-            <span class="btn-text">Send message</span>
+            <span class="btn-text">Request Assessment</span>
             <svg class="btn-spinner" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a9 9 0 1 1-6.219-8.56"/></svg>
           </button>
           <div class="form-status" role="alert" aria-live="polite"></div>
@@ -163,22 +168,11 @@ app.innerHTML = `
         <li><span class="choose-bullet"></span> Deep expertise in Uganda's regulatory landscape</li>
         <li><span class="choose-bullet"></span> Mobile money & fintech security specialists</li>
         <li><span class="choose-bullet"></span> Offensive + defensive in one practice</li>
-        <li><span class="choose-bullet"></span> Practical solutions for East African budgets</li>
+        <li><span class="choose-bullet"></span> Right sized engagements</li>
         <li><span class="choose-bullet"></span> Compliance-ready outcomes</li>
       </ul>
     </div>
-    <div class="philosophy-card">
-      <h3>What We Do</h3>
-      <ul class="choose-list">
-        <li><span class="choose-bullet"></span> Penetration Testing (Network, Web, API)</li>
-        <li><span class="choose-bullet"></span> Cloud Security for African SMEs</li>
-        <li><span class="choose-bullet"></span> Data Protection & Compliance (DPA 2019, ISO 27001, NIST)</li>
-        <li><span class="choose-bullet"></span> Mobile Money & USSD Security</li>
-        <li><span class="choose-bullet"></span> Fintech & Banking Security (BOU Compliance)</li>
-        <li><span class="choose-bullet"></span> Managed Security Monitoring</li>
-        <li><span class="choose-bullet"></span> Incident Response & Recovery</li>
-      </ul>
-    </div>
+    
     <div class="philosophy-card">
       <h3>Our Impact</h3>
       <p>We help organizations reduce security risk, achieve regulatory compliance, and build customer trust. Whether it is passing a Bank of Uganda audit, protecting mobile money transactions, or responding to a breach, we deliver measurable security outcomes that protect your business.</p>
@@ -273,7 +267,7 @@ app.innerHTML = `
     <div class="expertise-card">
       <div class="expertise-number">05</div>
       <h3>Cloud Security for African SMEs</h3>
-      <p>Secure cloud and hybrid environments across AWS, Azure, and GCP — plus on-premise setups — with identity hardening, network segmentation, and data protection designed for resource-conscious but security-aware organizations.</p>
+      <p>Cloud and hybrid security for teams that need real protection without an enterprise-scale budget or headcount</p>
       <div class="deliverables">
         <span class="deliverables-heading">What we deliver:</span>
         <ul>
@@ -666,7 +660,7 @@ app.innerHTML = `
     <div class="faq-item faq-emerald">
       <div class="faq-header">
         <span class="faq-number">04</span>
-        <h3>Is our data safe during testing?</h3>
+        <h3>How do you handle confidentiality and scope during testing?</h3>
       </div>
       <p>Absolutely. We operate under signed confidentiality agreements and follow responsible disclosure practices. We never exploit vulnerabilities beyond what is necessary to demonstrate risk, and we schedule testing outside your business-critical hours unless you request otherwise.</p>
     </div>
@@ -883,7 +877,17 @@ contactForm?.addEventListener('submit', async e => {
   }
 
   btn.disabled = false
-  btnText.textContent = 'Send message'
+  btnText.textContent = 'Request Assessment'
+})
+
+// Optional fields toggle
+const formToggle = document.querySelector<HTMLButtonElement>('#form-toggle')
+const optionalFields = document.querySelector<HTMLDivElement>('#form-optional-fields')
+formToggle?.addEventListener('click', () => {
+  optionalFields?.classList.toggle('expanded')
+  formToggle.textContent = optionalFields?.classList.contains('expanded')
+    ? 'Hide extra detail'
+    : 'Add more detail (optional)'
 })
 
 // Phone placeholder with default East Africa code
