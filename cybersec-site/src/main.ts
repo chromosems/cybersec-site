@@ -7,17 +7,13 @@ app.innerHTML = `
   <div class="nav-inner">
     <a href="#hero" class="logo">fuse-cec<span class="logo-accent">.io</span></a>
     <div class="nav-center">
-      <a href="#hero">Home</a>
       <a href="#philosophy">About</a>
       <a href="#expertise">Services</a>
-      <a href="#advanced">Advanced</a>
       <a href="#case-studies">Case Studies</a>
       <a href="#how-it-works">How It Works</a>
       <a href="#retainer">Retainer</a>
-      <a href="#faq">FAQ</a>
-      <a href="#hero" class="nav-btn nav-btn-internal">Book free assessment</a>
+      <a href="#hero" class="nav-btn">Book free assessment</a>
     </div>
-    <a href="#hero" class="nav-btn nav-btn-external">Book free assessment</a>
     <button class="nav-toggle" aria-label="Toggle navigation">
       <span></span><span></span><span></span>
     </button>
