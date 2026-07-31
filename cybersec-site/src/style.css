@@ -467,43 +467,6 @@ nav.nav-scrolled .nav-inner {
   text-align: center;
   margin-top: 4px;
 }
-
-/* Optional fields toggle */
-.form-optional {
-  margin-top: 4px;
-}
-
-.form-toggle {
-  background: transparent;
-  border: none;
-  color: var(--accent);
-  font-family: var(--sans);
-  font-size: 13px;
-  font-weight: 500;
-  padding: 0;
-  cursor: pointer;
-  text-decoration: underline;
-  text-underline-offset: 2px;
-  transition: color 0.2s;
-}
-
-.form-toggle:hover {
-  color: #ff6b6b;
-}
-
-.form-optional-fields {
-  display: none;
-  flex-direction: column;
-  gap: 12px;
-  margin-top: 12px;
-  padding-top: 12px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-}
-
-.form-optional-fields.expanded {
-  display: flex;
-}
-
 .form-status {
   font-size: 13px;
   line-height: 1.5;

@@ -102,38 +102,7 @@ app.innerHTML = `
             <option value="retainer">Ongoing Security Retainer</option>
             <option value="other">Other</option>
           </select>
-          <div class="form-optional" id="form-optional">
-            <button type="button" class="form-toggle" id="form-toggle">Add more detail (optional)</button>
-            <div class="form-optional-fields" id="form-optional-fields">
-              <label for="company" class="visually-hidden">Company</label>
-              <input id="company" type="text" name="company" placeholder="Company" autocomplete="organization">
-              <label for="company-size" class="visually-hidden">Company size</label>
-              <select id="company-size" name="company-size" class="hero-form-select">
-                <option value="" disabled selected>Company size</option>
-                <option value="1-10">1-10 employees</option>
-                <option value="11-50">11-50 employees</option>
-                <option value="51-200">51-200 employees</option>
-                <option value="201-500">201-500 employees</option>
-                <option value="500+">500+ employees</option>
-              </select>
-              <label for="security-maturity" class="visually-hidden">Current security maturity</label>
-              <select id="security-maturity" name="security-maturity" class="hero-form-select">
-                <option value="" disabled selected>Current security maturity</option>
-                <option value="none">No formal security program</option>
-                <option value="basic">Basic controls (firewall, antivirus)</option>
-                <option value="mature">Mature program with monitoring</option>
-              </select>
-              <label for="timeline" class="visually-hidden">Timeline</label>
-              <select id="timeline" name="timeline" class="hero-form-select">
-                <option value="" disabled selected>When do you need this?</option>
-                <option value="urgent">Urgent (within 2 weeks)</option>
-                <option value="1-3-months">1-3 months</option>
-                <option value="planning">Planning ahead (3+ months)</option>
-              </select>
-              <label for="message" class="visually-hidden">Tell us about your security needs</label>
-              <textarea id="message" name="message" placeholder="Tell us about your security needs..." rows="3"></textarea>
-            </div>
-          </div>
+
           <div class="form-privacy">
             <p>By submitting, you agree to our privacy policy. We process your data to respond to your inquiry and do not share it with third parties beyond our secure form processor.</p>
           </div>
@@ -878,16 +847,6 @@ contactForm?.addEventListener('submit', async e => {
 
   btn.disabled = false
   btnText.textContent = 'Request Assessment'
-})
-
-// Optional fields toggle
-const formToggle = document.querySelector<HTMLButtonElement>('#form-toggle')
-const optionalFields = document.querySelector<HTMLDivElement>('#form-optional-fields')
-formToggle?.addEventListener('click', () => {
-  optionalFields?.classList.toggle('expanded')
-  formToggle.textContent = optionalFields?.classList.contains('expanded')
-    ? 'Hide extra detail'
-    : 'Add more detail (optional)'
 })
 
 // Phone placeholder with default East Africa code
