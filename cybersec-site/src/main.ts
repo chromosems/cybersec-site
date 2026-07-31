@@ -739,9 +739,11 @@ document.querySelectorAll('.read-more-btn').forEach(btn => {
     btn.textContent = isExpanded ? 'Read more' : 'Show less'
 
     if (isExpanded) {
-      // Collapsing: restore fixed height
+      // Collapsing: wait for CSS transition to finish, then restore fixed height
       card.classList.remove('is-expanded')
-      equalizeCardHeights()
+      setTimeout(() => {
+        equalizeCardHeights()
+      }, 350)
     } else {
       // Expanding: remove fixed height to let card grow naturally
       card.classList.add('is-expanded')
