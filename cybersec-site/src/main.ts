@@ -558,8 +558,8 @@ app.innerHTML = `
         <tr>
           <td>Security awareness & training</td>
           <td>Guidance included</td>
-          <td class="recommended-cell">Quarterly training session</td>
-          <td>Monthly program + phishing simulation</td>
+          <td class="recommended-cell">Included in scope</td>
+          <td>Custom program</td>
         </tr>
         <tr>
           <td>Mobile money / USSD</td>
