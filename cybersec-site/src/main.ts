@@ -510,12 +510,15 @@ app.innerHTML = `
       <thead>
         <tr>
           <th>Feature</th>
-          <th>Basic</th>
-          <th class="recommended-header">Standard</th>
-          <th>Premium</th>
+          <th><span class="tier-name">Basic</span></th>
+          <th class="recommended-header"><span class="tier-name">Standard</span><span class="tier-badge">Recommended</span></th>
+          <th><span class="tier-name">Premium</span></th>
         </tr>
       </thead>
       <tbody>
+        <tr class="table-banner">
+          <td colspan="4"><span class="banner-icon">&#10003;</span> Most popular choice for growing organizations</td>
+        </tr>
         <tr>
           <td>Penetration testing</td>
           <td>Annual focused (web app or network)</td>
@@ -542,13 +545,13 @@ app.innerHTML = `
         </tr>
         <tr>
           <td>Data Protection / ISO 27001</td>
-          <td>Not included</td>
+          <td class="not-included">Not included</td>
           <td class="recommended-cell">Review twice yearly</td>
           <td>Ongoing</td>
         </tr>
         <tr>
           <td>BOU compliance</td>
-          <td>Not included</td>
+          <td class="not-included">Not included</td>
           <td class="recommended-cell">Guidance & advisory</td>
           <td>Full audit preparation + on-site</td>
         </tr>
@@ -566,7 +569,7 @@ app.innerHTML = `
         </tr>
         <tr>
           <td>Incident response</td>
-          <td>Not included</td>
+          <td class="not-included">Not included</td>
           <td class="recommended-cell">Remote, up to 20 hrs/year</td>
           <td>Full on-site Kampala, unlimited</td>
         </tr>

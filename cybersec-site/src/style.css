@@ -1727,7 +1727,7 @@ footer {
 
 .retainer-compare-toggle {
   text-align: center;
-  margin-top: 28px;
+  margin-top: 40px;
 }
 
 #compare-table {
@@ -1783,9 +1783,9 @@ footer {
   border-collapse: separate;
   border-spacing: 0;
   font-size: 14px;
-  background: #fff;
+  background: #fafbfc;
   border: 1px solid #e2e4e9;
-  border-radius: 10px;
+  border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
 }
