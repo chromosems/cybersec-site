@@ -698,16 +698,55 @@ app.innerHTML = `
 </button>
 `
 
+// ------ Equalize expertise card heights ------
+
+function equalizeCardHeights() {
+  const cards = document.querySelectorAll<HTMLElement>('.expertise-card')
+  if (!cards.length) return
+
+  // Reset any previously set heights to get natural heights
+  cards.forEach(card => {
+    card.style.height = ''
+  })
+
+  // Find tallest card
+  let maxHeight = 0
+  cards.forEach(card => {
+    maxHeight = Math.max(maxHeight, card.offsetHeight)
+  })
+
+  // Set all cards to tallest height (unless already expanded)
+  cards.forEach(card => {
+    if (!card.classList.contains('is-expanded')) {
+      card.style.height = `${maxHeight}px`
+    }
+  })
+}
+
+// Run on load and resize
+window.addEventListener('load', equalizeCardHeights)
+window.addEventListener('resize', equalizeCardHeights)
+
 // ------ Read more toggles ------
 
 document.querySelectorAll('.read-more-btn').forEach(btn => {
   btn.addEventListener('click', () => {
     const card = btn.closest('.expertise-card')
     const deliverables = card?.querySelector('.deliverables')
-    if (!deliverables) return
+    if (!deliverables || !card) return
     const isExpanded = deliverables.classList.contains('expanded')
     deliverables.classList.toggle('expanded')
     btn.textContent = isExpanded ? 'Read more' : 'Show less'
+
+    if (isExpanded) {
+      // Collapsing: restore fixed height
+      card.classList.remove('is-expanded')
+      equalizeCardHeights()
+    } else {
+      // Expanding: remove fixed height to let card grow naturally
+      card.classList.add('is-expanded')
+      card.style.height = ''
+    }
   })
 })
 
